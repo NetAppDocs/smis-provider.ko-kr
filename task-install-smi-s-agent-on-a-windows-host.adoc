@@ -1,0 +1,46 @@
+---
+permalink: task-install-smi-s-agent-on-a-windows-host.html 
+sidebar: sidebar 
+keywords: netapp smi-s provider, software, storage systems, data ontap 
+summary: 'NetApp SMI-S Provider 소프트웨어를 설치하면 Data ONTAP를 실행하는 스토리지 시스템을 관리할 수 있습니다. 기본적으로 NetApp SMI-S Provider 소프트웨어는 C:\Program Files (x86)\NetApp\SMIS\Pegasus 디렉토리에 설치됩니다.' 
+---
+= Windows 호스트에 NetApp SMI-S Provider를 설치합니다
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp SMI-S Provider 소프트웨어를 설치하면 Data ONTAP를 실행하는 스토리지 시스템을 관리할 수 있습니다. 기본적으로 NetApp SMI-S Provider 소프트웨어는 'C:\Program Files (x86)\NetApp\SMIS\Pegasus' 디렉토리에 설치됩니다.
+
+
+
+== 시작하기 전에
+
+다음 자격 증명 및 소프트웨어가 이미 있어야 합니다.
+
+* Windows 관리자 계정에 대한 로그인 자격 증명입니다
+* NetApp SMI-S Provider 소프트웨어 패키지입니다
+
+
+
+
+== 이 작업에 대해
+
+설치 프로세스의 결과로 CIMOM 서비스(서비스 제어 관리자에서 "NetApp SMI-S Provider"로 지정됨)와 SLP 데몬(서비스 제어 관리자에서 "Service Location Protocol"으로 지정됨)은 호스트를 재부팅한 후에도 자동으로 시작되는 자동 서비스로 실행됩니다.
+
+이 설치 절차는 새로 설치하는 과정을 반영합니다.
+
+
+
+== 단계
+
+. 관리자로 로그인합니다.
+. NetApp SMI-S Provider 소프트웨어 패키지('smisprovider-_version_number_.msi')가 포함된 디렉토리로 이동한 다음 패키지 이름을 두 번 클릭합니다.
+. 설정 마법사의 단계를 완료합니다.
+
+
+
+
+== 결과
+
+NetApp SMI-S Provider는 설치 프로세스가 종료될 때 자동으로 시작됩니다.

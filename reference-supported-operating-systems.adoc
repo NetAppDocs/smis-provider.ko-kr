@@ -1,0 +1,54 @@
+---
+permalink: reference-supported-operating-systems.html 
+sidebar: sidebar 
+keywords: installing, smi-s provider, verify, windows, host, operating systems 
+summary: SMI-S Provider를 설치하기 전에 Windows 호스트에서 지원되는 운영 체제를 실행 중인지 확인해야 합니다. 
+---
+= 지원되는 운영 체제 버전입니다
+:icons: font
+:imagesdir: ./media/
+:pp: &#43;&#43;
+
+
+[role="lead"]
+SMI-S Provider를 설치하기 전에 Windows 호스트에서 지원되는 운영 체제를 실행 중인지 확인해야 합니다.
+
+[cols="3*"]
+|===
+| 운영 체제 | 지원되는 버전 | 필요한 클라이언트 소프트웨어 
+
+
+ a| 
+Windows
+ a| 
+* Microsoft Windows Server 2016
+* Microsoft Windows Server 2019
+
+ a| 
+Microsoft Visual C{pp} 2010 런타임 라이브러리는 SMI-S Provider 설치 중에 자동으로 설치됩니다. 런타임 라이브러리와 관련된 잠재적인 문제를 방지하려면 Microsoft Visual C{pp} 2010 재배포 가능 패키지(x86)를 설치해야 합니다. 다음 위치에서: http://www.microsoft.com[]
+
+|===
+
+
+== SCVMM 2016 UR 2.1 요구 사항
+
+NetApp SMI-S Provider 5.2.4 이상이 설치된 NetApp 파일 서버를 관리하려면 SCVMM(System Center Virtual Machine Manager) 2016 UR(Update Rollup) 2.1이 필요합니다.
+
+이 UR이 없으면 SCVMM 2016은 NetApp File Server의 기존 파일 공유에 대해 "Total Capacity" 및 "Available Capacity" 옵션의 값을 "0GB *"로 표시합니다.
+
+SMI-S Provider를 실행하려면 공급자 호스트 시스템이 다음 사양을 충족해야 합니다.
+
+* 공급자 호스트 시스템을 사용하여 Hyper-V 노드를 호스팅할 수 없습니다.
+* SCVMM은 공급자 호스트 시스템에서 실행되지 않아야 합니다.
+* 공급자 호스트 컴퓨터는 메모리를 많이 사용하는 다른 프로그램을 실행하지 않아야 합니다.
+* 다른 공급업체의 SMI-S Provider는 Provider 호스트 시스템에서 실행할 수 없습니다.
+
+
+지원되는 하이퍼바이저는 다음과 같습니다.
+
+* Microsoft Windows Server 2016 Hyper-V
+* VMware ESX 5.0
+* VMware ESX 5.1
+* VMware ESX 5.5
+* VMware ESX 6.0
+

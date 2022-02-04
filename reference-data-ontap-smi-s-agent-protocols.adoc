@@ -1,0 +1,23 @@
+---
+permalink: reference-data-ontap-smi-s-agent-protocols.html 
+sidebar: sidebar 
+keywords: netapp smi-s provider, cim-xml, encoding, https, service, location, protocol 
+summary: 'NetApp SMI-S Provider는 HTTPS 및 SLP(Service Location Protocol)를 통해 CIM-XML 인코딩을 사용합니다.' 
+---
+= NetApp SMI-S Provider 프로토콜
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp SMI-S Provider는 HTTPS 및 SLP(Service Location Protocol)를 통해 CIM-XML 인코딩을 사용합니다.
+
+* * HTTPS를 통한 CIM-XML 인코딩 *
++
+WBEM(Web-Based Enterprise Management) 지원 관리 클라이언트와 CIMOM 서버 간에 정보를 교환하는 프로토콜입니다. HTTPS를 통한 CIM-XML 인코딩은 CIM 프로토콜을 페이로드로 사용하고 HTTPS를 전송으로 사용합니다. HTTP도 지원됩니다.
+
+* * SLP *
++
+LAN 내에서 WBEM 서비스를 감지하는 Discovery Protocol
+
+

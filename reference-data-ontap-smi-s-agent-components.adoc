@@ -1,0 +1,33 @@
+---
+permalink: reference-data-ontap-smi-s-agent-components.html 
+sidebar: sidebar 
+keywords: smi-s provider 
+summary: NetApp SMI-S Provider는 CIMOM, 공급자 개체 및 리포지토리의 스토리지 시스템을 관리 및 모니터링할 수 있는 세 가지 구성 요소로 구성되어 있습니다. 
+---
+= NetApp SMI-S Provider 구성 요소
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp SMI-S Provider는 CIMOM, 공급자 개체 및 리포지토리의 스토리지 시스템을 관리 및 모니터링할 수 있는 세 가지 구성 요소로 구성되어 있습니다.
+
+* * CIMOM *
++
+NetApp SMI-S Provider의 기반 역할을 합니다. CIMOM은 각 애플리케이션 요청을 수집, 검증 및 인증한 다음 애플리케이션에 응답합니다. 각 요청을 처리하는 적절한 공급자를 호출하여 각 요청에 대한 전달자가 됩니다.
+
+* * 공급자 객체 *
++
+호스트가 SMI-S Provider에 명령이나 쿼리를 실행하면 CIMOM은 공유 라이브러리 개체를 로드하고, 이를 호출하여 요청을 처리하고, 결과 정보를 호스트에 반환합니다.
+
++
+[NOTE]
+====
+Windows 호스트는 DLL 개체를 사용합니다.
+
+====
+* * 리포지토리 *
++
+CIMOM은 해당 리포지토리에 플랫 파일 데이터베이스를 사용합니다. CIM 레벨에서 필요한 영구 데이터를 저장합니다.
+
+

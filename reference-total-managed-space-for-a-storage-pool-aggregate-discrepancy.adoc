@@ -1,0 +1,24 @@
+---
+permalink: reference-total-managed-space-for-a-storage-pool-aggregate-discrepancy.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider에서 문제가 발생했습니다. 
+---
+= 스토리지 풀(볼륨)의 총 관리 공간 불일치
+:icons: font
+:imagesdir: ./media/
+
+
+* * 문제 *
++
+FilerView와 같은 다른 스토리지 관리 툴을 사용하는 경우 스토리지 풀(볼륨)의 총 관리 공간에 대해 보고된 크기가 SMI-S Provider에서 반환된 크기와 다를 수 있습니다.
+
+* * 원인 *
++
+SMI-S Provider가 반환하는 크기에 WAFL 및 Snapshot 예비 공간이 포함되어 있고 FilerView 및 기타 도구에는 WAFL 및 Snapshot 예비 공간을 제외한 사용 가능한 공간만 표시되기 때문에 이러한 불일치가 발생합니다.
+
+* * 시정 조치 *
++
+이는 예상된 동작이며, 수정 조치는 없습니다.
+
+

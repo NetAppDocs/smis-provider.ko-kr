@@ -1,0 +1,86 @@
+---
+permalink: reference-cimconfig-command-options.html 
+sidebar: sidebar 
+keywords: cimconfig, command, cimom configuration, settings, variable, mis cimserver restart command 
+summary: cimconfig 명령을 사용하여 CIMOM 구성 설정을 관리할 수 있습니다. cimconfig 명령을 입력하거나 NetApp SMI-S Provider 구성 값에 대한 환경 변수를 생성한 후에는 SMIS cimserver restart 명령을 사용하여 CIM 서버를 다시 시작해야 합니다. 
+---
+= 구성
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+cimconfig 명령을 사용하여 CIMOM 구성 설정을 관리할 수 있습니다. cimconfig 명령을 입력하거나 NetApp SMI-S Provider 구성 값에 대한 환경 변수를 생성한 후에는 'mis cimserver restart' 명령을 사용하여 CIM 서버를 다시 시작해야 합니다.
+
+
+
+== 구문
+
+'cimconfig_options_'
+
+
+
+== 위치
+
+'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
+
+
+
+== 권한 수준
+
+관리자(Windows)
+
+
+
+== 옵션
+
+* c *
++
+구성 설정이 현재 CIMOM 구성에 적용되도록 지정합니다.
+
+* * -d *
++
+기본 CIMOM 구성에 구성 설정을 적용하도록 지정합니다.
+
+* * -g *
++
+지정된 구성 속성의 값을 가져옵니다.
+
+* * -h, -- 도움말 *
++
+cimconfig 명령에 대한 도움말을 출력한다.
+
+* l * 를 선택합니다
++
+모든 CIMOM 구성 속성을 나열합니다.
+
+* * -p *
++
+CIM 서버를 다음에 시작할 때 구성 설정이 적용되도록 지정합니다.
+
+* * -s *
++
+지정된 구성 속성 값을 설정합니다.
+
+* * -u *
++
+구성 속성을 기본값으로 다시 설정합니다.
+
+* * -- 버전 *
++
+CIM 서버의 버전을 표시합니다.
+
+
+
+
+
+== 예
+
+최대 로그 파일 크기를 15000KB로 변경합니다.
+
+[listing]
+----
+cimconfig -s maxLogFileSizeKBytes=15000
+Current value for the property maxLogFileSizeKBytes is set to "15000" in CIMServer.
+smis cimserver restart
+----

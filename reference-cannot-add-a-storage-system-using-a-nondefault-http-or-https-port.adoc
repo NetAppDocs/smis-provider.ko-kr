@@ -1,0 +1,36 @@
+---
+permalink: reference-cannot-add-a-storage-system-using-a-nondefault-http-or-https-port.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider에서 문제가 발생했습니다. 
+---
+= 기본값이 아닌 HTTP 또는 HTTPS 포트를 사용하여 스토리지 시스템을 추가할 수 없습니다
+:icons: font
+:imagesdir: ./media/
+
+
+* * 문제 *
++
+기본 포트가 아닌 포트에서 HTTP 또는 HTTPS를 실행하는 스토리지 시스템을 추가할 수 없습니다.
+
+* * 원인 *
++
+기본적으로 NetApp SMI-S Provider는 포트 80을 사용하여 HTTP를 통한 스토리지 시스템과 통신하고 포트 443을 통해 HTTPS를 통해 통신합니다.
+
+* * 시정 조치 *
++
+다음 명령을 사용하여 HTTP 트래픽에 대해 80이 아닌 포트를 사용하는 스토리지 시스템을 추가하거나 HTTPS 트래픽에 포트 443을 추가합니다.
+
++
+"cimcli ci-n root/ONTAP_FilerData hostname=_storage_sys_ip_address_port=_non_default_port_username=_storage_sys_user_password=_storage_sys_pwd_comMechanism=HTTP-u_agent_user_-p_agent_pwd_-llocalhost:5989-s"
+
++
+'-u', '-p', '-l', '-s'는 선택적 매개 변수입니다.
+
+
+
+
+
+== HTTP 트래픽에 포트 8000을 사용하는 스토리지 시스템 추가
+
+'cimcli ci-n root/ONTAP ONTAP_FilerData 호스트 이름 = 10.60.167.12 port=8000 사용자 이름=루트 암호=netapp1! comMechanism=HTTP-u 루트-p netapp1! -l localhost:5989-s--timeout 180'을 선택합니다

@@ -1,0 +1,57 @@
+---
+permalink: reference-slptool-command-options.html 
+sidebar: sidebar 
+keywords: slptool, command 
+summary: 이 옵션을 slptool 명령과 함께 사용할 수 있습니다. 
+---
+= 슬래도구
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+이 옵션은 'lptool' 명령과 함께 사용할 수 있습니다.
+
+
+
+== 구문
+
+'S lptool [options]_subcommand _'
+
+
+
+== 위치
+
+'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
+
+
+
+== 권한 수준
+
+관리자(Windows)
+
+
+
+== 옵션
+
+* * -i *
++
+하나 이상의 인터페이스를 지정합니다.
+
+* l * 를 선택합니다
++
+언어 태그를 지정합니다.
+
+* * -s *
++
+범위 목록을 지정합니다(쉼표로 구분).
+
+* * -u *
++
+하나의 인터페이스를 지정합니다.
+
+* v *
++
+S lptool 버전과 OpenSLP 버전을 표시합니다.
+
+

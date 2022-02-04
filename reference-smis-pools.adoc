@@ -1,0 +1,59 @@
+---
+permalink: reference-smis-pools.html 
+sidebar: sidebar 
+keywords: smis pools, command, list, storage, pools 
+summary: SMIS 풀 명령은 스토리지 시스템용 스토리지 풀을 나열합니다. 
+---
+= SMIS 풀
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+'mis pool' 명령은 스토리지 시스템의 스토리지 풀을 나열합니다.
+
+
+
+== 구문
+
+'진풀장
+
+'[-t{ * http * | * https *}]'
+
+
+
+== 위치
+
+'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
+
+
+
+== 권한 수준
+
+유효한 사용자 이름과 암호를 가진 사용자
+
+
+
+== 매개 변수
+
+* '*[-t{http|https}] *'
++
+사용할 프로토콜: HTTPS(기본값) 또는 HTTP
+
+
+
+
+
+== 예
+
+'mis pool' 명령과 그 축약된 출력:
+
+[listing]
+----
+smis pools
+ONTAP_ConcretePool.InstanceID="ONTAP:0084259609:d46de7f0-3925-11df-8516-00a0980558ea"
+ONTAP_ConcretePool.InstanceID="ONTAP:0084259609:51927ab0-28b5-11df-92b2-00a0980558ea"
+ONTAP_DiskPrimordialPool.InstanceID="ONTAP:0084259609:Spare"
+ONTAP_DiskPrimordialPool.InstanceID="ONTAP:0084259609:Other"
+ONTAP_DiskPrimordialPool.InstanceID="ONTAP:0084259609:Present"
+----

@@ -1,0 +1,57 @@
+---
+permalink: reference-cannot-connect-to-localhost-5988-error.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider에서 문제가 발생했습니다. 
+---
+= localhost:5988에 연결할 수 없습니다
+:icons: font
+:imagesdir: ./media/
+
+
+* * 메시지 *
++
+'localhost:5988에 연결할 수 없습니다. 연결하지 못했습니다. localhost:5988'에 연결하려고 합니다
+
+* * 설명 *
++
+이 메시지는 HTTPS 연결이 비활성화되었거나 HTTPS 포트가 5988로 설정되지 않았거나 공급자가 작동을 중지하여 Hanging 상태로 남아 있는 경우에 발생합니다.
+
+* * 시정 조치 *
++
+"enableHttpsConnection"과 "eptPort"의 값이 올바른지 확인합니다.
+
++
+"cimconfig -g enableHttpConnection"을 참조하십시오
+
++
+'cimconfig -g enableHttpsConnection'
+
++
+'cimconfig-g httpPort'입니다
+
++
+'Cimconfig-g 난소항'
+
++
+enableHttpConnection 또는 enableHttpsConnection이 true로 설정되어 있지 않으면 다음 명령을 입력합니다.
+
++
+'cimconfig -s enableHttpConnection -p'입니다
+
++
+'Mis cimserver restart'를 선택합니다
+
++
+httpPort가 5988로 설정되어 있지 않으면 다음 명령을 입력합니다.
+
++
+'cimconfig-s httpPort=5988-p'
+
++
+'Mis cimserver restart'를 선택합니다
+
++
+공급자가 작업을 중지하고 연결 상태를 유지한 경우 작업 관리자를 열고 프로세스를 종료한 다음 공급자를 다시 시작합니다.
+
+

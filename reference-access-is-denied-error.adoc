@@ -1,0 +1,34 @@
+---
+permalink: reference-access-is-denied-error.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider에서 문제가 발생했습니다. 
+---
+= 액세스가 거부되었습니다. 오류
+:icons: font
+:imagesdir: ./media/
+
+
+* * 메시지 *
++
+액세스가 거부되었습니다
+
+* * 설명 *
++
+이 메시지는 다음과 같은 두 가지 상황에서 발생합니다.
+
++
+** 시작 메뉴 바로 가기에서 SMI-S Provider에 액세스할 때 관리자로 로그인하지 않은 경우
+** SMI-S Provider 디렉토리가 'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 가리키지 않는 경우
+
+
+* * 시정 조치 *
++
+상황에 해당하는 조치를 완료합니다.
+
++
+** 관리자 수준 권한으로 로그인하고 시작 메뉴에서 SMI-S Provider를 다시 열거나 마우스 오른쪽 버튼을 클릭하고 * 관리자 권한으로 실행 * 을 선택합니다.
+** 관리자 수준의 권한으로 로그인하고 디렉터리를 'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'으로 수동으로 변경합니다.
+
+
+

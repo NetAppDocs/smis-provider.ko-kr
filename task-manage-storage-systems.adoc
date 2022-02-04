@@ -1,0 +1,137 @@
+---
+permalink: task-manage-storage-systems.html 
+sidebar: sidebar 
+keywords: smis-provider, commands, add, delete, list, storage, systems, cimom repository 
+summary: NetApp SMI-S Provider 명령을 사용하여 CIMOM 저장소에 스토리지 시스템을 추가, 삭제 및 나열할 수 있습니다. 스토리지 시스템에 대해 NFS 및 CIFS 내보내기 및 내보낸 LUN을 나열할 수도 있습니다. 
+---
+= 스토리지 시스템 관리
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp SMI-S Provider 명령을 사용하여 CIMOM 저장소에 스토리지 시스템을 추가, 삭제 및 나열할 수 있습니다. 스토리지 시스템에 대해 NFS 및 CIFS 내보내기 및 내보낸 LUN을 나열할 수도 있습니다.
+
+
+
+== 시작하기 전에
+
+* 이미 관리자로 로그인 자격 증명이 있어야 합니다.
+* 호스트 시스템에 관리자로 이미 로그인되어 있어야 합니다.
+
+
+
+
+== 이 작업에 대해
+
+ONTAP의 경우 클러스터 IP 주소가 아니라 SVM의 관리 IP 주소를 지정해야 하며 vsadmin 사용자의 자격 증명을 제공해야 합니다. SMI-S Provider는 클러스터 IP 주소 또는 노드 관리 IP 주소를 지원하지 않으며 노드 관리자 또는 노드 SVM을 지원하지 않습니다.
+
+[NOTE]
+====
+SMI-S Provider에 관리 LIF를 추가할 때 데이터 프로토콜 값을 "없음"으로 설정해야 합니다.
+
+====
+
+
+== 단계
+
+. NetApp SMI-S Provider에 액세스합니다.
+. 다음 작업 중 하나를 수행합니다.
++
+[cols="3*"]
+|===
+| 조치 | 명령 | 추가 정보 
+
+
+ a| 
+공급자와 스토리지 시스템 간의 HTTP 연결을 통해 스토리지 시스템을 추가합니다
+ a| 
+' * SMIS ADD_STORAGE_sys storage_sys_user_ * '
+ a| 
+이 명령은 공급자가 캐시를 업데이트하고 응답할 때까지 최대 15분 동안 대기합니다.
+
+
+
+ a| 
+공급자와 스토리지 시스템 간에 HTTPS 연결을 통해 스토리지 시스템을 추가합니다
+ a| 
+'* SMIS addsecure_storage_sys storage_sys_user_ *'
+ a| 
+이 명령은 공급자가 캐시를 업데이트하고 응답할 때까지 최대 15분 동안 대기합니다.
+
+
+
+ a| 
+스토리지 시스템에 대한 NFS 및 CIFS 내보내기를 나열합니다
+ a| 
+``SMIS 수출 *’
+ a| 
+없음
+
+
+
+ a| 
+CIMOM 리포지토리의 스토리지 시스템을 나열합니다
+ a| 
+'* SMIS 목록 * '
+ a| 
+스토리지 시스템을 추가하거나 삭제하기 전에 이 명령을 실행하여 CIMOM 리포지토리의 스토리지 시스템을 확인할 수 있습니다.
+
+
+
+ a| 
+스토리지 시스템에 대해 내보낸 LUN을 나열합니다
+ a| 
+"* SMIS LUN*"
+ a| 
+없음
+
+
+
+ a| 
+CIMOM 리포지토리에서 스토리지 시스템을 삭제합니다
+ a| 
+'* SMIS DELETE_STORAGE_sys_*'
+ a| 
+스토리지 시스템을 더 이상 관리할 필요가 없는 경우 CIMOM 리포지토리에서 삭제할 수 있습니다.
+
+SMI-S Provider는 CIMOM 저장소에 있는 모든 스토리지 시스템에서 정보를 수집하므로 최적의 성능을 유지하기 위해 저장소에서 사용하지 않는 스토리지 시스템을 삭제해야 합니다.
+
+
+
+ a| 
+현재 CIM 서버 구성 정보를 나열합니다
+ a| 
+``SMIS config show *’’입니다
+ a| 
+없음
+
+
+
+ a| 
+에는 스토리지 시스템의 FC 및 iSCSI 포트 정보가 나와 있습니다
+ a| 
+' * SMIS initiators * '
+ a| 
+없음
+
+
+
+ a| 
+스토리지 시스템의 스토리지 풀을 나열합니다
+ a| 
+``SMIS 풀 *’
+ a| 
+없음
+
+
+
+ a| 
+에는 스토리지 시스템의 기존 볼륨과 유연한 볼륨이 나와 있습니다
+ a| 
+' * SMIS 볼륨 * '
+ a| 
+없음
+
+|===
+

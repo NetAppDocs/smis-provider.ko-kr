@@ -1,0 +1,32 @@
+---
+permalink: reference-network-path-not-found-error-during-vm-deployment.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider에서 문제가 발생했습니다. 
+---
+= 네트워크 경로를 찾을 수 없습니다
+:icons: font
+:imagesdir: ./media/
+
+
+* * 메시지 *
++
+네트워크 경로를 찾을 수 없습니다
+
+* * 설명 *
++
+이 메시지는 DNS 문제를 반영하며, 호스트가 DNS 서버에 레코드를 가지고 있지 않은 경우 SMB 공유에서 VM 배포 중에 발생합니다.
+
++
+일반적으로 도메인에 새 호스트가 구성된 경우 도메인 DNS 서버는 24시간에서 48시간 이내에 호스트 레코드를 자동으로 업데이트해야 합니다. 그러나 이 업데이트가 항상 자동으로 수행되지는 않습니다.
+
+* * 시정 조치 *
++
+** 도메인 관리자인 경우 DNS 호스트 레코드를 수동으로 업데이트합니다.
+** 도메인 관리자가 아닌 경우 호스트 파일('C:\Windows\System32\drivers\etc\hosts')을 업데이트합니다.
++
+호스트 파일에 파일 확장자(".txt")가 없습니다.
+
+
+
+

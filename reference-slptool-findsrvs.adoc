@@ -1,0 +1,72 @@
+---
+permalink: reference-slptool-findsrvs.html 
+sidebar: sidebar 
+keywords: slptool, findsrvs, command, wbem, service, run, network 
+summary: slptool findsrvs 명령은 네트워크에서 실행되는 WBEM 서비스를 찾습니다. 
+---
+= 슬래프툴 findsrvs
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+'lptool findsrvs' 명령은 네트워크에서 실행되는 WBEM 서비스를 찾습니다.
+
+
+
+== 구문
+
+'S lptool findsrvs_service_'
+
+
+
+== 위치
+
+'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
+
+
+
+== 권한 수준
+
+유효한 사용자 이름과 암호를 가진 사용자
+
+
+
+== 매개 변수
+
+* '*_service_ * '
++
+서비스 유형을 지정합니다.
+
+
+
+
+
+== 예
+
+'lptool findsrvs' 명령과 출력:
+
+[listing]
+----
+slptool findsrvs service:wbem
+service:wbem:http://10.60.167.143:5988,65535
+service:wbem:http://10.60.167.246:5988,65535
+service:wbem:https://10.60.167.143:5989,65535
+service:wbem:https://10.60.167.246:5989,65535
+service:wbem:http://10.60.167.151:5988,65535
+service:wbem:http://10.60.167.250:5988,65535
+service:wbem:https://10.60.167.151:5989,65535
+service:wbem:https://10.60.167.250:5989,65535
+service:wbem:http://10.60.167.141:5988,65535
+service:wbem:https://10.60.167.141:5989,65535
+service:wbem:http://10.60.167.147:5988,65535
+service:wbem:https://10.60.167.147:5989,65535
+service:wbem:http://10.60.167.139:5988,65535
+service:wbem:http://[fe80::7804:75ad:ab59:28c]:5988,65535
+service:wbem:http://[fe80::3cb1:12da:f5c3:5874]:5988,65535
+service:wbem:http://[2001::4137:9e76:3cb1:12da:f5c3:5874]:5988,65535
+service:wbem:https://10.60.167.139:5989,65535
+service:wbem:https://[fe80::7804:75ad:ab59:28c]:5989,65535
+service:wbem:https://[fe80::3cb1:12da:f5c3:5874]:5989,65535
+service:wbem:https://[2001::4137:9e76:3cb1:12da:f5c3:5874]:5989,65535
+----

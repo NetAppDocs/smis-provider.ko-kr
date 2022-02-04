@@ -1,0 +1,66 @@
+---
+permalink: reference-smis-luns.html 
+sidebar: sidebar 
+keywords: smis luns, command, display, lun information, storage system 
+summary: SMIS LUNs 명령은 스토리지 시스템에 대한 LUN 정보를 표시합니다. 
+---
+= SMIS LUN
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+'mis LUNs' 명령은 스토리지 시스템의 LUN 정보를 표시합니다.
+
+
+
+== 구문
+
+SMIS LUN
+
+'[-t{ * http * | * https *}]'
+
+
+
+== 위치
+
+'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
+
+
+
+== 권한 수준
+
+유효한 사용자 이름과 암호를 가진 사용자
+
+
+
+== 매개 변수
+
+* '*[-t{http|https}] *'
++
+사용할 프로토콜: HTTPS(기본값) 또는 HTTP
+
+
+
+
+
+== 예
+
+'mis LUNs' 명령과 단축 출력:
+
+[listing]
+----
+smis luns
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID
+="ef805c0d-5269-47c6-ba0fd9cdbf5e2515",
+SystemCreationClassName="ONTAP_StorageSystem",SystemNa
+me="ONTAP:68f6b3c0-923a-11e2-a856-123478563412"
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID
+="f81cb3bf-2f16-467c-8e30-88bae415ab05",SystemCreationClassName="ONT
+AP_StorageSystem",SystemName="ONTAP:68f6b3c0-923a-11e2-
+a856-123478563412"
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID
+="684f5fb9-0fdd-4b97-8678-188774bdcdd0",SystemCreationClassName="ONT
+AP_StorageSystem",SystemName="ONTAP:68f6b3c0-923a-11e2-
+a856-123478563412"
+----

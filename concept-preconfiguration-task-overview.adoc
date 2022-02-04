@@ -1,0 +1,25 @@
+---
+permalink: concept-preconfiguration-task-overview.html 
+sidebar: sidebar 
+keywords: smis-provider, first time, validate, preliminary, configuration 
+summary: SMI-S Provider를 처음 사용하기 전에 사전 구성을 확인해야 합니다. 
+---
+= 사전 구성 검증
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SMI-S Provider를 처음 사용하기 전에 사전 구성을 확인해야 합니다.
+
+SMI-S Provider를 사용하기 전에 다음 작업을 수행합니다.
+
+. NetApp SMI-S Provider에서 CIM 서버가 시작되었는지 확인합니다.
+. CIM 서버 사용자를 추가합니다.
+. SMI-S Provider에 스토리지 시스템을 하나 이상 추가하여 스토리지 시스템 관리를 확인합니다.
+. * 선택 사항: * CIMOM에 대해 자체 서명된 인증서를 생성합니다.
+
+
+기본적으로 SMI-S Provider에 대해 인증이 설정됩니다.
+
+이 검증을 성공적으로 수행한 후에는 NetApp SMI-S Provider를 사용하여 스토리지 시스템을 관리할 수 있습니다.

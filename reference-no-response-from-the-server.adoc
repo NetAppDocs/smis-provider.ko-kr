@@ -1,0 +1,33 @@
+---
+permalink: reference-no-response-from-the-server.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider에서 문제가 발생했습니다. 
+---
+= 서버로부터 응답이 없습니다
+:icons: font
+:imagesdir: ./media/
+
+
+* * 문제 *
++
+서버가 쿼리될 때 응답하지 않습니다.
+
+* * 원인 *
++
+이 문제는 CIMOM 저장소에 추가된 스토리지 시스템이 없을 때 발생합니다.
+
+* * 시정 조치 *
++
+다음 명령을 입력하여 스토리지 시스템이 추가되었는지 확인합니다.
+
++
+'MIS 목록'
+
++
+나열된 스토리지 시스템이 없는 경우 다음 명령을 입력하여 스토리지 시스템을 추가합니다.
+
++
+'mis add_storage_sys storage_sys_user storage_sys_pwd_'
+
+

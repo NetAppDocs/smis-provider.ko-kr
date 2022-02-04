@@ -1,0 +1,112 @@
+---
+permalink: reference-smis-addsecure.html 
+sidebar: sidebar 
+keywords: smis, addsecure, command, https connection configuration, manage, monitor 
+summary: SMIS addsecure 명령은 HTTPS 연결이 있는 스토리지 시스템을 구성에 추가하여 장치를 관리 및 모니터링할 수 있도록 합니다. 필요하지 않은 경우 SMIS 추가 대신 SMIS addsecure를 사용해야 합니다. 
+---
+= SMIS 추가 보안
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+'mis addsecure' 명령은 HTTPS로 구성된 스토리지 시스템을 추가하여 장치를 관리 및 모니터링할 수 있도록 합니다. 필요 없는 한, 'Mis addsecure' 대신 'mis addsecure'를 사용해야 합니다.
+
+
+
+== 구문
+
+"불안전한"
+
+'_storage_sys storage_sys_user_'+'[-t{ * http * | * https *}]'
+
+[NOTE]
+====
+미국 이외의 언어를 사용하는 운영 체제 영어는 addsecure 명령을 사용할 수 없습니다.
+
+====
+
+
+== 위치
+
+'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
+
+
+
+== 권한 수준
+
+관리자(Windows)
+
+
+
+== 매개 변수
+
+* '*_storage_sys_ *'
++
+추가할 스토리지 시스템의 이름 또는 IP 주소입니다
+
++
+IP 주소를 지정하는 경우 IPv4 또는 IPv6를 사용할 수 있습니다. 압축된 IPv6 주소 및 전체 IPv6 주소 모두 지원됩니다(예: 1001:0002:0000:0000:0000:0000:0003:0004).
+
+* '*_storage_sys_user_ *'
++
+추가할 스토리지 시스템을 관리하는 관리자의 사용자 이름입니다
+
+* '*_storage_sys_pwd_ *'
++
+선택 사항: 추가하려는 스토리지 시스템을 관리하는 관리자의 암호입니다
+
++
+가장 좋은 방법은 보안상의 이유로 이 매개 변수를 사용하지 않는 것입니다. 이 매개 변수는 자동화 및 이전 버전과의 호환성을 위해서만 제공됩니다.
+
+* '*[-t{http|https}] *'
++
+사용할 프로토콜: HTTPS(기본값) 또는 HTTP
+
+
+
+
+
+== 스토리지 시스템 에이전트 및 에이전트 클라이언트 프로토콜입니다
+
+'mis add' 및 'mis addsecure' 명령은 스토리지 시스템과 공급자 사이에서 사용되는 프로토콜을 결정합니다. [-t{ * http * | * https *}] 매개 변수는 공급자와 클라이언트 간에 사용되는 프로토콜을 결정합니다.
+
+SSL 암호화를 사용하여 "mis addsecure" 명령과 "[-t{*https*}" 매개 변수를 연결하고 암호화되지 않은 트래픽은 허용되지 않습니다. SSL 암호화를 사용하지 않고 'mis add' 명령어와 '[-t{ * http *}' 파라미터를 연결하면 암호화되지 않은 트래픽도 허용됩니다.
+
+SSL 암호화 연결을 해제하기 전에 환경의 보안 요구 사항을 고려해야 합니다.
+
+
+
+== 예
+
+HTTPS를 통해 IP 주소가 10.32.1.4인 IPv4를 사용하여 스토리지 시스템을 추가합니다.
+
+[listing]
+----
+smis addsecure 10.32.1.4 user2 password2
+----
+스토리지 시스템이 성공적으로 추가되었다는 확인 메시지가 나타납니다. 오류가 발생하면 오류 메시지가 나타납니다.
+
+
+
+== 예
+
+HTTPS를 통해 IPv6를 사용하여 스토리지 시스템 추가:
+
+[listing]
+----
+smis addsecure 1001:0002:0000:0000:0000:0000:0003:0004 user2 password2
+smis addsecure 1001:2::3:4 user2 password2
+----
+스토리지 시스템이 성공적으로 추가되었다는 확인 메시지가 나타납니다. 오류가 발생하면 오류 메시지가 나타납니다.
+
+
+
+== 예
+
+영어 이외의 언어 시스템에서 HTTPS를 통해 IP 주소가 10.32.1.4인 스토리지 시스템을 추가합니다.
+
+[listing]
+----
+cimcli -n root/ontap ci ontap_filerdata hostname="10.32.1.4" username="vsadmin" password="PasSw0Rd" port=443 comMechanism="HTTPS" --timeout 180
+----

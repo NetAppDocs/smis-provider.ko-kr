@@ -1,0 +1,23 @@
+---
+permalink: concept-requirement-for-using-fileshares-in-windows.html 
+sidebar: sidebar 
+keywords: netApp smis-s provider, fileshare, ntfs-only volume 
+summary: 'Windows에서 fileshaes(CIFS 공유)를 사용하는 경우 파일 공유가 생성되는 볼륨은 NTFS 전용 볼륨이어야 합니다.' 
+---
+= Windows에서 파일 표시 사용 요구 사항
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Windows에서 fileshaes(CIFS 공유)를 사용하는 경우 파일 공유가 생성되는 볼륨은 NTFS 전용 볼륨이어야 합니다.
+
+파일 공유 파일을 만들어 Windows에서 사용하려면 파일 공유 볼륨이 NTFS 전용 볼륨이어야 합니다. 이는 파일 공유 액세스 자격 증명에 문제가 발생하지 않도록 하기 위한 것입니다.
+
+System Center 2016 SCVMM(Virtual Machine Manager)에서는 NTFS 전용 볼륨에서 생성된 파일 세트에만 VM(가상 머신)을 생성할 수 있습니다. 혼합 볼륨과 UNIX 스타일 볼륨은 지원되지 않습니다.
+
+
+
+== CIFS 공유 및 SCVMM에 사용할 볼륨을 생성합니다
+
+CIFS 공유 및 SCVMM(System Center Virtual Machine Manager)에 사용할 볼륨을 생성할 때 볼륨은 NTFS 유형이어야 합니다. NTFS로 볼륨을 생성하려면 '_vol create -vserver <vserver_name> -volume <volume_name> -aggregate <aggr_name> -size <volume_size> -security-style NTFS_'를 입력합니다

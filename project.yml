@@ -1,0 +1,241 @@
+---
+settings:
+  name: NetApp SMI-S Provider
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: ko-kr,us-en,ja-jp,zh-cn
+sidebar:
+  entries:
+  - title: NetApp SMI-S 공급자 문서
+    url: "/index.html"
+  - title: 릴리스 정보
+    url: "/releasenotes.html"
+  - title: NetApp SMI-S Provider 개요
+    url: "/concept-data-ontap-smi-s-agent-overview.html"
+    entries:
+    - title: 이 릴리스의 새로운 기능
+      url: "/reference-new-in-this-release-smis.html"
+    - title: NetApp SMI-S Provider의 사용
+      url: "/reference-uses-of-data-ontap-smi-s-agent.html"
+    - title: NetApp SMI-S Provider 사이징 및 성능
+      url: "/reference-smi-s-agent-sizing-and-performance-information.html"
+    - title: NetApp SMI-S Provider 구성 요소
+      url: "/reference-data-ontap-smi-s-agent-components.html"
+    - title: NetApp SMI-S Provider 프로토콜
+      url: "/reference-data-ontap-smi-s-agent-protocols.html"
+    - title: NetApp SMI-S Provider가 호스트와 상호 작용하는 방법
+      url: "/concept-how-smi-s-provider-interacts-with-a-host.html"
+    - title: SMI-S 프로파일
+      url: "/concept-smi-s-profiles.html"
+  - title: 구축 워크플로우
+    url: "/concept-deployment-workflow.html"
+  - title: 배포를 준비합니다
+    url: "/concept-prepare-for-deployment.html"
+    entries:
+    - title: 지원되는 운영 체제 버전입니다
+      url: "/reference-supported-operating-systems.html"
+    - title: 하드웨어 요구 사항
+      url: "/reference-hardware-requirements.html"
+    - title: 필수 라이센스
+      url: "/reference-required-licenses.html"
+    - title: 지원되는 클러스터 플랫폼
+      url: "/reference-supported-platforms.html"
+    - title: NetApp SMI-S Provider 소프트웨어 패키지를 다운로드합니다
+      url: "/task-download-smi-s-provider.html"
+  - title: NetApp SMI-S Provider를 설치합니다
+    url: "/concept-install-and-uninstall-ontap-smi-s-agent.html"
+    entries:
+    - title: Windows 호스트에 NetApp SMI-S Provider를 설치합니다
+      url: "/task-install-smi-s-agent-on-a-windows-host.html"
+  - title: NetApp SMI-S Provider를 제거합니다
+    url: "/concept-uninstall-smi-s-provider.html"
+    entries:
+    - title: Windows 호스트에서 NetApp SMI-S Provider를 제거합니다
+      url: "/task-uninstall-smi-s-agent-from-a-windows-host.html"
+  - title: 사전 구성 검증
+    url: "/concept-preconfiguration-task-overview.html"
+    entries:
+    - title: CIM 서버 상태를 확인합니다
+      url: "/task-verify-the-cim-server-status.html"
+    - title: CIM 서버 사용자를 추가합니다
+      url: "/task-add-cim-server-users.html"
+    - title: 스토리지 시스템이 올바르게 작동하는지 확인합니다
+      url: "/task-verify-that-the-storage-system-is-working-correctly.html"
+    - title: CIM 서버에 대해 자체 서명된 인증서를 생성합니다
+      url: "/task-generate-a-self-signed-certificate-for-the-cim-server-windows.html"
+  - title: CIM 서버를 관리합니다
+    url: "/task-manage-the-cim-server.html"
+  - title: 스토리지 시스템 관리
+    url: "/task-manage-storage-systems.html"
+  - title: CIM 서버 사용자를 관리합니다
+    url: "/task-manage-cim-server-users.html"
+    entries:
+    - title: CIM 사용자 유형 및 관련 작업
+      url: "/reference-types-of-cim-users-and-associated-operations.html"
+  - title: CIMOM 구성 설정을 관리합니다
+    url: "/task-manage-cimom-configuration-settings.html"
+  - title: 로깅 및 추적 관리
+    url: "/concept-manage-logging-and-tracing.html"
+    entries:
+    - title: 로그 설정을 구성합니다
+      url: "/task-configure-log-settings.html"
+      entries:
+      - title: 로깅 수준
+        url: "/reference-logging-levels.html"
+    - title: 추적 관리
+      url: "/concept-manage-tracing.html"
+      entries:
+      - title: 트레이스 설정을 지정합니다
+        url: "/task-specify-trace-settings.html"
+        entries:
+        - title: 트레이스 설정 값
+          url: "/reference-trace-setting-values.html"
+      - title: 추적 파일 크기를 지정합니다
+        url: "/task-specify-trace-file-size.html"
+      - title: 저장된 추적 파일 수를 지정합니다
+        url: "/task-specify-the-number-of-trace-files-saved.html"
+    - title: SMI-S 명령에 대한 감사 로그를 설정하거나 해제합니다
+      url: "/task-enable-or-disable-audit-log-for-smi-s-commands.html"
+  - title: SMI-S Provider 고급 설정을 관리합니다
+    url: "/concept-manage-smi-s-agent-advanced-settings.html"
+    entries:
+    - title: SMI-S Provider 자동 캐시 새로 고침 간격을 지정합니다
+      url: "/task-specify-the-smi-s-agent-cache-refresh-interval.html"
+    - title: 구체적인 작업 수명 값을 지정하십시오
+      url: "/task-specify-the-concrete-job-lifetime-value.html"
+    - title: ONTAPI 시간 초과 값을 지정합니다
+      url: "/task-specify-the-ontapi-timeout-value.html"
+    - title: 메시지 서비스 대기열당 최대 스레드 수를 지정합니다
+      url: "/task-specify-the-maximum-number-of-threads-per-message-service-queue.html"
+    - title: NetApp SMI-S Provider에 대한 인증을 설정 또는 해제합니다
+      url: "/task-enable-or-disable-authentication-for-smi-s-provider.html"
+    - title: SMI-S Provider에서 표시를 설정합니다
+      url: "/task-enable-indications-in-smi-s-agent.html"
+  - title: SLP 관리
+    url: "/concept-manage-slp.html"
+    entries:
+    - title: SLP 구성 옵션을 지정합니다
+      url: "/concept-specify-slp-configuration-options.html"
+      entries:
+      - title: SLP.conf 파일 관리
+        url: "/reference-editing-the-slp-conf-file.html"
+  - title: CIMOM 명령
+    url: "/concept-cimom-commands.html"
+    entries:
+    - title: 구성
+      url: "/reference-cimconfig-command-options.html"
+  - title: CIM 사용자 명령
+    url: "/concept-cim-user-commands.html"
+    entries:
+    - title: 심사용자
+      url: "/reference-cimuser-command-options.html"
+  - title: SMI-S Provider 명령
+    url: "/concept-smi-s-provider-commands.html"
+    entries:
+    - title: SMIS 추가
+      url: "/reference-smis-add.html"
+    - title: SMIS 추가 보안
+      url: "/reference-smis-addsecure.html"
+    - title: SMIS cimom
+      url: "/reference-smis-cimom.html"
+    - title: SMIS 시임서버
+      url: "/reference-smis-cimserver.html"
+    - title: SMIS 클래스
+      url: "/reference-smis-class.html"
+    - title: SMIS config show를 참조하십시오
+      url: "/reference-smis-config-show.html"
+    - title: SMIS CRP
+      url: "/reference-smis-crp.html"
+    - title: SMIS 검사
+      url: "/reference-smis-crsp.html"
+    - title: SMIS 삭제
+      url: "/reference-smis-delete.html"
+    - title: SMIS 디스크
+      url: "/reference-smis-disks.html"
+    - title: SMIS 내보내기
+      url: "/reference-smis-exports.html"
+    - title: SMIS 이니시에이터
+      url: "/reference-smis-initiators.html"
+    - title: SMIS 라이센스 보유
+      url: "/reference-smis-licensed.html"
+    - title: SMIS 목록
+      url: "/reference-smis-list.html"
+    - title: SMIS LUN
+      url: "/reference-smis-luns.html"
+    - title: SMIS 네임스페이스
+      url: "/reference-smis-namespaces.html"
+    - title: SMIS 풀
+      url: "/reference-smis-pools.html"
+    - title: SMIS 업데이트
+      url: "/reference-smis-refresh.html"
+    - title: SMIS slpd
+      url: "/reference-smis-slpd.html"
+    - title: SMIS 버전
+      url: "/reference-smis-version.html"
+    - title: SMIS 볼륨
+      url: "/reference-smis-volumes.html"
+  - title: SLP 명령
+    url: "/concept-slp-commands.html"
+    entries:
+    - title: 슬래도구
+      url: "/reference-slptool-command-options.html"
+    - title: 슬렙툴 findattrs
+      url: "/reference-slptool-findattrs.html"
+    - title: 슬래프툴 findsrvs
+      url: "/reference-slptool-findsrvs.html"
+  - title: SMI-S Provider 문제 해결
+    url: "/concept-troubleshoot-smi-s-agent.html"
+    entries:
+    - title: 액세스가 거부되었습니다. 오류
+      url: "/reference-access-is-denied-error.html"
+    - title: 공유 라이브러리를 로드하는 동안 오류가 발생할 수 있습니다
+      url: "/reference-possible-errors-when-loading-shared-libraries.html"
+    - title: 연결이 거부되었습니다
+      url: "/reference-connection-refused-error.html"
+    - title: '파일러 반환: 응답이 ONTAP 요소가 없습니다'
+      url: "/reference-no-ontap-element-in-response-error.html"
+    - title: 클론/스냅샷 작업은 허용되지 않습니다
+      url: "/reference-clone-snapshot-operations-are-not-allowed.html"
+    - title: 경고 26130
+      url: "/reference-warning-26130.html"
+    - title: 'HostAgentAccessDenied(ID: 26263)'
+      url: "/reference-hostagentaccessdenied-error-id-26263.html"
+    - title: localhost:5988에 연결할 수 없습니다
+      url: "/reference-cannot-connect-to-localhost-5988-error.html"
+    - title: localhost:5989에 연결할 수 없습니다
+      url: "/reference-cannot-connect-to-localhost-5989-error.html"
+    - title: Windows에서 SMI-S Provider가 충돌합니다
+      url: "/reference-handling-smi-s-agent-crashes-in-windows.html"
+    - title: 특수 문자가 포함된 암호 입력 문제
+      url: "/reference-entering-passwords-containing-special-characters.html"
+    - title: SMI-S Provider에 사용되는 클론 기술입니다
+      url: "/concept-clone-technology-used-in-smi-s-agent-4-0.html"
+    - title: 중요 개체의 표시 여부를 확인합니다
+      url: "/concept-confirm-visibility-of-important-objects.html"
+    - title: Windows에서 파일 표시 사용 요구 사항
+      url: "/concept-requirement-for-using-fileshares-in-windows.html"
+    - title: 기본 방화벽이 아닌 방화벽은 예외로 포트를 수동으로 추가해야 합니다
+      url: "/reference-non-default-firewalls-must-have-ports-manually-added-as-exceptions.html"
+    - title: 기본값이 아닌 HTTP 또는 HTTPS 포트를 사용하여 스토리지 시스템을 추가할 수 없습니다
+      url: "/reference-cannot-add-a-storage-system-using-a-nondefault-http-or-https-port.html"
+    - title: 서버로부터 응답이 없습니다
+      url: "/reference-no-response-from-the-server.html"
+    - title: 런타임 라이브러리 문제
+      url: "/reference-runtime-library-issues.html"
+    - title: NetApp SMI-S Provider를 시작하는 데 시간이 오래 걸립니다
+      url: "/reference-smi-s-agent-takes-a-long-time-to-start.html"
+    - title: 스토리지 풀(볼륨)의 총 관리 공간 불일치
+      url: "/reference-total-managed-space-for-a-storage-pool-aggregate-discrepancy.html"
+    - title: 네트워크 경로를 찾을 수 없습니다
+      url: "/reference-network-path-not-found-error-during-vm-deployment.html"
+    - title: 요청한 서비스를 완료하기 위한 시스템 리소스가 부족합니다
+      url: "/reference-vm-provisioning-in-scvmm-fails-with-insufficient-system-resources-error.html"
+    - title: SCVMM에서 SMB 공유 크기가 0으로 떨어집니다
+      url: "/reference-smb-share-size-dropping-to-0-in-scvmm.html"
+    - title: SCVMM 재검색 작업이 SMI-S Provider를 찾거나 통신하지 못했습니다
+      url: "/reference-scvmm-rescan-operation-failed-to-locate-or-communicate-with-smi-s-provider.html"
+  - title: 법적 고지
+    url: "/reference-legal-notices.html"

@@ -1,0 +1,13 @@
+---
+permalink: concept-manage-smi-s-agent-advanced-settings.html 
+sidebar: sidebar 
+keywords: manage, advance, smis-provider, smis-s cache, refresh, interval, ontapi, timeout, thread, service, queue 
+summary: SMI-S 캐시 새로 고침 간격 지정, ONTAPI 시간 초과 및 메시지 서비스 대기열당 최대 스레드 수 지정과 같은 SMI-S Provider의 고급 설정을 관리할 수 있습니다. 
+---
+= SMI-S Provider 고급 설정을 관리합니다
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SMI-S 캐시 새로 고침 간격 지정, ONTAPI 시간 초과 및 메시지 서비스 대기열당 최대 스레드 수 지정과 같은 SMI-S Provider의 고급 설정을 관리할 수 있습니다.

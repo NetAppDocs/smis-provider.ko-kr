@@ -1,0 +1,19 @@
+---
+permalink: reference-smi-s-agent-takes-a-long-time-to-start.html 
+sidebar: sidebar 
+keywords: netapp smi-s provider 
+summary: NetApp SMI-S Provider에서 문제가 발생했습니다. 
+---
+= NetApp SMI-S Provider를 시작하는 데 시간이 오래 걸립니다
+:icons: font
+:imagesdir: ./media/
+
+
+* * 설명 *
++
+이미 관리 중인 스토리지 시스템이 있는 Windows 시스템에서 'mis cimserver' 명령을 사용하여 NetApp SMI-S Provider를 시작하면 공급자 로컬 캐시가 채워질 때까지 명령이 반환되지 않습니다. 캐시가 채워지는 동안 최대 15분 동안 기다리며 NetApp SMI-S Provider는 반환될 때까지 사용할 수 없습니다.
+
++
+'mis cimserver' 명령을 사용하는 것이 NetApp SMI-S Provider를 시작하는 데 권장되는 방법입니다.
+
+

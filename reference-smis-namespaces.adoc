@@ -1,0 +1,59 @@
+---
+permalink: reference-smis-namespaces.html 
+sidebar: sidebar 
+keywords: smis namespace, command, list, registered, namespace, cimom 
+summary: SMIS namespaces 명령은 CIMOM에 대해 등록된 네임스페이스를 나열합니다. 
+---
+= SMIS 네임스페이스
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+'mis namespaces' 명령어는 CIMOM에 등록된 네임스페이스를 열거한다.
+
+
+
+== 구문
+
+SMIS 네임스페이스
+
+'[-t{ * http * | * https *}]'
+
+
+
+== 위치
+
+'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
+
+* Windows:'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'
+
+
+
+
+== 권한 수준
+
+유효한 사용자 이름과 암호를 가진 사용자
+
+
+
+== 매개 변수
+
+* '*[-t{http|https}] *'
++
+사용할 프로토콜: HTTPS(기본값) 또는 HTTP
+
+
+
+
+
+== 예
+
+'mis namespaces' 명령과 그 축약된 출력:
+
+[listing]
+----
+smis namespaces
+interop
+root/ontap
+----

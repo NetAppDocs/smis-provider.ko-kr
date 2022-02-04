@@ -1,0 +1,112 @@
+---
+permalink: reference-smis-crp.html 
+sidebar: sidebar 
+keywords: smis crp, command, describe, cim registered, profile, netapp smi-s provider 
+summary: SMIS CRP 명령은 NetApp SMI-S Provider 프로필을 포함하여 NetApp SMI-S Provider에서 지원하는 CIM 등록 프로필에 대해 설명합니다. 
+---
+= SMIS CRP
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+'Smis CRP' 명령은 NetApp SMI-S Provider 프로필을 포함하여 NetApp SMI-S Provider에서 지원하는 CIM 등록 프로필에 대해 설명합니다.
+
+
+
+== 구문
+
+SMIS CRP
+
+'[-t{ * http * | * https *}]'
+
+
+
+== 위치
+
+'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
+
+
+
+== 권한 수준
+
+유효한 사용자 이름과 암호를 가진 사용자
+
+
+
+== 매개 변수
+
+* '*[-t{http|https}] *'
++
+사용할 프로토콜: HTTPS(기본값) 또는 HTTP
+
+
+
+
+
+== 예
+
+'mis crp' 명령 및 출력:
+
+[listing]
+----
+smis crp
+
+PG_RegisteredProfile.InstanceID="SNIA:Profile Registration:1.4.0"
+PG_RegisteredProfile.InstanceID="SNIA:SMI-S:1.4.0"
+PG_RegisteredProfile.InstanceID="SNIA:SMI-S:1.5.0"
+PG_RegisteredProfile.InstanceID="SNIA:SMI-S:1.6.0"
+PG_RegisteredProfile.InstanceID="SNIA:Server:1.4.0"
+PG_RegisteredProfile.InstanceID="SNIA:Server:1.5.0"
+PG_RegisteredProfile.InstanceID="SNIA:Server:1.6.0"
+PG_RegisteredProfile.InstanceID="DMTF:Profile Registration:1.4.0"
+PG_RegisteredProfile.InstanceID="DMTF:Indications:1.4.0"
+PG_RegisteredSubProfile.InstanceID="SNIA:Indication:1.4.0"
+PG_RegisteredSubProfile.InstanceID="SNIA:Indication:1.5.0"
+PG_RegisteredSubProfile.InstanceID="SNIA:Indication:1.6.0"
+PG_RegisteredSubProfile.InstanceID="SNIA:Software:1.4.0"
+PG_RegisteredSubProfile.InstanceID="SNIA:Software:1.5.0"
+PG_RegisteredSubProfile.InstanceID="SNIA:Software:1.6.0"
+PG_RegisteredSubProfile.InstanceID="SNIA:Object Manager Adapter:1.3.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:iSCSI Target Ports:1.6.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:iSCSI Target Ports:1.2.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Software:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Disk Drive Lite:1.6.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Disk Drive Lite:1.5.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Disk Drive Lite:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Multiple Computer System:1.2.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Access Points:1.3.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:FC Target Port:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:FC Initiator Ports:1.6.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:FC Initiator Ports:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:FC Initiator Ports:1.3.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Masking and Mapping:1.6.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Masking and Mapping:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Extent Composition:1.6.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Extent Composition:1.5.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Extent Composition:1.2.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Block Server Performance:1.5.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Block Server Performance:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Physical Package:1.5.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Physical Package:1.3.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Block Services:1.6.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Block Services:1.5.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Block Services:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Health:1.2.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:FileSystem:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:File Storage:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:File Export:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:File Export Manipulation:1.6.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:File Export Manipulation:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:File System Manipulation:1.6.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Filesystem Manipulation:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:File Server Manipulation:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:FileSystem Quotas:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Job Control:1.5.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Job Control:1.3.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Location:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:NAS Network Port:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Replication Services:1.5.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Replication Services:1.6.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Capacity Utilization:1.4.0"
+----

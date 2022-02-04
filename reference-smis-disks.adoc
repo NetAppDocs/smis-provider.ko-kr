@@ -1,0 +1,60 @@
+---
+permalink: reference-smis-disks.html 
+sidebar: sidebar 
+keywords: thesmis, disk, command, display, information, storage, systems 
+summary: Thesmis disks 명령은 스토리지 시스템의 디스크 정보를 표시합니다. SMIS 디스크는 Data ONTAP 7-Mode 컨트롤러와 함께 사용할 때만 작동합니다. 
+---
+= SMIS 디스크
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+'디스크 오류' 명령은 스토리지 시스템의 디스크 정보를 표시합니다. '디스크 오류'는 Data ONTAP 7-Mode 컨트롤러와 함께 사용할 때만 작동합니다.
+
+
+
+== 구문
+
+SMIS 디스크
+
+'[-t{ * http * | * https *}]'
+
+
+
+== 위치
+
+'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
+
+
+
+== 권한 수준
+
+유효한 사용자 이름과 암호를 가진 사용자
+
+
+
+== 매개 변수
+
+* '*[-t{http|https}] *'
++
+사용할 프로토콜: HTTPS(기본값) 또는 HTTP
+
+
+
+
+
+== 예
+
+'디스크 오류' 명령과 단축 출력:
+
+[listing]
+----
+smis disks
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.3",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.5",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.7",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.6",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.1",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.8",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+----

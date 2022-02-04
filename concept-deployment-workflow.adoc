@@ -1,0 +1,15 @@
+---
+permalink: concept-deployment-workflow.html 
+sidebar: sidebar 
+keywords: manage, monitor, storage, systems, smis-provider, software, validate, preliminary, configuration 
+summary: SMI-S Provider를 사용하여 스토리지 시스템을 관리 및 모니터링하려면 먼저 SMI-S Provider 소프트웨어를 설치하고 예비 구성을 확인해야 합니다. 
+---
+= 구축 워크플로우
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SMI-S Provider를 사용하여 스토리지 시스템을 관리 및 모니터링하려면 먼저 SMI-S Provider 소프트웨어를 설치하고 예비 구성을 확인해야 합니다.
+
+image::../media/smi_s_provider_workflow.gif[SMI 공급자 워크플로입니다]

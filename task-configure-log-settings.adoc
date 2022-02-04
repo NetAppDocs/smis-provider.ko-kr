@@ -1,0 +1,58 @@
+---
+permalink: task-configure-log-settings.html 
+sidebar: sidebar 
+keywords: system message, directory, netapp si-s provider, cim server log 
+summary: 기본적으로 모든 시스템 메시지가 기록됩니다. 또한 기본적으로 시스템 메시지 로그는 NetApp SMI-S Provider가 설치된 디렉토리의 logs 디렉토리에 있습니다. CIM 서버 로그에 기록되는 시스템 메시지의 위치와 수준을 변경할 수 있습니다. 예를 들어, 지정한 디렉토리에 로그를 저장하고 CIM 서버 로그에 치명적인 시스템 메시지만 기록하도록 선택할 수 있습니다. 
+---
+= 로그 설정을 구성합니다
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+기본적으로 모든 시스템 메시지가 기록됩니다. 또한 기본적으로 시스템 메시지 로그는 NetApp SMI-S Provider가 설치된 디렉토리의 "logs" 디렉토리에 있습니다. CIM 서버 로그에 기록되는 시스템 메시지의 위치와 수준을 변경할 수 있습니다. 예를 들어, 지정한 디렉토리에 로그를 저장하고 CIM 서버 로그에 치명적인 시스템 메시지만 기록하도록 선택할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+* 이미 관리자로 로그인 자격 증명이 있어야 합니다.
+* 호스트 시스템에 관리자로 이미 로그인되어 있어야 합니다.
+
+
+
+
+== 단계
+
+. NetApp SMI-S Provider에 액세스합니다.
+. 다음 작업 중 하나를 수행합니다.
++
+[cols="3*"]
+|===
+| 조치 | 명령 | 추가 정보 
+
+
+ a| 
+시스템 메시지 로깅 수준을 변경합니다
+ a| 
+'* cimconfig -s LogLevel=_new_log_level_-p *'
+ a| 
+예를 들어 로깅 수준을 ""정보""로 변경하려면 + "* cimconfig -s LogLevel=information-p *" 명령을 입력합니다
+
+
+
+ a| 
+시스템 메시지 로그 디렉터리를 변경합니다
+ a| 
+'* cimconfig -s logdir=new_log_directory -p * '_new_log_directory_'에 공백이 있으면 따옴표로 묶어야 합니다("_new log directory_").
+ a| 
+예를 들어 로그 디렉토리를 "serverlogs"로 변경하려면 다음 명령을 입력합니다.
+
+'* cimconfig -s logdir=serverlogs -p *'
+
+|===
+. CIM 서버를 다시 시작합니다.
++
+'* SMIS cimserver restart*'
+
+

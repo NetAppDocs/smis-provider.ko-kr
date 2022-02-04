@@ -1,0 +1,83 @@
+---
+permalink: reference-smis-config-show.html 
+sidebar: sidebar 
+keywords: smis config show, list, current cim server, configuration, information 
+summary: SMIS config show 명령은 현재 CIM 서버 구성 정보를 나열합니다. 
+---
+= SMIS config show를 참조하십시오
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+'mis config show' 명령은 현재 CIM 서버 구성 정보를 나열합니다.
+
+
+
+== 구문
+
+'mis config show'
+
+
+
+== 위치
+
+'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
+
+
+
+== 권한 수준
+
+관리자(Windows)
+
+
+
+== 예
+
+'mis config show'와 출력:
+
+[listing]
+----
+smis config show
+slp:
+Current value: true
+
+tracelevel:
+Current value: 4
+
+traceComponents:
+Current value: XmlIO,Thread, IndicationGeneration, DiscardedData, CMPIProvider, LogMessages, ProviderManager, SSL, Authentication, Authorization
+
+traceFilePath:
+Current value: traces/cimserver.trc
+
+enableAuditLog:
+Current value: true
+
+logLevel:
+Current value: WARNING
+
+sslKeyFilePath:
+Current value: cimom.key
+
+sslCertificateFilePath:
+Current value: cimom.cert
+
+passwordFilePath:
+Current value: cimserver.passwd
+
+enableHttpConnection:
+Current value: true
+
+enableHttpsConnection:
+Current value: true
+
+httpPort:
+Current value: 5988
+
+httpsPort:
+Current value: 5989
+
+enableAuthentication:
+Current value: true
+----

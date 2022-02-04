@@ -1,0 +1,17 @@
+---
+permalink: concept-how-smi-s-provider-interacts-with-a-host.html 
+sidebar: sidebar 
+keywords: client, application, discover, cimom server, shared objects, device specific api 
+summary: '호스트의 클라이언트 애플리케이션이 SLP(CIM-XML encoding over HTTP)를 사용하여 CIMOM 서버를 검색할 때 클라이언트는 공유 객체(CIM 언어로 모델링한 객체)를 CIMOM에 쿼리합니다. CIMOM은 요청된 정보에 대해 디바이스 관련 API를 사용하여 공유 객체를 로드하고 스토리지 시스템을 쿼리합니다.' 
+---
+= NetApp SMI-S Provider가 호스트와 상호 작용하는 방법
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+호스트의 클라이언트 애플리케이션이 SLP(CIM-XML encoding over HTTP)를 사용하여 CIMOM 서버를 검색할 때 클라이언트는 공유 객체(CIM 언어로 모델링한 객체)를 CIMOM에 쿼리합니다. CIMOM은 요청된 정보에 대해 디바이스 관련 API를 사용하여 공유 객체를 로드하고 스토리지 시스템을 쿼리합니다.
+
+다음 그림에서는 SMI-S Provider가 쿼리 또는 명령을 수신할 때 NetApp SMI-S Provider가 WBEM 관리 클라이언트와 상호 작용하는 방법을 보여 줍니다.
+
+image::../media/smi_s_agent_and_host_interaction.gif[SMI 에이전트 및 호스트 상호 작용]

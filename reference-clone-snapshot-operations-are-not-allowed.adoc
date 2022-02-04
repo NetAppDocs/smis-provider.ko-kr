@@ -1,0 +1,24 @@
+---
+permalink: reference-clone-snapshot-operations-are-not-allowed.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider에서 문제가 발생했습니다. 
+---
+= 클론/스냅샷 작업은 허용되지 않습니다
+:icons: font
+:imagesdir: ./media/
+
+
+* * 메시지 *
++
+"LUN 클론 분할 작업이 볼륨에서 진행되는 동안에는 클론/스냅샷 작업이 허용되지 않습니다. 잠시 기다린 후 다시 시도하십시오
+
+* * 설명 *
++
+이 오류는 LUN 클론 분할 중에 스냅샷 작업을 실행하려고 할 때 발생합니다. LUN 클론 분할이 백그라운드에서 실행 중인 경우 LUN이 분할 중인 볼륨에서 스냅샷 작업을 수행할 수 없습니다.
+
+* * 시정 조치 *
++
+LUN을 분할한 후 스냅샷 작업을 시도하십시오.
+
+

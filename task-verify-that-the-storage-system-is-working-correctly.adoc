@@ -1,0 +1,91 @@
+---
+permalink: task-verify-that-the-storage-system-is-working-correctly.html 
+sidebar: sidebar 
+keywords: smi-s provider, configure, least storage, cimom repository storage, working, correctly 
+summary: SMI-S Provider를 구성하려면 먼저 CIMOM 저장소에 스토리지 시스템을 하나 이상 추가한 다음 스토리지 시스템이 올바르게 작동하는지 확인해야 합니다. 
+---
+= 스토리지 시스템이 올바르게 작동하는지 확인합니다
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SMI-S Provider를 구성하려면 먼저 CIMOM 저장소에 스토리지 시스템을 하나 이상 추가한 다음 스토리지 시스템이 올바르게 작동하는지 확인해야 합니다.
+
+
+
+== 시작하기 전에
+
+* 관리자로 이미 로그인되어 있어야 합니다.
+* SMI-S Provider를 이미 액세스한 상태여야 합니다.
+
+
+
+
+== 단계
+
+. CIMOM 저장소에 스토리지 시스템을 하나 이상 추가합니다.
++
+[cols="2*"]
+|===
+| 를 사용하여 스토리지 시스템을 추가하려면... | 이 명령을 입력하십시오... 
+
+
+ a| 
+공급자와 스토리지 시스템 간의 HTTP 연결입니다
+ a| 
+' * SMIS ADD_STORAGE_sys storage_sys_user_ * '
+
+
+
+ a| 
+공급자와 스토리지 시스템 간의 HTTPS 연결
+ a| 
+'* SMIS addsecure_storage_sys storage_sys_user_ *'
+
+|===
++
+이 명령은 공급자가 캐시를 업데이트하고 응답할 때까지 최대 15분 동안 대기합니다.
+
+. 다음 명령의 출력을 확인합니다.
++
+[cols="2*"]
+|===
+| 이 명령의 경우... | 확인 사항... 
+
+
+ a| 
+'MIS 목록'
+ a| 
+항목 수가 관리 중인 스토리지 시스템의 수와 일치합니다.
+
+
+
+ a| 
+디스크 오류
+ a| 
+디스크 수는 모든 스토리지 시스템의 총 디스크 수와 일치합니다.
+
+
+
+ a| 
+'MIS LUN'
+ a| 
+LUN 수는 모든 스토리지 시스템의 총 LUN 수와 일치합니다.
+
+
+
+ a| 
+'진풀장
+ a| 
+ONTAP_ConcretePools의 수는 모든 스토리지 시스템의 총 애그리게이트 수와 일치합니다.
+
+
+
+ a| 
+'MIS 볼륨'
+ a| 
+볼륨 수는 모든 스토리지 시스템의 총 볼륨 수와 일치합니다.
+
+|===
+

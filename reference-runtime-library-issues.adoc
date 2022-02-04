@@ -1,0 +1,21 @@
+---
+permalink: reference-runtime-library-issues.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider에서 문제가 발생했습니다. 
+---
+= 런타임 라이브러리 문제
+:icons: font
+:imagesdir: ./media/
+:pp: &#43;&#43;
+
+
+* * 문제 *
++
+런타임 라이브러리 문제가 발생합니다.
+
+* * 시정 조치 *
++
+www.microsoft.com 에서 Microsoft Visual C{pp} 2010 재배포 가능 패키지(x86)를 설치합니다.
+
+

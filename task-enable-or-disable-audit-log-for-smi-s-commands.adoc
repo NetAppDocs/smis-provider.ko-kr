@@ -1,0 +1,64 @@
+---
+permalink: task-enable-or-disable-audit-log-for-smi-s-commands.html 
+sidebar: sidebar 
+keywords: incoming smi-s command, record, log files, auditor, wbem client 
+summary: 수신되는 모든 SMI-S 명령은 감사 로그 파일에 기록되며 감사자가 WBEM 클라이언트 작업 및 공급자 사용 활동을 추적할 수 있습니다. 동적 구성 속성을 설정하여 이러한 들어오는 명령에 대한 로깅을 설정하거나 해제할 수 있습니다. 
+---
+= SMI-S 명령에 대한 감사 로그를 설정하거나 해제합니다
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+수신되는 모든 SMI-S 명령은 감사 로그 파일에 기록되며 감사자가 WBEM 클라이언트 작업 및 공급자 사용 활동을 추적할 수 있습니다. 동적 구성 속성을 설정하여 이러한 들어오는 명령에 대한 로깅을 설정하거나 해제할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+* 이미 관리자로 로그인 자격 증명이 있어야 합니다.
+* 호스트 시스템에 관리자로 이미 로그인되어 있어야 합니다.
+
+
+
+
+== 이 작업에 대해
+
+감사 로그 데이터는 CIM 서버에 대한 액세스, 활동 및 구성 변경 기록을 제공할 수 있습니다. 감사 파일의 내용에는 명령이 실행된 대상, 명령이 실행된 대상 및 명령이 실행된 시간이 포함됩니다.
+
+동적 구성 속성 'enableAuditLog'는 런타임에 감사 로깅을 활성화하거나 비활성화합니다. 기본적으로 enableAuditLog 는 true 로 설정됩니다.
+
+일반적인 관행은 감사 로깅을 사용하도록 설정한 상태로 두는 것입니다.
+
+감사 로그 파일('cimserver_auditlog')은 Pegasus 로그 디렉토리('C:\Program Files (x86)\NetApp\SMIS\Pegasus\logs')에 저장됩니다.
+
+감사 로그 파일의 최대 크기는 10MB입니다. 최대 한도에 도달하면 파일 이름이 cimserver_auditlog.0 으로 바뀌고 새 감사 로깅 정보를 수집하기 위해 새 cimserver auditlog 파일이 생성됩니다.
+
+NetApp SMI-S Provider는 'cimserver_auditlog.5'를 통해 가장 최근의 6개의 감사 로그 파일('cimserver_auditlog.0')을 유지합니다.
+
+
+
+== 단계
+
+. NetApp SMI-S Provider에 액세스합니다.
+. 런타임에 SMI-S 명령의 감사 로깅을 설정합니다.
++
+[cols="2*"]
+|===
+| 조치 | 명령 
+
+
+ a| 
+* SMI-S 감사 로깅 사용 *
+ a| 
+(* cimconfig -s enableAuditLog=true*)
+
+
+
+ a| 
+* SMI-S 감사 로깅 비활성화 *
+ a| 
+(* cimconfig -s enableAuditLog=false *)
+
+|===
+

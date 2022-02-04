@@ -1,0 +1,27 @@
+---
+permalink: reference-smb-share-size-dropping-to-0-in-scvmm.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider에서 문제가 발생했습니다. 
+---
+= SCVMM에서 SMB 공유 크기가 0으로 떨어집니다
+:icons: font
+:imagesdir: ./media/
+
+
+* * 문제 *
++
+SCVMM(System Center Virtual Machine Manager)에서 신규 또는 기존 SMB 3.0 공유 크기가 0으로 떨어질 수 있습니다.
+
+* * 원인 *
++
+이 문제는 Data ONTAP에서 과도한 I/O로 인해 할당량 재초기화가 오랜 시간이 걸리는 경우, SCVMM에서 새 SMB 3.0 공유 크기 또는 기존 SMB 3.0 공유 크기가 0으로 떨어질 수 있습니다. 따라서 새 SMB 3.0 공유 또는 기존 SMB 3.0 공유에서 새 VM을 프로비저닝할 수 없습니다.
+
+* * 시정 조치 *
++
+.. 할당량을 해제합니다.
+.. SMB 공유를 호스팅하는 각 볼륨에 ""트리"" 유형의 기본 할당량 규칙을 하나 추가합니다.
+.. 기본 할당량 규칙을 추가한 볼륨에 대해 할당량을 설정하고 SMI-S Provider를 다시 시작합니다.
+
+
+

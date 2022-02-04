@@ -1,0 +1,23 @@
+---
+permalink: concept-data-ontap-smi-s-agent-overview.html 
+sidebar: sidebar 
+keywords: smis-s provider, enable, manage, storage, systems, lun, volumes, cimom configuration, cim server settings 
+summary: NetApp SMI-S Provider 5.2.5를 사용하면 스토리지 시스템을 관리 및 모니터링하고 스토리지 시스템의 LUN 및 볼륨, CIMOM 구성 설정 및 CIM 서버 사용자를 관리할 수 있습니다. 
+---
+= NetApp SMI-S Provider 개요
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp SMI-S Provider 5.2.5를 사용하면 스토리지 시스템을 관리 및 모니터링하고 스토리지 시스템의 LUN 및 볼륨, CIMOM 구성 설정 및 CIM 서버 사용자를 관리할 수 있습니다.
+
+NetApp SMI-S Provider는 ONTAP 소프트웨어를 실행하는 플랫폼을 검색하고 관리하는 명령 기반 인터페이스입니다. SMI-S Provider는 WBEM(Web-Based Enterprise Management) 프로토콜을 사용하여 스토리지 요소를 관리, 모니터링 및 보고할 수 있습니다.
+
+NetApp SMI-S Provider는 다음과 같은 두 가지 조직에서 표준화된 스키마를 따릅니다.
+
+* http://www.dmtf.org/home["DMTF(Distributed Management Task Force)"^]
+* http://www.snia.org/home["SNIA(Storage Networking Industry Association)"^]
+
+
+SMI-S Provider는 여러 개의 관리되는 오브젝트 모델, 프로토콜 및 전송을 스토리지 네트워크의 모든 구성 요소에 대한 단일 객체 지향 모델로 대체합니다.

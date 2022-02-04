@@ -1,0 +1,56 @@
+---
+permalink: reference-smis-exports.html 
+sidebar: sidebar 
+keywords: smis exports, command display, network attached storage 
+summary: 'SMIS Exports 명령은 스토리지 시스템에 대한 NAS(Network Attached Storage) 내보내기를 표시합니다.' 
+---
+= SMIS 내보내기
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+'mis exports' 명령은 스토리지 시스템의 NAS(Network Attached Storage) 내보내기를 표시합니다.
+
+
+
+== 구문
+
+SMIS는 '[-t{ * http * | * https *}]'를 내보냅니다
+
+
+
+== 위치
+
+'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
+
+
+
+== 권한 수준
+
+유효한 사용자 이름과 암호를 가진 사용자
+
+
+
+== 매개 변수
+
+* '*[-t{http|https}] *'
++
+사용할 프로토콜: HTTPS(기본값) 또는 HTTP
+
+
+
+
+
+== 예
+
+'수출 오류' 명령과 그 출력:
+
+[listing]
+----
+smis exports
+ONTAP_LogicalFile.CreationClassName="ONTAP_LogicalFile",CSCreationClassName="ONTAP_StorageSystem",CSName="ONTAP:68f6b3c0-923a-11e2-a856-123478563412",FSCreationClassName="ONTAP_LocalFS",FSName="/vol/NAS_vol/TestCFS0528",Name="/vol/NAS_vol/TestCFS0528"
+ONTAP_Qtree.CreationClassName="ONTAP_Qtree",CSCreationClassName="ONTAP_StorageSystem",CSName="ONTAP:68f6b3c0-923a-11e2-a856-123478563412",FSCreationClassName="ONTAP_LocalFS",FSName="nilesh_vserver_rootvol",Id="nilesh_vserver_rootvol:0",Name=""
+ONTAP_Qtree.CreationClassName="ONTAP_Qtree",CSCreationClassName="ONTAP_StorageSystem",CSName="ONTAP:68f6b3c0-923a-11e2-a856-123478563412",FSCreationClassName="ONTAP_LocalFS",FSName="NAS_vol",Id="NAS_vol:0",Name=""
+ONTAP_Qtree.CreationClassName="ONTAP_Qtree",CSCreationClassName="ONTAP_StorageSystem",CSName="ONTAP:68f6b3c0-923a-11e2-a856-123478563412",FSCreationClassName="ONTAP_LocalFS",FSName="NAS_vol",Id="NAS_vol:1",Name=""
+----

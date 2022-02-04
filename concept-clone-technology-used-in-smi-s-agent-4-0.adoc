@@ -1,0 +1,19 @@
+---
+permalink: concept-clone-technology-used-in-smi-s-agent-4-0.html 
+sidebar: sidebar 
+keywords: flexclone, license, smis-provider, create, lun clones 
+summary: SMI-S Provider에 LUN 클론을 생성하려면 FlexClone 라이센스가 있어야 합니다. 
+---
+= SMI-S Provider에 사용되는 클론 기술입니다
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SMI-S Provider에 LUN 클론을 생성하려면 FlexClone 라이센스가 있어야 합니다.
+
+SMI-S Provider는 FlexClone 기술만을 사용하여 해당 스토리지 시스템에 LUN 클론을 생성합니다. FlexClone 라이센스가 없는 경우 SMI-S Provider는 LUN 클론 기술을 사용하여 클론을 생성하지 않으며 다음 오류 메시지를 생성합니다.
+
+"FlexClone 라이센스가 스토리지 시스템에 설정되어 있지 않습니다.
+
+LUN 클론 기술을 사용하여 생성된 LUN 클론이 있고 Data ONTAP 버전이 7.3.1 이상으로 업그레이드되면 SMI-S Provider를 사용하여 해당 클론을 분할할 수 없습니다. 스토리지 시스템 관리자가 관리해야 합니다.

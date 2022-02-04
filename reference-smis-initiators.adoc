@@ -1,0 +1,57 @@
+---
+permalink: reference-smis-initiators.html 
+sidebar: sidebar 
+keywords: smis initiators, display, fibre channel, iscsi, storage systems 
+summary: SMIS initiators 명령은 스토리지 시스템에 대한 Fibre Channel 및 iSCSI 포트 정보를 표시합니다. 
+---
+= SMIS 이니시에이터
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+'mis initiators' 명령은 스토리지 시스템에 대한 Fibre Channel 및 iSCSI 포트 정보를 표시합니다.
+
+
+
+== 구문
+
+SMIS 이니시에이터
+
+'[-t{ * http * | * https *}]'
+
+
+
+== 위치
+
+'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
+
+
+
+== 권한 수준
+
+유효한 사용자 이름과 암호를 가진 사용자
+
+
+
+== 매개 변수
+
+* '*[-t{http|https}] *'
++
+사용할 프로토콜: HTTPS(기본값) 또는 HTTP
+
+
+
+
+
+== 예
+
+'잘못된 이니시에이터' 명령과 그 축약된 출력:
+
+[listing]
+----
+smis initiators
+ONTAP_StorageHardwareID.InstanceID="ONTAP:0084259609:iqn.1991-05.com.microsoft:sf-tpc1"
+ONTAP_StorageHardwareID.InstanceID="ONTAP:0084259609:21:00:00:e0:8b:86:f2:89"
+ONTAP_StorageHardwareID.InstanceID="ONTAP:0084259609:iqn.1991-05.com.microsoft:went2k3x32-01"
+----

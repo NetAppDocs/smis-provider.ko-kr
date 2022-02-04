@@ -1,0 +1,36 @@
+---
+permalink: reference-smi-s-agent-sizing-and-performance-information.html 
+sidebar: sidebar 
+keywords: maximum, systems, netapp smi-s provider, help, understand, performance, capability 
+summary: NetApp SMI-S Provider에서 관리하는 시스템의 최대 수를 알면 시스템의 성능 기능을 이해하는 데 도움이 됩니다. 
+---
+= NetApp SMI-S Provider 사이징 및 성능
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp SMI-S Provider에서 관리하는 시스템의 최대 수를 알면 시스템의 성능 기능을 이해하는 데 도움이 됩니다.
+
+* 사이징 *
+
+NetApp SMI-S Provider는 clustered Data ONTAP에서 다음과 같은 수의 오브젝트를 관리할 수 있습니다.
+
+* 100개의 SVM(스토리지 가상 머신)(표시 없음)
+* 스토리지 가상 머신 10개(표시 포함)
+* LUN 1,500개(FlexVol 볼륨당)
+* CIFS 파일 공유 200개(FlexVol 볼륨당)
+
+
+FlexVol에 qtree와 볼륨이 모두 포함되어 있으면 qtree가 디렉토리로 표시됩니다. 볼륨을 삭제할 때 실수로 Qtree를 삭제하지 않도록 주의해야 합니다.
+
+* 성능 공지 *
+
+5,000개의 FlexVol 볼륨 또는 300,000개의 Snapshot 복사본이 있는 구성의 경우 다음 "cimcli" 명령에서 성능 문제가 발생할 수 있습니다.
+
+* 'cimcli EI ONTAP_Snapshot-n root/ONTAP'
+* 'cimcli EI ONTAP_SnapshotBasedOnFlexVol-n 루트/ONTAP'
+* 'cimcli EI ONTAP_StorageVolumeStats-n root/ONTAP'
+
+
+상호 운용성 매트릭스 툴(IMT) 크기 조정 및 성능에 대한 최신 정보를 제공합니다.

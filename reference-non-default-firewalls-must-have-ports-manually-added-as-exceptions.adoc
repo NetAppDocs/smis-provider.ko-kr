@@ -1,0 +1,29 @@
+---
+permalink: reference-non-default-firewalls-must-have-ports-manually-added-as-exceptions.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider에서 문제가 발생했습니다. 
+---
+= 기본 방화벽이 아닌 방화벽은 예외로 포트를 수동으로 추가해야 합니다
+:icons: font
+:imagesdir: ./media/
+
+
+* * 문제 *
++
+기본 Windows 방화벽 이외의 방화벽을 사용하는 경우 다음과 같은 문제가 발생할 수 있습니다.
+
++
+** SMI-S Provider가 제거된 SMI-S 클라이언트와 통신할 수 없습니다.
+** SMI-S 클라이언트가 SMI-S Provider로부터 알림을 수신할 수 없습니다.
+
+
+* * 원인 *
++
+이 문제는 필수 포트를 예외로 수동으로 추가하지 않고 기본 Windows 방화벽 이외의 방화벽을 사용할 때 발생합니다.
+
+* * 시정 조치 *
++
+포트 427, 5988 및 5989를 방화벽에 예외로 추가합니다.
+
+

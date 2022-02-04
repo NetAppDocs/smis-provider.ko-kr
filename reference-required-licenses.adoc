@@ -1,0 +1,20 @@
+---
+permalink: reference-required-licenses.html 
+sidebar: sidebar 
+keywords: smi-s provider, required, license 
+summary: NetApp SMI-S Provider를 사용하려면 필요한 라이센스가 있어야 합니다. 
+---
+= 필수 라이센스
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp SMI-S Provider를 사용하려면 필요한 라이센스가 있어야 합니다.
+
+NetApp SMI-S Provider의 경우 다음 라이센스가 필요합니다.
+
+* 스토리지 시스템에서 LUN을 생성하려면 FCP, iSCSI 또는 FCP 및 iSCSI 라이센스가 모두 필요합니다.
+* 지원되는 ONTAP 스토리지 시스템에서 파일 공유를 생성하려면 CIFS 라이센스가 필요합니다.
+* 지원되는 ONTAP 버전을 실행하는 클러스터 스토리지 시스템에서 LUN 클론을 생성하려면 FlexClone 라이센스가 필요합니다.
+

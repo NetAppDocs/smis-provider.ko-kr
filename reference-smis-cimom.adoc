@@ -1,0 +1,55 @@
+---
+permalink: reference-smis-cimom.html 
+sidebar: sidebar 
+keywords: smis cimon, command, cim object manager 
+summary: SMIS cimom 명령은 CIM 객체 관리자에 대해 설명합니다. 
+---
+= SMIS cimom
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+'mis cimom' 명령어는 CIM object manager를 설명한다.
+
+
+
+== 구문
+
+SMIS cimom '[-t{ * http * | * https *}]'
+
+
+
+== 위치
+
+'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
+
+
+
+== 권한 수준
+
+유효한 사용자 이름과 암호를 가진 사용자
+
+
+
+== 매개 변수
+
+* '*[-t{http|https}] *'
++
+사용할 프로토콜: HTTPS(기본값) 또는 HTTP
+
+
+
+
+
+== 예
+
+'mis cimmom' 명령과 출력:
+
+[listing]
+----
+smis cimom
+PG_ObjectManager.CreationClassName="PG_ObjectManager",
+Name="PG:1297121114307-10-229-89-243",
+SystemCreationClassName="PG_ComputerSystem",SystemName="10.1.2.3"
+----

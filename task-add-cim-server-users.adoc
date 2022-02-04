@@ -1,0 +1,43 @@
+---
+permalink: task-add-cim-server-users.html 
+sidebar: sidebar 
+keywords: validate, storage systems, cim user, cim server 
+summary: 스토리지 시스템을 검증하려면 CIM 서버를 사용할 수 있는 권한이 있는 CIM 사용자를 추가해야 합니다. 
+---
+= CIM 서버 사용자를 추가합니다
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+스토리지 시스템을 검증하려면 CIM 서버를 사용할 수 있는 권한이 있는 CIM 사용자를 추가해야 합니다.
+
+
+
+== 시작하기 전에
+
+* 관리자로 이미 로그인되어 있어야 합니다.
+* SMI-S Provider를 이미 액세스한 상태여야 합니다.
+
+
+
+
+== 단계
+
+. 로컬 사용자 계정을 생성합니다.
+. 사용자를 Administrators 그룹에 추가합니다.
++
+자세한 내용은 _시스템 설명서_를 참조하십시오.
+
+. CIM 서버 사용자 추가:
++
+' * cimuser-a-u_user_name_ *'
+
++
+예를 들어, 이름이 ""Chris""인 CIM 서버 사용자를 추가하려면:
+
++
+``시무즈-아우 크리스*’
+
+. 메시지가 나타나면 암호를 입력하고 다시 입력합니다.
+
