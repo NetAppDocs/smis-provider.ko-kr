@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head class="at-element-marker">
+  <title>NetApp SMI-S Provider에 대한 인증을 설정 또는 해제합니다</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="NetApp SMI-S Provider에 대한 인증을 설정 또는 해제합니다" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/ko-kr/smis-provider/task-enable-or-disable-authentication-for-smi-s-provider.html" />
+	<meta property="og:description" content="기본적으로 SMI-S Provider에 대해 인증이 설정됩니다. 인증으로 인해 시스템에 오류가 발생하는 경우 선택적으로 비활성화할 수 있습니다. 인증이 비활성화된 상태에서 다시 사용하려는 경우 다시 활성화할 수 있습니다." />
+  <meta property="og:image" content="https://docs.netapp.com/ko-kr/smis-provider/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/>
+  
+  <meta name="description" content="기본적으로 SMI-S Provider에 대해 인증이 설정됩니다. 인증으로 인해 시스템에 오류가 발생하는 경우 선택적으로 비활성화할 수 있습니다. 인증이 비활성화된 상태에서 다시 사용하려는 경우 다시 활성화할 수 있습니다.">
+  <meta name="keywords" content=" smi-s provider, authentication, enable, errors, system, disable">
+  
+  
+
+  <!-- Icons -->
+  <link rel="icon" href="/ko-kr/smis-provider/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed -->
+  
+
+  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/ko-kr/smis-provider/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/ko-kr/smis-provider/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/ko-kr/smis-provider/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/ko-kr/smis-provider/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/ko-kr/smis-provider/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/ko-kr/smis-provider/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/ko-kr/smis-provider/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/ko-kr/smis-provider/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/ko-kr/smis-provider/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/ko-kr/smis-provider/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/ko-kr/smis-provider/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/ko-kr/smis-provider/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/ko-kr/smis-provider/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/ko-kr/smis-provider/css/tabbed-blocks.css" type="text/css">
+  <link rel="stylesheet" href='/ko-kr/smis-provider/css/product-family.css' type="text/css">
+  
+
+  
+  <link rel='stylesheet' href='/ko-kr/smis-provider/css/na-feature.css' type='text/css'>
+  
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
+  
+    <script src='/ko-kr/smis-provider/js/na-search.js'></script>
+  
+
+  
+  <script src='/ko-kr/smis-provider/js/na-pagenav.js'></script>
+  
+
+  <link rel='stylesheet' href='/ko-kr/smis-provider/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/ko-kr/smis-provider/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/ko-kr/smis-provider/js/na-utility.js'></script>
+  <script src='/ko-kr/smis-provider/js/clouddocs.js'></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
+  <script src='/ko-kr/smis-provider/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/ko-kr/smis-provider/js/toc.js'></script>
+  <script src='/ko-kr/smis-provider/js/customscripts.js'></script>
+
+  <script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
+  }
+  </script>
+  <script src='/ko-kr/smis-provider/js/version-dropdown.js'></script>
+  <script src='/ko-kr/smis-provider/js/product-family.js'></script>
+  <script src='/ko-kr/smis-provider/js/FileSaver.min.js'></script>
+  <script src='/ko-kr/smis-provider/js/jszip-utils.min.js'></script>
+  <script src='/ko-kr/smis-provider/js/jszip.min.js'></script>
+  <script src='/ko-kr/smis-provider/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">제품 및 솔루션</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">지원 및 교육</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">커뮤니티</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">블로그</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">고객 성공 사례</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">연락처</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">연락처</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/ko-kr/smis-provider/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/ko-kr/smis-provider/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/ko-kr/smis-provider/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/ko-kr/smis-provider/search.html"
+          data-type="widget" 
+          data-placeholder="설명서 검색" 
+          data-no-results-found="{query}에 대한 결과를 찾을 수 없음" 
+          data-did-you-mean="{suggestion}을(를) 검색해보십시오." 
+          data-no-results-found-did-you-mean="{query}에 대한 결과를 찾을 수 없습니다. {suggestion}을(를) 검색하려 하셨습니까?" 
+          data-results-found="{hitCount}개의 결과를 찾음"  
+          data-sk-es-pf-indexes=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/smis-provider/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
+      <div id="ie-i18n-menu">
+      <span class="ie-i18n-lang">한국어</span>
+        <button class="ie-i18n-icon-container" type="button">
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/smis-provider/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+        <div class="n-language-selector-menu">
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ko-kr/smis-provider/task-enable-or-disable-authentication-for-smi-s-provider.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/us-en/smis-provider/task-enable-or-disable-authentication-for-smi-s-provider.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ja-jp/smis-provider/task-enable-or-disable-authentication-for-smi-s-provider.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/smis-provider/task-enable-or-disable-authentication-for-smi-s-provider.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/ko-kr/smis-provider/images/pdf.png" width="16" height="16"/>사용 가능한 PDF<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        <a target="_blank" href="/ko-kr/smis-provider/pdfs/fullsite-sidebar/NetApp_SMI_S_공급자_문서.pdf" >
+          <img src="/ko-kr/smis-provider/images/pdf.png" width="16" height="16"/>이 문서 사이트의 PDF</a>
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/smis-provider/pdfs/sidebar/NetApp_SMI_S_Provider_개요.pdf" 
+            
+          >
+            <img src="/ko-kr/smis-provider/images/pdf.png" width="16" height="16"/>
+            NetApp SMI-S Provider 개요
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/smis-provider/pdfs/sidebar/배포를_준비합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/smis-provider/images/pdf.png" width="16" height="16"/>
+            배포를 준비합니다
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/smis-provider/pdfs/sidebar/NetApp_SMI_S_Provider를_설치합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/smis-provider/images/pdf.png" width="16" height="16"/>
+            NetApp SMI-S Provider를 설치합니다
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/smis-provider/pdfs/sidebar/NetApp_SMI_S_Provider를_제거합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/smis-provider/images/pdf.png" width="16" height="16"/>
+            NetApp SMI-S Provider를 제거합니다
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/smis-provider/pdfs/sidebar/사전_구성_검증.pdf" 
+            
+          >
+            <img src="/ko-kr/smis-provider/images/pdf.png" width="16" height="16"/>
+            사전 구성 검증
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/smis-provider/pdfs/sidebar/CIM_서버_사용자를_관리합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/smis-provider/images/pdf.png" width="16" height="16"/>
+            CIM 서버 사용자를 관리합니다
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/smis-provider/pdfs/sidebar/로깅_및_추적_관리.pdf" 
+            
+          >
+            <img src="/ko-kr/smis-provider/images/pdf.png" width="16" height="16"/>
+            로깅 및 추적 관리
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/smis-provider/pdfs/sidebar/로그_설정을_구성합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/smis-provider/images/pdf.png" width="16" height="16"/>
+            로그 설정을 구성합니다
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/smis-provider/pdfs/sidebar/추적_관리.pdf" 
+            
+          >
+            <img src="/ko-kr/smis-provider/images/pdf.png" width="16" height="16"/>
+            추적 관리
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/smis-provider/pdfs/sidebar/트레이스_설정을_지정합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/smis-provider/images/pdf.png" width="16" height="16"/>
+            트레이스 설정을 지정합니다
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/smis-provider/pdfs/sidebar/SMI_S_Provider_고급_설정을_관리합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/smis-provider/images/pdf.png" width="16" height="16"/>
+            SMI-S Provider 고급 설정을 관리합니다
+          </a>
+          
+
+
+
+
+
+
+
+
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/ko-kr/smis-provider/pdfs/pages/task-enable-or-disable-authentication-for-smi-s-provider.pdf" >
+    <img src="/ko-kr/smis-provider/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/smis-provider/pdfs/sidebar/SLP_관리.pdf" 
+            
+          >
+            <img src="/ko-kr/smis-provider/images/pdf.png" width="16" height="16"/>
+            SLP 관리
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/smis-provider/pdfs/sidebar/SLP_구성_옵션을_지정합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/smis-provider/images/pdf.png" width="16" height="16"/>
+            SLP 구성 옵션을 지정합니다
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/smis-provider/pdfs/sidebar/CIMOM_명령.pdf" 
+            
+          >
+            <img src="/ko-kr/smis-provider/images/pdf.png" width="16" height="16"/>
+            CIMOM 명령
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/smis-provider/pdfs/sidebar/CIM_사용자_명령.pdf" 
+            
+          >
+            <img src="/ko-kr/smis-provider/images/pdf.png" width="16" height="16"/>
+            CIM 사용자 명령
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/smis-provider/pdfs/sidebar/SMI_S_Provider_명령.pdf" 
+            
+          >
+            <img src="/ko-kr/smis-provider/images/pdf.png" width="16" height="16"/>
+            SMI-S Provider 명령
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/smis-provider/pdfs/sidebar/SLP_명령.pdf" 
+            
+          >
+            <img src="/ko-kr/smis-provider/images/pdf.png" width="16" height="16"/>
+            SLP 명령
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/smis-provider/pdfs/sidebar/SMI_S_Provider_문제_해결.pdf" 
+            
+          >
+            <img src="/ko-kr/smis-provider/images/pdf.png" width="16" height="16"/>
+            SMI-S Provider 문제 해결
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/ko-kr/smis-provider/images/pdf-zip.png" width="16" height="16"/>
+      <pre>별도의 PDF 문서 모음<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/index.html">
+        NetApp SMI-S 공급자 문서
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/releasenotes.html">
+        릴리스 정보
+      </a></li><li class="subfolders "><a href="/ko-kr/smis-provider/concept-data-ontap-smi-s-agent-overview.html">
+        <div class="na-navbar-padding"> NetApp SMI-S Provider 개요</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-new-in-this-release-smis.html">
+        이 릴리스의 새로운 기능
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-uses-of-data-ontap-smi-s-agent.html">
+        NetApp SMI-S Provider의 사용
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smi-s-agent-sizing-and-performance-information.html">
+        NetApp SMI-S Provider 사이징 및 성능
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-data-ontap-smi-s-agent-components.html">
+        NetApp SMI-S Provider 구성 요소
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-data-ontap-smi-s-agent-protocols.html">
+        NetApp SMI-S Provider 프로토콜
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/concept-how-smi-s-provider-interacts-with-a-host.html">
+        NetApp SMI-S Provider가 호스트와 상호 작용하는 방법
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/concept-smi-s-profiles.html">
+        SMI-S 프로파일
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/concept-deployment-workflow.html">
+        구축 워크플로우
+      </a></li><li class="subfolders "><a href="/ko-kr/smis-provider/concept-prepare-for-deployment.html">
+        <div class="na-navbar-padding"> 배포를 준비합니다</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-supported-operating-systems.html">
+        지원되는 운영 체제 버전입니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-hardware-requirements.html">
+        하드웨어 요구 사항
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-required-licenses.html">
+        필수 라이센스
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-supported-platforms.html">
+        지원되는 클러스터 플랫폼
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/task-download-smi-s-provider.html">
+        NetApp SMI-S Provider 소프트웨어 패키지를 다운로드합니다
+      </a></li></ul></li><li class="subfolders "><a href="/ko-kr/smis-provider/concept-install-and-uninstall-ontap-smi-s-agent.html">
+        <div class="na-navbar-padding"> NetApp SMI-S Provider를 설치합니다</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/task-install-smi-s-agent-on-a-windows-host.html">
+        Windows 호스트에 NetApp SMI-S Provider를 설치합니다
+      </a></li></ul></li><li class="subfolders "><a href="/ko-kr/smis-provider/concept-uninstall-smi-s-provider.html">
+        <div class="na-navbar-padding"> NetApp SMI-S Provider를 제거합니다</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/task-uninstall-smi-s-agent-from-a-windows-host.html">
+        Windows 호스트에서 NetApp SMI-S Provider를 제거합니다
+      </a></li></ul></li><li class="subfolders "><a href="/ko-kr/smis-provider/concept-preconfiguration-task-overview.html">
+        <div class="na-navbar-padding"> 사전 구성 검증</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/task-verify-the-cim-server-status.html">
+        CIM 서버 상태를 확인합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/task-add-cim-server-users.html">
+        CIM 서버 사용자를 추가합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/task-verify-that-the-storage-system-is-working-correctly.html">
+        스토리지 시스템이 올바르게 작동하는지 확인합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/task-generate-a-self-signed-certificate-for-the-cim-server-windows.html">
+        CIM 서버에 대해 자체 서명된 인증서를 생성합니다
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/task-manage-the-cim-server.html">
+        CIM 서버를 관리합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/task-manage-storage-systems.html">
+        스토리지 시스템 관리
+      </a></li><li class="subfolders "><a href="/ko-kr/smis-provider/task-manage-cim-server-users.html">
+        <div class="na-navbar-padding"> CIM 서버 사용자를 관리합니다</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-types-of-cim-users-and-associated-operations.html">
+        CIM 사용자 유형 및 관련 작업
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/task-manage-cimom-configuration-settings.html">
+        CIMOM 구성 설정을 관리합니다
+      </a></li><li class="subfolders "><a href="/ko-kr/smis-provider/concept-manage-logging-and-tracing.html">
+        <div class="na-navbar-padding"> 로깅 및 추적 관리</div>
+      </a>
+      <ul><li class="subfolders "><a href="/ko-kr/smis-provider/task-configure-log-settings.html">
+        <div class="na-navbar-padding"> 로그 설정을 구성합니다</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-logging-levels.html">
+        로깅 수준
+      </a></li></ul></li><li class="subfolders "><a href="/ko-kr/smis-provider/concept-manage-tracing.html">
+        <div class="na-navbar-padding"> 추적 관리</div>
+      </a>
+      <ul><li class="subfolders "><a href="/ko-kr/smis-provider/task-specify-trace-settings.html">
+        <div class="na-navbar-padding"> 트레이스 설정을 지정합니다</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-trace-setting-values.html">
+        트레이스 설정 값
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/task-specify-trace-file-size.html">
+        추적 파일 크기를 지정합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/task-specify-the-number-of-trace-files-saved.html">
+        저장된 추적 파일 수를 지정합니다
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/task-enable-or-disable-audit-log-for-smi-s-commands.html">
+        SMI-S 명령에 대한 감사 로그를 설정하거나 해제합니다
+      </a></li></ul></li><li class="subfolders "><a href="/ko-kr/smis-provider/concept-manage-smi-s-agent-advanced-settings.html">
+        <div class="na-navbar-padding"> SMI-S Provider 고급 설정을 관리합니다</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/task-specify-the-smi-s-agent-cache-refresh-interval.html">
+        SMI-S Provider 자동 캐시 새로 고침 간격을 지정합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/task-specify-the-concrete-job-lifetime-value.html">
+        구체적인 작업 수명 값을 지정하십시오
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/task-specify-the-ontapi-timeout-value.html">
+        ONTAPI 시간 초과 값을 지정합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/task-specify-the-maximum-number-of-threads-per-message-service-queue.html">
+        메시지 서비스 대기열당 최대 스레드 수를 지정합니다
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/ko-kr/smis-provider/task-enable-or-disable-authentication-for-smi-s-provider.html">
+        NetApp SMI-S Provider에 대한 인증을 설정 또는 해제합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/task-enable-indications-in-smi-s-agent.html">
+        SMI-S Provider에서 표시를 설정합니다
+      </a></li></ul></li><li class="subfolders "><a href="/ko-kr/smis-provider/concept-manage-slp.html">
+        <div class="na-navbar-padding"> SLP 관리</div>
+      </a>
+      <ul><li class="subfolders "><a href="/ko-kr/smis-provider/concept-specify-slp-configuration-options.html">
+        <div class="na-navbar-padding"> SLP 구성 옵션을 지정합니다</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-editing-the-slp-conf-file.html">
+        SLP.conf 파일 관리
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/ko-kr/smis-provider/concept-cimom-commands.html">
+        <div class="na-navbar-padding"> CIMOM 명령</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-cimconfig-command-options.html">
+        구성
+      </a></li></ul></li><li class="subfolders "><a href="/ko-kr/smis-provider/concept-cim-user-commands.html">
+        <div class="na-navbar-padding"> CIM 사용자 명령</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-cimuser-command-options.html">
+        심사용자
+      </a></li></ul></li><li class="subfolders "><a href="/ko-kr/smis-provider/concept-smi-s-provider-commands.html">
+        <div class="na-navbar-padding"> SMI-S Provider 명령</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smis-add.html">
+        SMIS 추가
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smis-addsecure.html">
+        SMIS 추가 보안
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smis-cimom.html">
+        SMIS cimom
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smis-cimserver.html">
+        SMIS 시임서버
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smis-class.html">
+        SMIS 클래스
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smis-config-show.html">
+        SMIS config show를 참조하십시오
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smis-crp.html">
+        SMIS CRP
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smis-crsp.html">
+        SMIS 검사
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smis-delete.html">
+        SMIS 삭제
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smis-disks.html">
+        SMIS 디스크
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smis-exports.html">
+        SMIS 내보내기
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smis-initiators.html">
+        SMIS 이니시에이터
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smis-licensed.html">
+        SMIS 라이센스 보유
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smis-list.html">
+        SMIS 목록
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smis-luns.html">
+        SMIS LUN
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smis-namespaces.html">
+        SMIS 네임스페이스
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smis-pools.html">
+        SMIS 풀
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smis-refresh.html">
+        SMIS 업데이트
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smis-slpd.html">
+        SMIS slpd
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smis-version.html">
+        SMIS 버전
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smis-volumes.html">
+        SMIS 볼륨
+      </a></li></ul></li><li class="subfolders "><a href="/ko-kr/smis-provider/concept-slp-commands.html">
+        <div class="na-navbar-padding"> SLP 명령</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-slptool-command-options.html">
+        슬래도구
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-slptool-findattrs.html">
+        슬렙툴 findattrs
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-slptool-findsrvs.html">
+        슬래프툴 findsrvs
+      </a></li></ul></li><li class="subfolders "><a href="/ko-kr/smis-provider/concept-troubleshoot-smi-s-agent.html">
+        <div class="na-navbar-padding"> SMI-S Provider 문제 해결</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-access-is-denied-error.html">
+        액세스가 거부되었습니다. 오류
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-possible-errors-when-loading-shared-libraries.html">
+        공유 라이브러리를 로드하는 동안 오류가 발생할 수 있습니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-connection-refused-error.html">
+        연결이 거부되었습니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-no-ontap-element-in-response-error.html">
+        파일러 반환: 응답이 ONTAP 요소가 없습니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-clone-snapshot-operations-are-not-allowed.html">
+        클론/스냅샷 작업은 허용되지 않습니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-warning-26130.html">
+        경고 26130
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-hostagentaccessdenied-error-id-26263.html">
+        HostAgentAccessDenied(ID: 26263)
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-cannot-connect-to-localhost-5988-error.html">
+        localhost:5988에 연결할 수 없습니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-cannot-connect-to-localhost-5989-error.html">
+        localhost:5989에 연결할 수 없습니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-handling-smi-s-agent-crashes-in-windows.html">
+        Windows에서 SMI-S Provider가 충돌합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-entering-passwords-containing-special-characters.html">
+        특수 문자가 포함된 암호 입력 문제
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/concept-clone-technology-used-in-smi-s-agent-4-0.html">
+        SMI-S Provider에 사용되는 클론 기술입니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/concept-confirm-visibility-of-important-objects.html">
+        중요 개체의 표시 여부를 확인합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/concept-requirement-for-using-fileshares-in-windows.html">
+        Windows에서 파일 표시 사용 요구 사항
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-non-default-firewalls-must-have-ports-manually-added-as-exceptions.html">
+        기본 방화벽이 아닌 방화벽은 예외로 포트를 수동으로 추가해야 합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-cannot-add-a-storage-system-using-a-nondefault-http-or-https-port.html">
+        기본값이 아닌 HTTP 또는 HTTPS 포트를 사용하여 스토리지 시스템을 추가할 수 없습니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-no-response-from-the-server.html">
+        서버로부터 응답이 없습니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-runtime-library-issues.html">
+        런타임 라이브러리 문제
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smi-s-agent-takes-a-long-time-to-start.html">
+        NetApp SMI-S Provider를 시작하는 데 시간이 오래 걸립니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-total-managed-space-for-a-storage-pool-aggregate-discrepancy.html">
+        스토리지 풀(볼륨)의 총 관리 공간 불일치
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-network-path-not-found-error-during-vm-deployment.html">
+        네트워크 경로를 찾을 수 없습니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-vm-provisioning-in-scvmm-fails-with-insufficient-system-resources-error.html">
+        요청한 서비스를 완료하기 위한 시스템 리소스가 부족합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-smb-share-size-dropping-to-0-in-scvmm.html">
+        SCVMM에서 SMB 공유 크기가 0으로 떨어집니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-scvmm-rescan-operation-failed-to-locate-or-communicate-with-smi-s-provider.html">
+        SCVMM 재검색 작업이 SMI-S Provider를 찾거나 통신하지 못했습니다
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/smis-provider/reference-legal-notices.html">
+        법적 고지
+      </a></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container -->
+    <article class="page-content">
+      <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://www.netapp.com">홈</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">설명서</a>
+        </li>
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/ko-kr/smis-provider/">NetApp&nbsp;SMI-S&nbsp;Provider</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          NetApp SMI-S Provider에 대한 인증을 설정 또는 해제합니다
+        </li>
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/ko-kr/smis-provider/common/svg/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> 본 한국어 번역은 사용자 편의를 위해 제공되는 기계 번역입니다. 영어 버전과 한국어 버전이 서로 어긋나는 경우에는 언제나 영어 버전이 우선합니다. </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">NetApp SMI-S Provider에 대한 인증을 설정 또는 해제합니다</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2022-02-04 16:52:00 +0000">02/04/2022</time>
+    
+  
+
+<span>기여자
+</span>
+
+
+</p>
+
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>기본적으로 SMI-S Provider에 대해 인증이 설정됩니다. 인증으로 인해 시스템에 오류가 발생하는 경우 선택적으로 비활성화할 수 있습니다. 인증이 비활성화된 상태에서 다시 사용하려는 경우 다시 활성화할 수 있습니다.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="시작하기-전에">시작하기 전에</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>이미 관리자로 로그인 자격 증명이 있어야 합니다.</p>
+</li>
+<li>
+<p>관리자로 이미 로그인되어 있어야 합니다.</p>
+</li>
+<li>
+<p>SCVMM(System Center Virtual Machine Manager)을 비롯한 모든 클라이언트는 cimuser 및 cimpassword를 사용하여 공급자에 연결해야 합니다.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="단계">단계</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>NetApp SMI-S Provider에 액세스합니다.</p>
+</li>
+<li>
+<p>SMI-S Provider에 대한 인증 설정:</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">조치</th>
+<th class="tableblock halign-left valign-top">명령</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>이전에 비활성화된 경우 인증 사용 *</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>"* cimconfig -p -s enableAuthentication=true*"</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>인증 비활성화 *</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>'* cimconfig -p -s enableAuthentication=false*'</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>CIMOM은 Windows 인증을 사용하지 않습니다.</p>
+</div>
+</li>
+<li>
+<p>NetApp SMI-S Provider 재시작:</p>
+<div class="paragraph">
+<p>'* SMIS cimserver restart*'</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/smis-provider/issues/new?body=Page%3A%20[NetApp SMI-S Provider에 대한 인증을 설정 또는 해제합니다](https://docs.netapp.com/ko-kr/smis-provider/task-enable-or-disable-authentication-for-smi-s-provider.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/smis-provider/images/discuss-sm.svg" class="github-icon" />문서 변경 요청</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/smis-provider/blob/main/task-enable-or-disable-authentication-for-smi-s-provider.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/smis-provider/images/edit-sm.svg" class="github-icon" />이 페이지 편집</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/smis-provider/images/article-sm.svg" class="github-icon" />기여하는 방법 자세히 알아보기</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">이 페이지의 내용</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <div style="clear: both"></div><!-- Main needs to have height -->
+</div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+
+</ul>
+</div>
+<div class="n-footer__social-links">
+<ul class="n-footer__social-link-list">
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
+<span class="n-footer__social-link-text">blog</span>
+<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+  <title>blog@</title>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/smis-provider/common/svg/sprite.svg#blog"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
+<span class="n-footer__social-link-text">community</span>
+<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+<title>community@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/smis-provider/common/svg/sprite.svg#comments"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
+<span class="n-footer__social-link-text">twitter</span>
+<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+<title>twitter@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/smis-provider/common/svg/sprite.svg#twitter"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
+<span class="n-footer__social-link-text">facebook</span>
+<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+<title>facebook@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/smis-provider/common/svg/sprite.svg#facebook"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+<span class="n-footer__social-link-text">linkedin</span>
+<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+<title>linkedin@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/smis-provider/common/svg/sprite.svg#linkedin"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+<span class="n-footer__social-link-text">youtube</span>
+<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+<title>youtube@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/smis-provider/common/svg/sprite.svg#youtube"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+<span class="n-footer__social-link-text">slideshare</span>
+<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+<title>slideshare@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/smis-provider/common/svg/sprite.svg#slideshare"></use>
+</svg>
+
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div class="n-footer__bottom-right">
+  <p class="n-footer__fine-print">웹 사이트에 대한 피드백이 있으십니까?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">의견을 공유해 주십시오</a>
+  <a href="https://docs.netapp.com/ko-kr/announcements/" class="n-footer__copyright">공지 사항</a>
+  </p>
+</div>
+</div>
+</div>
+</footer>
+
+      </div>
+
+      <!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/ko-kr/smis-provider/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/ko-kr/smis-provider/js/prism.js'></script>
+      <script type="text/javascript" src='/ko-kr/smis-provider/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/ko-kr/smis-provider/js/www-ntap.js'></script>
+    <script src='/ko-kr/smis-provider/js/tabbed-blocks.js'></script>
+  </body>
+
+  
+</html>
