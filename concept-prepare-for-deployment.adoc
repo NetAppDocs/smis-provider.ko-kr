@@ -1,7 +1,7 @@
 ---
 permalink: concept-prepare-for-deployment.html 
 sidebar: sidebar 
-keywords: netapp, smis-provider, verify, supported, operating system, platform, licenses, minimum, requirements 
+keywords: netapp, smi-s provider, verify, supported, operating system, platform, licenses, minimum, requirements 
 summary: NetApp SMI-S Provider를 구축하기 전에 지원되는 운영 체제 및 플랫폼이 있는지, 필요한 라이센스가 있는지, 호스트가 최소 요구 사항을 충족하는지 확인해야 합니다. 
 ---
 = 배포를 준비합니다

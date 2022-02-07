@@ -4,9 +4,9 @@ sidebar: sidebar
 keywords: netapp smi-s provider, relnotes, limitations, fixes, known issues 
 summary: NetApp SMI-S Provider 5.2.6 소프트웨어의 기능, 제한 사항 및 알려진 문제에 대한 정보를 제공합니다. 
 ---
-= NetApp SMIS-Provider 릴리즈 노트
+= NetApp SMI-S Provider 릴리즈 노트
 :icons: font
 :imagesdir: ./media/
 
 
-를 클릭합니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2862930["NetApp SMIS-Provider 릴리즈 노트"] 새로운 기능, 업그레이드 노트, 해결된 문제, 알려진 제한 사항 및 알려진 문제에 대해 설명합니다. 릴리즈 노트에 액세스하려면 NetApp Support 사이트에 로그인해야 합니다.
+를 클릭합니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2862930["NetApp SMI-S Provider 릴리즈 노트"^] 새로운 기능, 업그레이드 노트, 해결된 문제, 알려진 제한 사항 및 알려진 문제에 대해 설명합니다.

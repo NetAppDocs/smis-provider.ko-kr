@@ -1,7 +1,7 @@
 ---
 permalink: task-manage-storage-systems.html 
 sidebar: sidebar 
-keywords: smis-provider, commands, add, delete, list, storage, systems, cimom repository 
+keywords: smi-s provider, commands, add, delete, list, storage, systems, cimom repository 
 summary: NetApp SMI-S Provider 명령을 사용하여 CIMOM 저장소에 스토리지 시스템을 추가, 삭제 및 나열할 수 있습니다. 스토리지 시스템에 대해 NFS 및 CIFS 내보내기 및 내보낸 LUN을 나열할 수도 있습니다. 
 ---
 = 스토리지 시스템 관리

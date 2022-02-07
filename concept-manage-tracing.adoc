@@ -1,7 +1,7 @@
 ---
 permalink: concept-manage-tracing.html 
 sidebar: sidebar 
-keywords: configure, smis-provider, trace, files, components, trace, write, trace, file location 
+keywords: configure, smi-s provider, trace, files, components, trace, write, trace, file location 
 summary: 추적할 구성 요소 지정, 추적 메시지가 기록되는 대상, 추적 수준 및 추적 파일 위치 지정 등 SMI-S Provider가 추적 파일을 관리하는 방법을 구성할 수 있습니다. 
 ---
 = 추적 관리

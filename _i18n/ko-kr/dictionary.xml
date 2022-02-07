@@ -384,24 +384,15 @@
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">법적 고지 사항은 저작권 선언, 상표, 특허 등에 대한 액세스를 제공합니다.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">저작권</block>
-  <block id="de6edae22bc37b97b38a15c7f8af62e2" category="paragraph"><block ref="de6edae22bc37b97b38a15c7f8af62e2" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">상표</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp, NetApp 로고, NetApp 상표 페이지에 나열된 마크는 NetApp Inc.의 상표입니다. 기타 회사 및 제품 이름은 해당 소유자의 상표일 수 있습니다.</block>
-  <block id="a93bc0a57623c2facaa010825c808507" category="paragraph"><block ref="a93bc0a57623c2facaa010825c808507" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">특허</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">NetApp 소유 특허 목록은 다음 사이트에서 확인할 수 있습니다.</block>
-  <block id="547ea2e305891e64d8e744949b0aca2c" category="paragraph"><block ref="547ea2e305891e64d8e744949b0aca2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">개인 정보 보호 정책</block>
-  <block id="50921fca0d376fca62102a5e608994e2" category="paragraph"><block ref="50921fca0d376fca62102a5e608994e2" category="inline-link-rx"></block></block>
   <block id="24efa7ee4511563b16144f39706d594f" category="section-title">주의</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
-  <block id="3b82af97dcafa172aa23387cf791feca" category="inline-link">NetApp SMIS-Provider 알림</block>
-  <block id="398bd28759c5235bdb5a9e5aa7c50e35" category="paragraph"><block ref="398bd28759c5235bdb5a9e5aa7c50e35" category="inline-link-rx"></block></block>
   <block id="c3cb8bf1ed7183e77f46d5e7e662b2c1" category="summary">NetApp 스토리지 시스템을 검색 및 관리하는 명령 기반 인터페이스인 NetApp SMI-S Provider를 설치 및 관리하는 방법에 대해 설명합니다.</block>
-  <block id="fd508117c0fd3f123e7353306ca51e6a" category="doc">NetApp SMIS-Provider 문서</block>
-  <block id="80ba3f83a7dec42d3f0c2b9511a26a28" category="paragraph">NetApp SMIS-Provider 정보 라이브러리에 오신 것을 환영합니다. NetApp 스토리지 시스템을 검색 및 관리하는 명령 기반 인터페이스인 NetApp SMI-S Provider를 설치 및 관리하는 방법을 비롯하여 NetApp SMIS-Provider 소프트웨어 설명서를 확인할 수 있습니다.</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp Support 사이트</block>
-  <block id="8aa9082c24819042404b817138276501" category="paragraph">NetApp SMIS-Provider의 이전 릴리즈에 대한 문서는 에서 확인할 수 있습니다<block ref="64d8ed7ea495c5a62b427fad32607c3d" category="inline-link-rx"></block>.</block>
   <block id="5df91904e284b02eadf3bef23d5a41d4" category="summary">기본적으로 CIM 서버에 대해 SSL 인증이 활성화됩니다. SMI-S Provider를 설치하는 동안 CIM 서버에 대한 자체 서명된 인증서가 Pegasus 디렉토리에 설치됩니다. 자체 서명된 인증서를 생성하여 기본 인증서 대신 사용할 수 있습니다.</block>
   <block id="706bd7f5dc0fd11f32957fcfe95a1d86" category="doc">CIM 서버에 대해 자체 서명된 인증서를 생성합니다</block>
   <block id="ddf96c0ef94c04177aac4c565af47742" category="paragraph">기본적으로 CIM 서버에 대해 SSL 인증이 활성화됩니다. SMI-S Provider 설치 중에 CIM 서버의 자체 서명된 인증서가 'Pegasus' 디렉토리에 설치됩니다. 자체 서명된 인증서를 생성하여 기본 인증서 대신 사용할 수 있습니다.</block>
@@ -623,8 +614,6 @@
   <block id="6f37785193648cc0fab41c9b222a7a2f" category="paragraph">예를 들어 로그 디렉토리를 "serverlogs"로 변경하려면 다음 명령을 입력합니다.</block>
   <block id="882d7437047d18007764dd5615ed4aba" category="paragraph">'* cimconfig -s logdir=serverlogs -p *'</block>
   <block id="591f96ef7fe1cdb42aa58f385466c717" category="summary">NetApp SMI-S Provider 5.2.6 소프트웨어의 기능, 제한 사항 및 알려진 문제에 대한 정보를 제공합니다.</block>
-  <block id="655d7e9f201053f0e25987d7ca92a6fc" category="doc">NetApp SMIS-Provider 릴리즈 노트</block>
-  <block id="296afb93a730015ccf0a911acd6efec5" category="paragraph">를 클릭합니다<block ref="f447ffc7c64f700d57e2b9647508055d" category="inline-link-rx"></block> 새로운 기능, 업그레이드 노트, 해결된 문제, 알려진 제한 사항 및 알려진 문제에 대해 설명합니다. 릴리즈 노트에 액세스하려면 NetApp Support 사이트에 로그인해야 합니다.</block>
   <block id="58c8d351ba9d95afd9752aa88bf6e0f7" category="doc">SCVMM에서 SMB 공유 크기가 0으로 떨어집니다</block>
   <block id="d19b0ea77723113b53c5f3b5bcfc71cb" category="paragraph">SCVMM(System Center Virtual Machine Manager)에서 신규 또는 기존 SMB 3.0 공유 크기가 0으로 떨어질 수 있습니다.</block>
   <block id="286cd1d6f9ece4f567a343b0e19efe60" category="paragraph">이 문제는 Data ONTAP에서 과도한 I/O로 인해 할당량 재초기화가 오랜 시간이 걸리는 경우, SCVMM에서 새 SMB 3.0 공유 크기 또는 기존 SMB 3.0 공유 크기가 0으로 떨어질 수 있습니다. 따라서 새 SMB 3.0 공유 또는 기존 SMB 3.0 공유에서 새 VM을 프로비저닝할 수 없습니다.</block>
@@ -902,4 +891,15 @@
   <block id="111bb0fad8beadbe3d12694d63ed1d33" category="sidebar">NetApp SMI-S 공급자 문서</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">릴리스 정보</block>
   <block id="f16f70c449d9f0048b9a3659fcb12389" category="sidebar">트레이스 설정을 지정합니다</block>
+  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
+  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
+  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
+  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
+  <block id="e746749730e661dd557a1c067c4dbe7d" category="inline-link">NetApp SMI-S Provider에 대한 알림입니다</block>
+  <block id="de70f78d604c1f59e6de2a196d7084c8" category="paragraph"><block ref="de70f78d604c1f59e6de2a196d7084c8" category="inline-link-rx"></block></block>
+  <block id="b51493aaf7964eeecd1d7dfd7e847d13" category="doc">NetApp SMI-S 공급자 문서</block>
+  <block id="3222e2c38626bc2823512833cc493f15" category="paragraph">NetApp SMI-S Provider Information Library에 오신 것을 환영합니다. NetApp 스토리지 시스템을 검색 및 관리하는 명령 기반 인터페이스인 NetApp SMI-S Provider를 설치 및 관리하는 방법을 비롯하여 NetApp SMI-S Provider 소프트웨어에 대한 문서가 제공됩니다.</block>
+  <block id="1456d67be31dd1251336fefc3219f261" category="paragraph">NetApp SMI-S Provider의 이전 릴리즈에 대한 문서는 에서 확인할 수 있습니다<block ref="c1cc34bfdb0a4a31c8960c236e9f731a" category="inline-link-rx"></block>.</block>
+  <block id="336d68bc1f4a7a4dd4d6826a8c11877e" category="doc">NetApp SMI-S Provider 릴리즈 노트</block>
+  <block id="6e3b9e20f7f45cc7004fb8412900830e" category="paragraph">를 클릭합니다<block ref="b5aeaaea80149eaf6be32e7995332412" category="inline-link-rx"></block> 새로운 기능, 업그레이드 노트, 해결된 문제, 알려진 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
 </blocks>

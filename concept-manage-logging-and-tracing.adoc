@@ -1,7 +1,7 @@
 ---
 permalink: concept-manage-logging-and-tracing.html 
 sidebar: sidebar 
-keywords: configure, smis-provider, trace files, specify, levels, message logging, component, trace, file location 
+keywords: configure, smi-s provider, trace files, specify, levels, message logging, component, trace, file location 
 summary: 기록할 메시지 수준 및 로그를 저장할 디렉터리를 지정하는 등 SMI-S Provider가 로그 및 추적 파일을 관리하는 방법을 구성할 수 있습니다. 추적할 구성 요소, 추적 메시지를 기록할 대상, 추적 수준 및 추적 파일 위치를 지정할 수도 있습니다. 
 ---
 = 로깅 및 추적 관리
