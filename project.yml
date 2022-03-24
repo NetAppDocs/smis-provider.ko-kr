@@ -14,8 +14,9 @@ sidebar:
   - title: 릴리스 정보
     url: "/releasenotes.html"
   - title: NetApp SMI-S Provider 개요
-    url: "/concept-data-ontap-smi-s-agent-overview.html"
     entries:
+    - title: 개요
+      url: "/concept-overview.html"
     - title: 이 릴리스의 새로운 기능
       url: "/reference-new-in-this-release-smis.html"
     - title: NetApp SMI-S Provider의 사용
@@ -33,8 +34,9 @@ sidebar:
   - title: 구축 워크플로우
     url: "/concept-deployment-workflow.html"
   - title: 배포를 준비합니다
-    url: "/concept-prepare-for-deployment.html"
     entries:
+    - title: 개요
+      url: "/concept-prepare-for-deployment-overview.html"
     - title: 지원되는 운영 체제 버전입니다
       url: "/reference-supported-operating-systems.html"
     - title: 하드웨어 요구 사항
@@ -46,18 +48,17 @@ sidebar:
     - title: NetApp SMI-S Provider 소프트웨어 패키지를 다운로드합니다
       url: "/task-download-smi-s-provider.html"
   - title: NetApp SMI-S Provider를 설치합니다
-    url: "/concept-install-and-uninstall-ontap-smi-s-agent.html"
     entries:
     - title: Windows 호스트에 NetApp SMI-S Provider를 설치합니다
       url: "/task-install-smi-s-agent-on-a-windows-host.html"
   - title: NetApp SMI-S Provider를 제거합니다
-    url: "/concept-uninstall-smi-s-provider.html"
     entries:
     - title: Windows 호스트에서 NetApp SMI-S Provider를 제거합니다
       url: "/task-uninstall-smi-s-agent-from-a-windows-host.html"
   - title: 사전 구성 검증
-    url: "/concept-preconfiguration-task-overview.html"
     entries:
+    - title: 개요
+      url: "/concept-preconfiguration-task-overview.html"
     - title: CIM 서버 상태를 확인합니다
       url: "/task-verify-the-cim-server-status.html"
     - title: CIM 서버 사용자를 추가합니다
@@ -71,15 +72,17 @@ sidebar:
   - title: 스토리지 시스템 관리
     url: "/task-manage-storage-systems.html"
   - title: CIM 서버 사용자를 관리합니다
-    url: "/task-manage-cim-server-users.html"
     entries:
+    - title: 개요
+      url: "/task-manage-cim-server-users-overview.html"
     - title: CIM 사용자 유형 및 관련 작업
       url: "/reference-types-of-cim-users-and-associated-operations.html"
   - title: CIMOM 구성 설정을 관리합니다
     url: "/task-manage-cimom-configuration-settings.html"
   - title: 로깅 및 추적 관리
-    url: "/concept-manage-logging-and-tracing.html"
     entries:
+    - title: 개요
+      url: "/concept-manage-logging-and-tracing-overview.html"
     - title: 로그 설정을 구성합니다
       url: "/task-configure-log-settings.html"
       entries:
@@ -100,8 +103,9 @@ sidebar:
     - title: SMI-S 명령에 대한 감사 로그를 설정하거나 해제합니다
       url: "/task-enable-or-disable-audit-log-for-smi-s-commands.html"
   - title: SMI-S Provider 고급 설정을 관리합니다
-    url: "/concept-manage-smi-s-agent-advanced-settings.html"
     entries:
+    - title: 개요
+      url: "/concept-manage-smi-s-agent-advanced-settings-overview.html"
     - title: SMI-S Provider 자동 캐시 새로 고침 간격을 지정합니다
       url: "/task-specify-the-smi-s-agent-cache-refresh-interval.html"
     - title: 구체적인 작업 수명 값을 지정하십시오
@@ -115,26 +119,26 @@ sidebar:
     - title: SMI-S Provider에서 표시를 설정합니다
       url: "/task-enable-indications-in-smi-s-agent.html"
   - title: SLP 관리
-    url: "/concept-manage-slp.html"
     entries:
+    - title: 개요
+      url: "/concept-manage-slp-overview.html"
     - title: SLP 구성 옵션을 지정합니다
       url: "/concept-specify-slp-configuration-options.html"
       entries:
       - title: SLP.conf 파일 관리
         url: "/reference-editing-the-slp-conf-file.html"
   - title: CIMOM 명령
-    url: "/concept-cimom-commands.html"
     entries:
     - title: 구성
       url: "/reference-cimconfig-command-options.html"
   - title: CIM 사용자 명령
-    url: "/concept-cim-user-commands.html"
     entries:
     - title: 심사용자
       url: "/reference-cimuser-command-options.html"
   - title: SMI-S Provider 명령
-    url: "/concept-smi-s-provider-commands.html"
     entries:
+    - title: 개요
+      url: "/concept-smi-s-provider-commands-overview.html"
     - title: SMIS 추가
       url: "/reference-smis-add.html"
     - title: SMIS 추가 보안
@@ -178,7 +182,6 @@ sidebar:
     - title: SMIS 볼륨
       url: "/reference-smis-volumes.html"
   - title: SLP 명령
-    url: "/concept-slp-commands.html"
     entries:
     - title: 슬래도구
       url: "/reference-slptool-command-options.html"
@@ -187,8 +190,9 @@ sidebar:
     - title: 슬래프툴 findsrvs
       url: "/reference-slptool-findsrvs.html"
   - title: SMI-S Provider 문제 해결
-    url: "/concept-troubleshoot-smi-s-agent.html"
     entries:
+    - title: 개요
+      url: "/concept-troubleshoot-smi-s-agent-overview.html"
     - title: 액세스가 거부되었습니다. 오류
       url: "/reference-access-is-denied-error.html"
     - title: 공유 라이브러리를 로드하는 동안 오류가 발생할 수 있습니다

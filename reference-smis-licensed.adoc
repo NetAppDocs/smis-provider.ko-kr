@@ -12,39 +12,20 @@ summary: SMIS 라이센스 명령은 스토리지 시스템에 대해 라이센�
 [role="lead"]
 'mis licensed' 명령은 스토리지 시스템에 대해 라이센스가 부여된 기능을 나열합니다.
 
-
-
-== 구문
-
 SMIS 라이센스 보유
 
 '[-t{ * http * | * https *}]'
 
-
-
-== 위치
-
 'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
-
-
-
-== 권한 수준
 
 유효한 사용자 이름과 암호를 가진 사용자
 
-
-
-== 매개 변수
-
+.매개 변수
 * '*[-t{http|https}] *'
 +
 사용할 프로토콜: HTTPS(기본값) 또는 HTTP
 
 
-
-
-
-== 예
 
 오허라이센스 명령 및 축약된 출력:
 

@@ -12,16 +12,9 @@ summary: NetApp SMI-S Provider를 설치하기 전에 NetApp Support 사이트�
 [role="lead"]
 NetApp SMI-S Provider를 설치하기 전에 NetApp Support 사이트에서 소프트웨어 패키지를 다운로드해야 합니다.
 
-
-
-== 시작하기 전에
-
 에서 NetApp Support 사이트 계정을 만들어야 합니다 https://mysupport.netapp.com/site/global/dashboard["NetApp 지원"].
 
-
-
-== 단계
-
+.단계
 . NetApp Support 사이트에서 * Downloads * > * Software * 페이지로 이동합니다.
 . SMI-S Provider(이전의 Data ONTAP SMI-S Agent)를 찾아 Windows 운영 체제를 선택한 다음 * Go! * 를 클릭합니다.
 . 보기 및 다운로드 * 를 클릭하여 다운로드할 버전을 선택합니다.

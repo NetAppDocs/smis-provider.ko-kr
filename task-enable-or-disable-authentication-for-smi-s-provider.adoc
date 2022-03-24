@@ -12,19 +12,13 @@ summary: 기본적으로 SMI-S Provider에 대해 인증이 설정됩니다. 인
 [role="lead"]
 기본적으로 SMI-S Provider에 대해 인증이 설정됩니다. 인증으로 인해 시스템에 오류가 발생하는 경우 선택적으로 비활성화할 수 있습니다. 인증이 비활성화된 상태에서 다시 사용하려는 경우 다시 활성화할 수 있습니다.
 
-
-
-== 시작하기 전에
-
+.시작하기 전에
 * 이미 관리자로 로그인 자격 증명이 있어야 합니다.
 * 관리자로 이미 로그인되어 있어야 합니다.
 * SCVMM(System Center Virtual Machine Manager)을 비롯한 모든 클라이언트는 cimuser 및 cimpassword를 사용하여 공급자에 연결해야 합니다.
 
 
-
-
-== 단계
-
+.단계
 . NetApp SMI-S Provider에 액세스합니다.
 . SMI-S Provider에 대한 인증 설정:
 +

@@ -12,10 +12,6 @@ summary: SMIS 볼륨 명령은 스토리지 시스템에 대한 기존 볼륨과
 [role="lead"]
 'mis volumes' 명령은 스토리지 시스템의 기존 볼륨과 유연한 볼륨을 나열합니다.
 
-
-
-== 구문
-
 'MIS 볼륨'
 
 '[-t{ * http * | * https *}]'
@@ -25,31 +21,16 @@ summary: SMIS 볼륨 명령은 스토리지 시스템에 대한 기존 볼륨과
 Clustered Data ONTAP의 경우 'mis volumes' 명령 대신 'mis pool' 명령을 사용해야 합니다.
 
 ====
-
-
-== 위치
-
 'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
-
-
-
-== 권한 수준
 
 유효한 사용자 이름과 암호를 가진 사용자
 
-
-
-== 매개 변수
-
+.매개 변수
 * '*[-t{http|https}] *'
 +
 사용할 프로토콜: HTTPS(기본값) 또는 HTTP
 
 
-
-
-
-== 예
 
 'mis volumes' 명령과 그 축약된 출력:
 

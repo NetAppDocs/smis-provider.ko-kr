@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: smi-s provider, first time, validate, preliminary, configuration 
 summary: SMI-S Provider를 처음 사용하기 전에 사전 구성을 확인해야 합니다. 
 ---
-= 사전 구성 검증
+= 개요
 :icons: font
 :imagesdir: ./media/
 

@@ -12,30 +12,15 @@ summary: SMIS 클래스 명령은 지정된 클래스 또는 모든 클래스에
 [role="lead"]
 'mis class' 명령은 지정된 클래스 또는 모든 클래스에 대한 정보를 나열합니다.
 
-
-
-== 구문
-
 'Mis class'
 
 '_NAME_SPACE_{ * Niall * | { * EI * | * NI * | * gi * | * gc *}_CLASS_NAME_} [-t{ * http * | * https *}]'
 
-
-
-== 위치
-
 'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
-
-
-
-== 권한 수준
 
 유효한 사용자 이름과 암호를 가진 사용자
 
-
-
-== 매개 변수
-
+.매개 변수
 * '*_name_space_*'
 +
 CIMOM에서 지원하는 이름 공간입니다
@@ -69,10 +54,6 @@ CIMOM에서 지원하는 이름 공간입니다
 사용할 프로토콜: HTTPS(기본값) 또는 HTTP
 
 
-
-
-
-== 예
 
 'mis class' 명령과 그 축약된 출력:
 

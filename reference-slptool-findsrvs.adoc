@@ -12,37 +12,18 @@ summary: slptool findsrvs 명령은 네트워크에서 실행되는 WBEM 서비�
 [role="lead"]
 'lptool findsrvs' 명령은 네트워크에서 실행되는 WBEM 서비스를 찾습니다.
 
-
-
-== 구문
-
 'S lptool findsrvs_service_'
-
-
-
-== 위치
 
 'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
 
-
-
-== 권한 수준
-
 유효한 사용자 이름과 암호를 가진 사용자
 
-
-
-== 매개 변수
-
+.매개 변수
 * '*_service_ * '
 +
 서비스 유형을 지정합니다.
 
 
-
-
-
-== 예
 
 'lptool findsrvs' 명령과 출력:
 

@@ -12,29 +12,13 @@ summary: SMIS slpd 명령은 SLP 데몬을 시작하거나 중지합니다.
 [role="lead"]
 'mis slpd' 명령어는 SLP 데몬을 시작하거나 중지한다.
 
-
-
-== 구문
-
 '진오슬피'
 
 '{ * start * | * stop *}'
 
-
-
-== 위치
-
 'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
 
-
-
-== 권한 수준
-
 관리자(Windows)
-
-
-
-== 예
 
 SLP 데몬을 시작합니다.
 
