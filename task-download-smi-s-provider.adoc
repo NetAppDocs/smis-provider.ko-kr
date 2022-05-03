@@ -5,6 +5,7 @@ keywords: netapp smi-s provider, installing, download
 summary: NetApp SMI-S Provider를 설치하기 전에 NetApp Support 사이트에서 소프트웨어 패키지를 다운로드해야 합니다. 
 ---
 = NetApp SMI-S Provider 소프트웨어 패키지를 다운로드합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

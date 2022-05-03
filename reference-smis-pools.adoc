@@ -5,6 +5,7 @@ keywords: smis pools, command, list, storage, pools
 summary: SMIS 풀 명령은 스토리지 시스템용 스토리지 풀을 나열합니다. 
 ---
 = SMIS 풀
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

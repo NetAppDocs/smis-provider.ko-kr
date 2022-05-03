@@ -5,6 +5,7 @@ keywords: maximum, systems, netapp smi-s provider, help, understand, performance
 summary: NetApp SMI-S Provider에서 관리하는 시스템의 최대 수를 알면 시스템의 성능 기능을 이해하는 데 도움이 됩니다. 
 ---
 = NetApp SMI-S Provider 사이징 및 성능
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

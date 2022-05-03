@@ -5,6 +5,7 @@ keywords: netapp smi-s provider, relnotes, limitations, fixes, known issues
 summary: NetApp SMI-S Provider 5.2.6 소프트웨어의 기능, 제한 사항 및 알려진 문제에 대한 정보를 제공합니다. 
 ---
 = NetApp SMI-S Provider 릴리즈 노트
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

@@ -5,6 +5,7 @@ keywords: smis debate, command, storage system
 summary: SMIS delete 명령은 스토리지 시스템을 삭제합니다. 
 ---
 = SMIS 삭제
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

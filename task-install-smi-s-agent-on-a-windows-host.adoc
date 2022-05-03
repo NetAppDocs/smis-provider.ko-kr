@@ -5,6 +5,7 @@ keywords: netapp smi-s provider, software, storage systems, data ontap
 summary: 'NetApp SMI-S Provider 소프트웨어를 설치하면 Data ONTAP를 실행하는 스토리지 시스템을 관리할 수 있습니다. 기본적으로 NetApp SMI-S Provider 소프트웨어는 C:\Program Files (x86)\NetApp\SMIS\Pegasus 디렉토리에 설치됩니다.' 
 ---
 = Windows 호스트에 NetApp SMI-S Provider를 설치합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

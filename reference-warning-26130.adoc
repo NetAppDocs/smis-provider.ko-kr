@@ -5,6 +5,7 @@ keywords: troubleshooting, issue, encounter
 summary: NetApp SMI-S Provider에서 문제가 발생했습니다. 
 ---
 = 경고 26130
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

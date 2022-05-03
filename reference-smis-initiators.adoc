@@ -5,6 +5,7 @@ keywords: smis initiators, display, fibre channel, iscsi, storage systems
 summary: SMIS initiators 명령은 스토리지 시스템에 대한 Fibre Channel 및 iSCSI 포트 정보를 표시합니다. 
 ---
 = SMIS 이니시에이터
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

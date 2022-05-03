@@ -5,6 +5,7 @@ keywords: smi-s provider, ontap api, calls, storage systems, ontapi, default, 30
 summary: 'SMI-S Provider는 스토리지 시스템에 ONTAP API(ONTAPI)를 호출합니다. 기본적으로 ONTAPI 시간 제한은 300초입니다. 제한 시간을 60초에서 300초 사이의 값으로 설정할 수 있습니다.' 
 ---
 = ONTAPI 시간 초과 값을 지정합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

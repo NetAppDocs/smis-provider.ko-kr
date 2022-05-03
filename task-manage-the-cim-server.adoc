@@ -5,6 +5,7 @@ keywords: smi-s provider, start, stop, cim server, review, status
 summary: SMI-S Provider를 사용하여 CIM 서버를 시작, 중지 및 재시작하고 상태를 검토할 수 있습니다. 
 ---
 = CIM 서버를 관리합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

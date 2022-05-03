@@ -5,6 +5,7 @@ keywords: troubleshooting, issue, encounter
 summary: NetApp SMI-S Provider에서 문제가 발생했습니다. 
 ---
 = 기본값이 아닌 HTTP 또는 HTTPS 포트를 사용하여 스토리지 시스템을 추가할 수 없습니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

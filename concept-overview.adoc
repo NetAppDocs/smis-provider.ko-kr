@@ -5,6 +5,7 @@ keywords: smis-s provider, enable, manage, storage, systems, lun, volumes, cimom
 summary: NetApp SMI-S Provider 5.2.5를 사용하면 스토리지 시스템을 관리 및 모니터링하고 스토리지 시스템의 LUN 및 볼륨, CIMOM 구성 설정 및 CIM 서버 사용자를 관리할 수 있습니다. 
 ---
 = 개요
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

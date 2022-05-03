@@ -5,6 +5,7 @@ keywords: netapp smi-s provider, documentation, installation, command based inte
 summary: NetApp 스토리지 시스템을 검색 및 관리하는 명령 기반 인터페이스인 NetApp SMI-S Provider를 설치 및 관리하는 방법에 대해 설명합니다. 
 ---
 = NetApp SMI-S 공급자 문서
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

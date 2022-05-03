@@ -5,6 +5,7 @@ keywords: netApp smis-s provider, fileshare, ntfs-only volume
 summary: 'Windows에서 fileshaes(CIFS 공유)를 사용하는 경우 파일 공유가 생성되는 볼륨은 NTFS 전용 볼륨이어야 합니다.' 
 ---
 = Windows에서 파일 표시 사용 요구 사항
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

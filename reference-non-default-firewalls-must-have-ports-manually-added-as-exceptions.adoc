@@ -5,6 +5,7 @@ keywords: troubleshooting, issue, encounter
 summary: NetApp SMI-S Provider에서 문제가 발생했습니다. 
 ---
 = 기본 방화벽이 아닌 방화벽은 예외로 포트를 수동으로 추가해야 합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

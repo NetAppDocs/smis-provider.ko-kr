@@ -5,6 +5,7 @@ keywords: manage, advance, smi-s provider, smis-s cache, refresh, interval, onta
 summary: SMI-S 캐시 새로 고침 간격 지정, ONTAPI 시간 초과 및 메시지 서비스 대기열당 최대 스레드 수 지정과 같은 SMI-S Provider의 고급 설정을 관리할 수 있습니다. 
 ---
 = 개요
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

@@ -5,6 +5,7 @@ keywords: editing, slp.conf, configuration, file, manage, service location proto
 summary: 'SLP.conf 구성 파일을 편집하여 서비스 위치 프로토콜 데몬(SLPD) 서비스를 관리할 수 있습니다.' 
 ---
 = SLP 구성 옵션을 지정합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

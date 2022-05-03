@@ -5,6 +5,7 @@ keywords: specify, comments, trace, target, change, location
 summary: 추적할 구성 요소, 추적 대상 및 추적 수준을 지정할 수 있습니다. 선택적으로 기본 추적 파일 이름과 위치를 사용하지 않으려는 경우 추적 파일의 이름과 위치를 변경할 수 있습니다. 
 ---
 = 트레이스 설정 값
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

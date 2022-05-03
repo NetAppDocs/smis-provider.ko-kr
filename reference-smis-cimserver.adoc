@@ -5,6 +5,7 @@ keywords: smis cimserver, command, start, stop, restart, cim server
 summary: SMIS cimserver 명령은 CIM 서버의 상태를 시작, 중지, 다시 시작 또는 가져옵니다. 
 ---
 = SMIS 시임서버
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

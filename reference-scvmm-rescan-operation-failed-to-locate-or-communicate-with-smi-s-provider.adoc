@@ -5,6 +5,7 @@ keywords: troubleshooting, issue, encounter
 summary: NetApp SMI-S Provider에서 문제가 발생했습니다. 
 ---
 = SCVMM 재검색 작업이 SMI-S Provider를 찾거나 통신하지 못했습니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

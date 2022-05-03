@@ -5,6 +5,7 @@ keywords: smi-s provider, smi-s agent
 summary: NetApp SMI-S Provider를 설치하기 전에 Windows 호스트가 최소 하드웨어 요구 사항을 충족하는지 확인해야 합니다. 
 ---
 = 하드웨어 요구 사항
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

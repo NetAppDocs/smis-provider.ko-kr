@@ -5,6 +5,7 @@ keywords: messages, specify, logged
 summary: '기록되는 메시지 유형을 지정할 수 있습니다(예: 치명적인 시스템 메시지만 기록하려는 경우).' 
 ---
 = 로깅 수준
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

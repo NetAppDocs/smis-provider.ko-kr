@@ -5,6 +5,7 @@ keywords: ssl authentication, enable, cim server, installation, self-signed cert
 summary: 기본적으로 CIM 서버에 대해 SSL 인증이 활성화됩니다. SMI-S Provider를 설치하는 동안 CIM 서버에 대한 자체 서명된 인증서가 Pegasus 디렉토리에 설치됩니다. 자체 서명된 인증서를 생성하여 기본 인증서 대신 사용할 수 있습니다. 
 ---
 = CIM 서버에 대해 자체 서명된 인증서를 생성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

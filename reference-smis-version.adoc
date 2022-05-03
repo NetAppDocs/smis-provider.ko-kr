@@ -5,6 +5,7 @@ keywords: smis version, command, display, netapp smi-s provider
 summary: SMIS 버전 명령은 NetApp SMI-S Provider 버전을 표시합니다. 
 ---
 = SMIS 버전
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

@@ -5,6 +5,7 @@ keywords: smis volume, command, list, traditional, storage systems
 summary: SMIS 볼륨 명령은 스토리지 시스템에 대한 기존 볼륨과 유연한 볼륨을 나열합니다. 
 ---
 = SMIS 볼륨
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

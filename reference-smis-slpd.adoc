@@ -5,6 +5,7 @@ keywords: smis slpd, command, start, stop, slp daemon
 summary: SMIS slpd 명령은 SLP 데몬을 시작하거나 중지합니다. 
 ---
 = SMIS slpd
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

@@ -5,6 +5,7 @@ keywords: flexclone, license, smi-s provider, create, lun clones
 summary: SMI-S Provider에 LUN 클론을 생성하려면 FlexClone 라이센스가 있어야 합니다. 
 ---
 = SMI-S Provider에 사용되는 클론 기술입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

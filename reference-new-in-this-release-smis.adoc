@@ -5,6 +5,7 @@ keywords: new, release
 summary: 이 릴리스의 새로운 기능 
 ---
 = 이 릴리스의 새로운 기능
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

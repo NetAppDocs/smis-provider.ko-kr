@@ -5,6 +5,7 @@ keywords: 'slp.conf, configuration, additional options, manage, service location
 summary: 'SLP.conf 구성 파일은 서비스 위치 프로토콜 데몬(SLPD) 서버를 관리할 수 있는 추가 옵션을 제공합니다.' 
 ---
 = SLP.conf 파일 관리
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

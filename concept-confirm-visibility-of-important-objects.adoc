@@ -5,6 +5,7 @@ keywords: manage, storage, system, confirm, important, logic, physical, object, 
 summary: 관리되는 스토리지 시스템을 추가한 후에는 NetApp SMI-S Provider에서 중요한 논리적 오브젝트 및 물리적 오브젝트를 모두 볼 수 있는지 확인해야 합니다. 
 ---
 = 중요 개체의 표시 여부를 확인합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

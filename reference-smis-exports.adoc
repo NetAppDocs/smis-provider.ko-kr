@@ -5,6 +5,7 @@ keywords: smis exports, command display, network attached storage
 summary: 'SMIS Exports 명령은 스토리지 시스템에 대한 NAS(Network Attached Storage) 내보내기를 표시합니다.' 
 ---
 = SMIS 내보내기
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

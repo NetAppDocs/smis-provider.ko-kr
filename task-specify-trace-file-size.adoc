@@ -5,6 +5,7 @@ keywords: trace, enable, trace, file, size, environment, variable, 10 mb
 summary: 추적이 활성화된 경우 최대 추적 파일 크기는 기본적으로 100MB입니다. 환경 변수 PEGASUS_TRACE_FILE_SIZE를 설정하여 최대 트레이스 파일 크기를 늘리거나 줄일 수 있습니다. 추적 파일 크기 값은 10MB에서 2GB까지 가능합니다. 
 ---
 = 추적 파일 크기를 지정합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

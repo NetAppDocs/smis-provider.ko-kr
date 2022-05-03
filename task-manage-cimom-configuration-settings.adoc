@@ -5,6 +5,7 @@ keywords: smi-s provider, to manage, cimom configuration, enable, disable, http,
 summary: SMI-S Provider를 사용하여 HTTP 및 HTTPS 연결 활성화 또는 비활성화, HTTP 및 HTTPS 포트 번호 변경 등의 CIMOM 구성을 관리할 수 있습니다. 기본적으로 HTTP 연결이 활성화되어 클라이언트가 SSL 암호화를 사용하지 않고 CIM 서버에 연결할 수 있습니다. 
 ---
 = CIMOM 구성 설정을 관리합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

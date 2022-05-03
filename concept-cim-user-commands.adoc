@@ -5,6 +5,7 @@ keywords: cimuser, command, add, delete, list, cim server, manage, password
 summary: cimuser 명령을 사용하여 CIM 서버 사용자를 추가, 삭제 및 나열하고 암호를 관리할 수 있습니다. 
 ---
 = CIM 사용자 명령
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

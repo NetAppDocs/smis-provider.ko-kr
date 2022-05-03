@@ -5,6 +5,7 @@ keywords: troubleshooting, issue, encounter
 summary: NetApp SMI-S Provider에서 문제가 발생했습니다. 
 ---
 = SCVMM에서 SMB 공유 크기가 0으로 떨어집니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

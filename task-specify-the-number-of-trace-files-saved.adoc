@@ -5,6 +5,7 @@ keywords: trace, enable, seven trace file, pegasus trace file num, system, space
 summary: 추적이 활성화되면 기본적으로 7개의 추적 파일이 저장됩니다. 더 많은 추적 파일을 저장해야 하는 경우 환경 변수 PEGASUS_TRACE_FILE_NUM을 설정하여 저장된 최대 추적 파일 수를 늘릴 수 있습니다. 저장된 추적 파일의 최대 개수를 늘릴 경우 시스템에서 추적 파일을 수용할 수 있는 충분한 공간이 하드 드라이브에 있는지 확인해야 합니다. 
 ---
 = 저장된 추적 파일 수를 지정합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

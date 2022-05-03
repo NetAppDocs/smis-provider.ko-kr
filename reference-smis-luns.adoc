@@ -5,6 +5,7 @@ keywords: smis luns, command, display, lun information, storage system
 summary: SMIS LUNs 명령은 스토리지 시스템에 대한 LUN 정보를 표시합니다. 
 ---
 = SMIS LUN
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

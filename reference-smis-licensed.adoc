@@ -5,6 +5,7 @@ keywords: smis licensed, command, lists, licensed, storage systems
 summary: SMIS 라이센스 명령은 스토리지 시스템에 대해 라이센스가 부여된 기능을 나열합니다. 
 ---
 = SMIS 라이센스 보유
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

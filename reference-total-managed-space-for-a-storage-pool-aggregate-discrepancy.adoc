@@ -5,6 +5,7 @@ keywords: troubleshooting, issue, encounter
 summary: NetApp SMI-S Provider에서 문제가 발생했습니다. 
 ---
 = 스토리지 풀(볼륨)의 총 관리 공간 불일치
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

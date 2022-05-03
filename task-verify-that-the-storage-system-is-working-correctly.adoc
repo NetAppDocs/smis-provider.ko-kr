@@ -5,6 +5,7 @@ keywords: smi-s provider, configure, least storage, cimom repository storage, wo
 summary: SMI-S Provider를 구성하려면 먼저 CIMOM 저장소에 스토리지 시스템을 하나 이상 추가한 다음 스토리지 시스템이 올바르게 작동하는지 확인해야 합니다. 
 ---
 = 스토리지 시스템이 올바르게 작동하는지 확인합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

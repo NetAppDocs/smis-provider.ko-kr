@@ -5,6 +5,7 @@ keywords: troubleshooting, issue, encounter
 summary: NetApp SMI-S Provider에서 문제가 발생했습니다. 
 ---
 = 요청한 서비스를 완료하기 위한 시스템 리소스가 부족합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

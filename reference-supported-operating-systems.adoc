@@ -5,6 +5,7 @@ keywords: installing, smi-s provider, verify, windows, host, operating systems
 summary: SMI-S Provider를 설치하기 전에 Windows 호스트에서 지원되는 운영 체제를 실행 중인지 확인해야 합니다. 
 ---
 = 지원되는 운영 체제 버전입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 :pp: &#43;&#43;

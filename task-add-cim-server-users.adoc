@@ -5,6 +5,7 @@ keywords: validate, storage systems, cim user, cim server
 summary: 스토리지 시스템을 검증하려면 CIM 서버를 사용할 수 있는 권한이 있는 CIM 사용자를 추가해야 합니다. 
 ---
 = CIM 서버 사용자를 추가합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

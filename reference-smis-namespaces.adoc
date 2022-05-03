@@ -5,6 +5,7 @@ keywords: smis namespace, command, list, registered, namespace, cimom
 summary: SMIS namespaces 명령은 CIMOM에 대해 등록된 네임스페이스를 나열합니다. 
 ---
 = SMIS 네임스페이스
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

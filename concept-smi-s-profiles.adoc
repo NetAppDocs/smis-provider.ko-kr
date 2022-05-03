@@ -5,6 +5,7 @@ keywords: smi-s provider, profile, subprofile, comply, smis-s v1.7
 summary: 'SMI-S Provider는 SMI-S v1.7을 준수하는 프로파일과 하위 프로파일을 사용합니다. SMI-S v1.7에 대한 자세한 내용은 SNIA: 기술 표준 및 소프트웨어 페이지를 참조하십시오.' 
 ---
 = SMI-S 프로파일
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

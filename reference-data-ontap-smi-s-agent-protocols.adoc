@@ -5,6 +5,7 @@ keywords: netapp smi-s provider, cim-xml, encoding, https, service, location, pr
 summary: 'NetApp SMI-S Provider는 HTTPS 및 SLP(Service Location Protocol)를 통해 CIM-XML 인코딩을 사용합니다.' 
 ---
 = NetApp SMI-S Provider 프로토콜
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

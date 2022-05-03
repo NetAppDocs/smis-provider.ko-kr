@@ -5,6 +5,7 @@ keywords: slptool, findattrs, command, wbem attributes, run, network
 summary: slptool findattrs 명령은 네트워크에서 실행되는 WBEM 속성을 찾습니다. 
 ---
 = 슬렙툴 findattrs
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
