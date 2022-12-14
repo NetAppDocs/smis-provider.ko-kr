@@ -13,10 +13,13 @@ summary: cimconfig 명령을 사용하여 CIMOM 구성 설정을 관리할 수 �
 [role="lead"]
 cimconfig 명령을 사용하여 HTTP 및 HTTPS 활성화/비활성화, HTTP 및 HTTPS 포트 번호 변경 등의 CIMOM 설정을 구성할 수 있습니다. cimconfig 명령을 입력하거나 NetApp SMI-S Provider 구성 값에 대한 환경 변수를 생성한 후에는 'mis cimserver restart' 명령을 사용하여 CIM 서버를 다시 시작해야 합니다.
 
+.구문
 'cimconfig_options_'
 
+.위치
 'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
 
+.권한 수준
 관리자(Windows)
 
 .옵션
@@ -58,6 +61,7 @@ CIM 서버의 버전을 표시합니다.
 
 
 
+.예
 최대 로그 파일 크기를 15000KB로 변경합니다.
 
 [listing]

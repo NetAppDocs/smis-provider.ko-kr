@@ -13,10 +13,13 @@ summary: 이 옵션을 slptool 명령과 함께 사용할 수 있습니다.
 [role="lead"]
 'lptool' 명령을 사용하여 WBEM 서비스에 대한 정보를 표시할 수 있습니다.
 
+.구문
 'S lptool [options]_subcommand _'
 
+.위치
 'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
 
+.권한 수준
 관리자(Windows)
 
 .옵션

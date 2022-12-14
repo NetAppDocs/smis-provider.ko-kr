@@ -13,12 +13,15 @@ summary: SMIS 버전 명령은 NetApp SMI-S Provider 버전을 표시합니다.
 [role="lead"]
 'mis version' 명령은 NetApp SMI-S Provider 버전을 표시합니다.
 
+.구문
 'MIS 버전'
 
 '[-t{ * http * | * https *}]'
 
+.위치
 'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
 
+.권한 수준
 유효한 사용자 이름과 암호를 가진 사용자
 
 .매개 변수
@@ -28,6 +31,7 @@ summary: SMIS 버전 명령은 NetApp SMI-S Provider 버전을 표시합니다.
 
 
 
+.예
 'Mis version' 명령과 출력:
 
 [listing]

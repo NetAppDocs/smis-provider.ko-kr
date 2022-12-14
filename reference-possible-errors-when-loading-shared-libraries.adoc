@@ -10,6 +10,7 @@ summary: NetApp SMI-S Provider에서 문제가 발생했습니다.
 :imagesdir: ./media/
 
 
+[role="lead"]
 * 메시지 *
 +
 ''공유 라이브러리 로드 중 오류: libssl.so 1.0.0: 공유 객체 파일을 열 수 없습니다: 해당 파일 또는 디렉토리가 없습니다.

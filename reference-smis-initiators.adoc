@@ -13,12 +13,15 @@ summary: SMIS initiators 명령은 스토리지 시스템에 대한 Fibre Channe
 [role="lead"]
 'mis initiators' 명령은 스토리지 시스템에 대한 Fibre Channel 및 iSCSI 포트 정보를 표시합니다.
 
+.구문
 SMIS 이니시에이터
 
 '[-t{ * http * | * https *}]'
 
+.위치
 'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
 
+.권한 수준
 유효한 사용자 이름과 암호를 가진 사용자
 
 .매개 변수
@@ -28,6 +31,7 @@ SMIS 이니시에이터
 
 
 
+.예
 '잘못된 이니시에이터' 명령과 그 축약된 출력:
 
 [listing]

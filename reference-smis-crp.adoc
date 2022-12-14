@@ -13,12 +13,15 @@ summary: SMIS CRP 명령은 NetApp SMI-S Provider 프로필을 포함하여 NetA
 [role="lead"]
 'Smis CRP' 명령은 NetApp SMI-S Provider 프로필을 포함하여 NetApp SMI-S Provider에서 지원하는 CIM 등록 프로필에 대해 설명합니다.
 
+.구문
 SMIS CRP
 
 '[-t{ * http * | * https *}]'
 
+.위치
 'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
 
+.권한 수준
 유효한 사용자 이름과 암호를 가진 사용자
 
 .매개 변수
@@ -28,6 +31,7 @@ SMIS CRP
 
 
 
+.예
 'mis crp' 명령 및 출력:
 
 [listing]

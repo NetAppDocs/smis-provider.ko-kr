@@ -13,12 +13,15 @@ summary: SMIS list 명령은 추가된 스토리지 시스템을 표시합니다
 [role="lead"]
 'mis list' 명령은 추가된 스토리지 시스템을 표시합니다.
 
+.구문
 SMIS 목록
 
 '[-t{ * http * | * https *}]'
 
+.위치
 'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
 
+.권한 수준
 유효한 사용자 이름과 암호를 가진 사용자
 
 .매개 변수
@@ -28,6 +31,7 @@ SMIS 목록
 
 
 
+.예
 'mis list' 명령과 출력:
 
 [listing]

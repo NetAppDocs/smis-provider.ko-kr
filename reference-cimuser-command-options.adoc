@@ -13,10 +13,13 @@ summary: cimuser 옵션을 사용하여 CIM 서버 사용자를 추가, 제거, 
 [role="lead"]
 cimuser 명령을 사용하여 CIM 서버 사용자를 추가, 제거, 삭제, 수정 및 나열하고 암호를 관리할 수 있습니다.
 
+.구문
 'cimuser_options_'입니다
 
+.위치
 'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
 
+.권한 수준
 관리자(Windows)
 
 .옵션
@@ -58,6 +61,7 @@ CIM 서버의 버전을 표시합니다.
 
 
 
+.예
 암호 1을 사용하여 이름이 Sydney인 CIM 사용자를 생성합니다.
 
 [listing]

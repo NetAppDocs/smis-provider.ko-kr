@@ -13,14 +13,17 @@ summary: SMIS delete 명령은 스토리지 시스템을 삭제합니다.
 [role="lead"]
 'mis delete' 명령어는 스토리지 시스템을 삭제한다.
 
+.구문
 'MIS DELETE'
 
 '_storage_sys_'
 
 '[-t{ * http * | * https *}]'
 
+.위치
 'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
 
+.권한 수준
 관리자(Windows)
 
 .매개 변수
@@ -34,6 +37,7 @@ summary: SMIS delete 명령은 스토리지 시스템을 삭제합니다.
 
 
 
+.예
 mgt-1이라는 레이블이 붙은 스토리지 시스템을 삭제합니다.
 
 `* SMIS 삭제 관리-1 * '

@@ -13,10 +13,13 @@ summary: SMIS cimom 명령은 CIM 객체 관리자에 대해 설명합니다.
 [role="lead"]
 'mis cimom' 명령어는 CIM object manager를 설명한다.
 
+.구문
 SMIS cimom '[-t{ * http * | * https *}]'
 
+.위치
 'C:\Program Files (x86)\NetApp\SMIS\Pegasus\bin'을 선택합니다
 
+.권한 수준
 유효한 사용자 이름과 암호를 가진 사용자
 
 .매개 변수
@@ -26,6 +29,7 @@ SMIS cimom '[-t{ * http * | * https *}]'
 
 
 
+.예
 'mis cimmom' 명령과 출력:
 
 [listing]

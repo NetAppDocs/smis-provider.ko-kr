@@ -13,12 +13,14 @@ summary: 'NetApp SMI-S Provider 소프트웨어를 설치하면 Data ONTAP를 �
 [role="lead"]
 NetApp SMI-S Provider 소프트웨어를 설치하면 Data ONTAP를 실행하는 스토리지 시스템을 관리할 수 있습니다. 그러나 이전 버전으로 되돌리거나 다운그레이드할 수는 없습니다. 기본적으로 NetApp SMI-S Provider 소프트웨어는 'C:\Program Files (x86)\NetApp\SMIS\Pegasus' 디렉토리에 설치됩니다.
 
+.시작하기 전에
 다음 자격 증명 및 소프트웨어가 이미 있어야 합니다.
 
 * Windows 관리자 계정에 대한 로그인 자격 증명입니다
 * NetApp SMI-S Provider 소프트웨어 패키지입니다
 
 
+.이 작업에 대해
 설치 프로세스의 결과로 CIMOM 서비스(서비스 제어 관리자에서 "NetApp SMI-S Provider"로 지정됨)와 SLP 데몬(서비스 제어 관리자에서 "Service Location Protocol"으로 지정됨)은 호스트를 재부팅한 후에도 자동으로 시작되는 자동 서비스로 실행됩니다.
 
 이 설치 절차는 새로 설치하는 과정을 반영합니다.
