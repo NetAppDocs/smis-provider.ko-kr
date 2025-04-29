@@ -1,21 +1,22 @@
 ---
 permalink: reference-new-in-this-release-smis.html 
 sidebar: sidebar 
-keywords: new, release 
-summary: 이 릴리스의 새로운 기능 
+keywords: 'new, release, new in this release, what"s new' 
+summary: 5.2.7의 새로운 기능 
 ---
-= 이 릴리스의 새로운 기능
+= 5.2.7의 새로운 기능
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
-* SMI-S Provider 5.2.5에 사용할 수 있는 업그레이드 경로가 없습니다.
-* SMI-S Provider 5.2.5를 새로 설치해야 합니다.
+* SMI-S Provider 5.2.7에 사용할 수 있는 업그레이드 경로가 없습니다.
+* SMI-S Provider 5.2.7를 새로 설치해야 합니다.
+* 이 버전의 SMI-S 공급자에서는 Azure Site Recovery를 사용한 SnapMirror 관리가 지원되지 않습니다.
 
 
-* Windows 사용자용: *
+* Windows 사용자용 *
 
 * 이 릴리즈는 Windows Server 2012 또는 SCVMM(System Center Virtual Machine Manager) 2012와 호환되지 않습니다.
-* SMI-S Provider 5.2.5는 Windows Server 2016, Windows Server 2019, SCVMM 2016 및 SCVMM 2019를 지원합니다.
+* SMI-S Provider 5.2.7은 Windows Server 2025, Windows Server 2022, Windows Server 2019, Windows Server 2016, SCVMM 2025, SCVMM 2022, SCVMM 2019 및 SCVMM 2016을 지원합니다.
 

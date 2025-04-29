@@ -2,7 +2,7 @@
 permalink: reference-smis-disks.html 
 sidebar: sidebar 
 keywords: thesmis, disk, command, display, information, storage, systems 
-summary: Thesmis disks 명령은 스토리지 시스템의 디스크 정보를 표시합니다. SMIS 디스크는 Data ONTAP 7-Mode 컨트롤러와 함께 사용할 때만 작동합니다. 
+summary: SMIS 디스크 명령은 스토리지 시스템에 대한 디스크 정보를 표시합니다. SMIS 디스크는 ONTAP 7-Mode 컨트롤러와 함께 사용할 때만 작동합니다. 
 ---
 = SMIS 디스크
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Thesmis disks 명령은 스토리지 시스템의 디스크 정보를 �
 
 
 [role="lead"]
-'디스크 오류' 명령은 스토리지 시스템의 디스크 정보를 표시합니다. '디스크 오류'는 Data ONTAP 7-Mode 컨트롤러와 함께 사용할 때만 작동합니다.
+이 `smis disks` 명령은 스토리지 시스템에 대한 디스크 정보를 표시합니다.  `smis disks`명령은 ONTAP 7-Mode 컨트롤러에서만 지원됩니다.
 
 .구문
 SMIS 디스크

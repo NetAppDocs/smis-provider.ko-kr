@@ -20,7 +20,7 @@ summary: SMIS 볼륨 명령은 스토리지 시스템에 대한 기존 볼륨과
 
 [NOTE]
 ====
-Clustered Data ONTAP의 경우 'mis volumes' 명령 대신 'mis pool' 명령을 사용해야 합니다.
+ONTAP의 경우 명령 대신 명령을 `smis volumes` 사용해야 `smis pools` 합니다.
 
 ====
 .위치

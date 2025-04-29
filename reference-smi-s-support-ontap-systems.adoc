@@ -1,0 +1,20 @@
+---
+permalink: reference-supported-platforms.html 
+sidebar: sidebar 
+keywords: netApp smi-s provider, cluster, platforms, support for ONTAP systems 
+summary: NetApp SMI-S Provider는 ONTAP 9 이상을 실행하는 클러스터 플랫폼을 지원합니다. 
+---
+= ONTAP 시스템에 대한 NetApp SMI-S Provider 지원
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp SMI-S Provider는 ONTAP 9 이상을 실행하는 클러스터 플랫폼을 지원합니다.
+
+NetApp SMI-S Provider에서 스토리지 볼륨(LUN)의 클론을 생성하려면 스토리지 시스템에 FlexClone 라이센스를 설치해야 합니다.
+
+NetApp SMI-S Provider는 FAS 시스템을 지원합니다.
+
+NetApp SMI-S Provider는 ASA 시스템을 지원하지 않습니다.

@@ -15,10 +15,11 @@ NetApp SMI-S Provider에서 관리하는 시스템의 최대 수를 알면 시�
 
 * 사이징 *
 
-NetApp SMI-S Provider는 clustered Data ONTAP에서 다음과 같은 수의 오브젝트를 관리할 수 있습니다.
+NetApp SMI-S Provider는 ONTAP에서 다음과 같은 수의 객체를 관리할 수 있습니다.
 
-* 100개의 SVM(스토리지 가상 머신)(표시 없음)
-* 스토리지 가상 머신 10개(표시 포함)
+* 스토리지 가상 시스템(SVM) 30개 
+* 100 SVM(표시 없음)
+* SVM 10개(표시 포함)
 * LUN 1,500개(FlexVol 볼륨당)
 * CIFS 파일 공유 200개(FlexVol 볼륨당)
 

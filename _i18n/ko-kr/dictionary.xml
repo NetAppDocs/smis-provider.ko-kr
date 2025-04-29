@@ -30,12 +30,7 @@
   <block id="39886d4eb2e3e0df0226ae521aff498d" category="paragraph">' Port'가 5989로 설정되어 있지 않으면 다음 명령을 입력합니다.</block>
   <block id="a844ae38553a46283a09852e419c1e3b" category="paragraph">'cimconfig-s '난포 포트 = 5989-p'</block>
   <block id="8ba2aeabfaeefcb034351a0847a41488" category="paragraph">공급자가 작업을 중지하고 연결 상태를 유지한 경우 작업 관리자를 열고 프로세스를 종료한 다음 공급자를 다시 시작합니다.</block>
-  <block id="e14a9944fe8690b0f4a896ee4dd1b1bc" category="summary">NetApp SMI-S Provider는 Data ONTAP 8.3.2 및 ONTAP 9 이상을 실행하는 클러스터 플랫폼을 지원합니다.</block>
-  <block id="6ac98480cf75c6dae666143ef19e1b44" category="doc">지원되는 클러스터 플랫폼</block>
   <block id="62861fc78ada9051faca6fd4990e1665" category="paragraph">NetApp SMI-S Provider에서 스토리지 볼륨(LUN)의 클론을 생성하려면 스토리지 시스템에 FlexClone 라이센스를 설치해야 합니다.</block>
-  <block id="39a815a66b6abb4cbca8976fc7695c9e" category="paragraph">NetApp SMI-S Provider는 다음 플랫폼을 지원합니다.</block>
-  <block id="6b2c2280811e36eb16c24d5aa7a083b0" category="list-text">FAS 시리즈 시스템</block>
-  <block id="e5c7df601f61f29bd5487de4001b15d8" category="list-text">V-Series 스토리지 시스템을 활용할 수 있습니다</block>
   <block id="483fa710d6223ec73718131f768d782a" category="doc">HostAgentAccessDenied(ID: 26263)</block>
   <block id="4c2a8fe7eaf24721cc7a9f0175115bd4" category="section-title">메시지</block>
   <block id="607e31cb929ef6a163ec4dbf21bfdbee" category="paragraph">'_SCVMM___(시스템)_에서 사용자_이름_에 대한 스토리지 공급자_SMIS_PROVIDER_MACHINE_의 등록이 실패했습니다. 오류 코드 HostAgentAccessDenied가 있습니다. 스토리지 검색에 유효한 공급자, 포트 및 사용자 자격 증명을 지정합니다. ID: 26263</block>
@@ -277,7 +272,6 @@
   <block id="992f99e76d782026d10813b89cf90cdc" category="paragraph">예를 들어, 이름이 ""Chris""인 CIM 서버 사용자를 추가하려면:</block>
   <block id="c506910979386a24184c6dbf0c3e93da" category="paragraph">``시무즈-아우 크리스*’</block>
   <block id="dcca715816190ebf9dcab8ec1989cd39" category="list-text">메시지가 나타나면 암호를 입력하고 다시 입력합니다.</block>
-  <block id="24293140a3816d75c19d74064899984b" category="summary">NetApp SMI-S Provider 5.2.5를 사용하면 스토리지 시스템을 관리 및 모니터링하고 스토리지 시스템의 LUN 및 볼륨, CIMOM 구성 설정 및 CIM 서버 사용자를 관리할 수 있습니다.</block>
   <block id="72f7ffffe5d6a7aaa530f33b20be146d" category="doc">NetApp SMI-S Provider 개요</block>
   <block id="c79b9638e429df89a219f67e64877677" category="paragraph">NetApp SMI-S Provider는 ONTAP 소프트웨어를 실행하는 플랫폼을 검색하고 관리하는 명령 기반 인터페이스입니다. SMI-S Provider는 WBEM(Web-Based Enterprise Management) 프로토콜을 사용하여 스토리지 요소를 관리, 모니터링 및 보고할 수 있습니다.</block>
   <block id="a316d32069744858b73bc2472339bb1d" category="paragraph">NetApp SMI-S Provider는 다음과 같은 두 가지 조직에서 표준화된 스키마를 따릅니다.</block>
@@ -293,8 +287,6 @@
   <block id="7730b695d01e614f5ca99b68c96b377e" category="paragraph">이 오류는 스토리지 용량을 할당하고 호스트 그룹에 있는 호스트에 스토리지 액세스 권한을 부여할 때 발생합니다. 이 경고를 사용하면 스토리지 시스템에 가상 머신을 배치할 수 없습니다.</block>
   <block id="4937a7033ec39bd8589c2df73c921a89" category="list-text">각 호스트 시스템에서 각 스토리지 시스템의 IP 주소를 iSCSI Initiator 애플리케이션에 추가합니다.</block>
   <block id="7d36242dbaa9912fc085b5ff7c002458" category="list-text">필요한 경우 각 스토리지 시스템에서 각 호스트 시스템에 대해 해당 호스트 시스템에서 적절한 iSCSI 노드 이름과 연결된 하나의 고유한 igroup을 생성합니다.</block>
-  <block id="f4a55e7cbbe39eb8f955afd704ea726a" category="list-text">Data ONTAP에 연결된 각 호스트 시스템에 대해 MPIO 애플리케이션을 열고 다음 하드웨어 ID를 추가합니다.</block>
-  <block id="25c100de8cdfff7216dbf6a699030071" category="list-text">Clustered Data ONTAP의 경우 ' * NetApp LUN C-Mode * '를 입력합니다.</block>
   <block id="ffd73db9cb7d1dec7d0b41031a0865f5" category="list-text">호스트 시스템을 재부팅합니다.</block>
   <block id="96ee3206e5a288b7c11d4de582d14ec9" category="list-text">공급자를 제거합니다.</block>
   <block id="0bc3df559d8caef1f69d55ee3c5b77e1" category="list-text">스토리지 풀을 다시 설정합니다.</block>
@@ -311,7 +303,6 @@
   <block id="738fec68f2c0323ebece5138b2290be2" category="paragraph">정리 재설치를 원하지 않는 경우 SMI-S Provider는 제거 후 구성, 사용자 및 기타 데이터베이스 파일을 보존합니다.</block>
   <block id="7e2a994657c3cb1b74140df49210abda" category="list-text">관리자로 로그인합니다.</block>
   <block id="4de0a229b09daf73d106e4499b5eab63" category="list-text">Windows Add/Remove Programs 유틸리티를 사용하여 Windows 호스트에서 NetApp SMI-S Provider를 제거합니다.</block>
-  <block id="1cedcb17c92a3535c2610261b466714a" category="summary">SMI-S 캐시 새로 고침 간격 지정, ONTAPI 시간 초과 및 메시지 서비스 대기열당 최대 스레드 수 지정과 같은 SMI-S Provider의 고급 설정을 관리할 수 있습니다.</block>
   <block id="64dcf446a7778f30264ca7a94586a6e1" category="doc">SMI-S Provider 고급 설정을 관리합니다</block>
   <block id="42c81e79f364b151f80c02c552b5850d" category="summary">SMI-S Provider를 사용하여 스토리지 시스템을 관리 및 모니터링하려면 먼저 SMI-S Provider 소프트웨어를 설치하고 예비 구성을 확인해야 합니다.</block>
   <block id="ab3ccb0be518e752d20f706d36d252c9" category="doc">구축 워크플로우</block>
@@ -382,7 +373,6 @@
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">특허</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">NetApp 소유 특허 목록은 다음 사이트에서 확인할 수 있습니다.</block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">개인 정보 보호 정책</block>
-  <block id="24efa7ee4511563b16144f39706d594f" category="section-title">주의</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
   <block id="c3cb8bf1ed7183e77f46d5e7e662b2c1" category="summary">NetApp 스토리지 시스템을 검색 및 관리하는 명령 기반 인터페이스인 NetApp SMI-S Provider를 설치 및 관리하는 방법에 대해 설명합니다.</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp Support 사이트</block>
@@ -444,10 +434,8 @@
   <block id="155f23a4622d9e88b8c1a5c1526d3e64" category="paragraph">'Mis cimserver start'입니다</block>
   <block id="db348a1845bc8863a15226d1296f5943" category="summary">NetApp SMI-S Provider를 사용하면 스토리지 시스템을 쉽게 관리 및 모니터링하고 스토리지 시스템의 LUN 및 볼륨을 관리할 수 있습니다.</block>
   <block id="a6a30f6fc1ea5086f1f6a22630def76e" category="doc">NetApp SMI-S Provider의 사용</block>
-  <block id="df0ce33f18f070a6ddb1ef19fb303e98" category="paragraph">NetApp SMI-S Provider를 사용하면 System Center 2016 - Virtual Machine Manager 또는 System Center 2016 - Virtual Machine Manager를 사용하여 스토리지 컨트롤러를 관리할 수 있습니다.</block>
   <block id="f367b7dd9d33500bed829af817d25418" category="doc">SLP 명령</block>
   <block id="44875d713d6680857ff840765882108e" category="paragraph">'lptool' 명령을 사용하여 WBEM 서비스에 대한 정보를 표시할 수 있습니다.</block>
-  <block id="36bc4391121621ccbd43a1d20890bbfb" category="summary">NetApp SMI-S Provider 소프트웨어를 설치하면 Data ONTAP를 실행하는 스토리지 시스템을 관리할 수 있습니다. 기본적으로 NetApp SMI-S Provider 소프트웨어는 C:\Program Files (x86)\NetApp\SMIS\Pegasus 디렉토리에 설치됩니다.</block>
   <block id="b7ceff6488201ada2adc1183d4779baa" category="doc">Windows 호스트에 NetApp SMI-S Provider를 설치합니다</block>
   <block id="e9c2e2fe706f7cb451b683459ed09ff9" category="paragraph">다음 자격 증명 및 소프트웨어가 이미 있어야 합니다.</block>
   <block id="b08dc0dbe07b37cce50f2429165603b4" category="list-text">Windows 관리자 계정에 대한 로그인 자격 증명입니다</block>
@@ -489,9 +477,6 @@
   <block id="74dd40aa9a6635d79204e610e8324c38" category="list-text">Microsoft Windows Server 2016</block>
   <block id="1ee2c5253c485a81cfff8c8e3e23a23f" category="list-text">Microsoft Windows Server 2019</block>
   <block id="89ff2866e74db001ea07e0b7fdde9ac5" category="paragraph">Microsoft Visual C{pp} 2010 런타임 라이브러리는 SMI-S Provider 설치 중에 자동으로 설치됩니다. 런타임 라이브러리와 관련된 잠재적인 문제를 방지하려면 Microsoft Visual C{pp} 2010 재배포 가능 패키지(x86)를 설치해야 합니다. 다음 위치에서:<block ref="b7a41ff45868862feefaef480db2df7e" category="inline-link-rx"></block></block>
-  <block id="dc917e4fa1217c63d38aa1b4aacbe7ba" category="section-title">SCVMM 2016 UR 2.1 요구 사항</block>
-  <block id="13601f1842a061432974c3d2a9141b74" category="paragraph">NetApp SMI-S Provider 5.2.4 이상이 설치된 NetApp 파일 서버를 관리하려면 SCVMM(System Center Virtual Machine Manager) 2016 UR(Update Rollup) 2.1이 필요합니다.</block>
-  <block id="10d506f406f3b135deaa62f78cfd5476" category="paragraph">이 UR이 없으면 SCVMM 2016은 NetApp File Server의 기존 파일 공유에 대해 "Total Capacity" 및 "Available Capacity" 옵션의 값을 "0GB *"로 표시합니다.</block>
   <block id="05dbd63393cf525e41d034d5de449c98" category="paragraph">SMI-S Provider를 실행하려면 공급자 호스트 시스템이 다음 사양을 충족해야 합니다.</block>
   <block id="fd72eadfdaeb4e69b5477af765434a93" category="list-text">공급자 호스트 시스템을 사용하여 Hyper-V 노드를 호스팅할 수 없습니다.</block>
   <block id="b74c30689c8afa829d128cf3e62d6817" category="list-text">SCVMM은 공급자 호스트 시스템에서 실행되지 않아야 합니다.</block>
@@ -555,9 +540,7 @@
   <block id="252a5d2c10241ca715834e346795020e" category="paragraph">높은 데이터 세부 정보</block>
   <block id="e4da3b7fbbce2345d7772b0674a318d5" category="paragraph">5</block>
   <block id="3760243c0ec28bcb0e1a0c201dd5d0db" category="paragraph">높은 데이터 세부 정보 + 메서드 입력 및 종료</block>
-  <block id="f7f67a4b989755c831e2703c64ac314b" category="summary">Thesmis disks 명령은 스토리지 시스템의 디스크 정보를 표시합니다. SMIS 디스크는 Data ONTAP 7-Mode 컨트롤러와 함께 사용할 때만 작동합니다.</block>
   <block id="001e1f541b1e42bd39ea2ea40c19ea63" category="doc">SMIS 디스크</block>
-  <block id="d21c1931b01f62c3b9c02c100019a202" category="paragraph">'디스크 오류' 명령은 스토리지 시스템의 디스크 정보를 표시합니다. '디스크 오류'는 Data ONTAP 7-Mode 컨트롤러와 함께 사용할 때만 작동합니다.</block>
   <block id="1ac1bc188887b49a916919759fa511f6" category="paragraph">'디스크 오류' 명령과 단축 출력:</block>
   <block id="e805a7074bd5f3f2f6002db7b0f11fd5" category="summary">SMIS LUNs 명령은 스토리지 시스템에 대한 LUN 정보를 표시합니다.</block>
   <block id="ecb4091a0d7fe12a01800c4c519c074d" category="doc">SMIS LUN</block>
@@ -565,10 +548,6 @@
   <block id="d1a0d4852e62844a3ab6d7da1573e44b" category="paragraph">'mis LUNs' 명령과 단축 출력:</block>
   <block id="7e58f3c32490291520a1a61221da598d" category="doc">파일러 반환: 응답이 ONTAP 요소가 없습니다</block>
   <block id="6e2039d962c6e75488fd40f9c951c19a" category="paragraph">파일러가 반환한 ONTAP 요소가 없습니다.</block>
-  <block id="e229a1324a21093601dc13ac94ed1e4b" category="paragraph">이 메시지는 ONTAPI API 시간이 초과될 때 발생합니다. 기본 ONTAPI API 시간 제한은 60초이며 일부 시나리오에서는 너무 짧을 수 있습니다.</block>
-  <block id="520c461e0dad01779322190a189497d5" category="paragraph">환경 변수 "ONTAPI_TIMEOUT_SEC"를 설정하여 ONTAPI API TIMEOUT을 60초 이상으로 변경한 다음 SMI-S Provider를 다시 시작합니다.</block>
-  <block id="4dd620f035497b4c26fd3db7a737531e" category="summary">SMI-S Provider는 스토리지 시스템에 ONTAP API(ONTAPI)를 호출합니다. 기본적으로 ONTAPI 시간 제한은 300초입니다. 제한 시간을 60초에서 300초 사이의 값으로 설정할 수 있습니다.</block>
-  <block id="2968f0fa1a0d4ef15b62ef7173cea84f" category="doc">ONTAPI 시간 초과 값을 지정합니다</block>
   <block id="c23ac41b72372a7f3c20cb975800351a" category="list-text">새 타임아웃 값(초 단위)으로 이름이 "ONTAPI_TIMEOUT_SEC"인 시스템 또는 사용자 환경 변수를 만듭니다.</block>
   <block id="fb44665cf49d63acda1cdb213857d17b" category="doc">기본값이 아닌 HTTP 또는 HTTPS 포트를 사용하여 스토리지 시스템을 추가할 수 없습니다</block>
   <block id="a1324d13680ad51ed3e3b999a3eca7f8" category="paragraph">기본 포트가 아닌 포트에서 HTTP 또는 HTTPS를 실행하는 스토리지 시스템을 추가할 수 없습니다.</block>
@@ -602,10 +581,8 @@
   <block id="651259a98991e0b35e4f51aa4d4a4319" category="paragraph">'* cimconfig -s logdir=new_log_directory -p * '_new_log_directory_'에 공백이 있으면 따옴표로 묶어야 합니다("_new log directory_").</block>
   <block id="6f37785193648cc0fab41c9b222a7a2f" category="paragraph">예를 들어 로그 디렉토리를 "serverlogs"로 변경하려면 다음 명령을 입력합니다.</block>
   <block id="882d7437047d18007764dd5615ed4aba" category="paragraph">'* cimconfig -s logdir=serverlogs -p *'</block>
-  <block id="591f96ef7fe1cdb42aa58f385466c717" category="summary">NetApp SMI-S Provider 5.2.6 소프트웨어의 기능, 제한 사항 및 알려진 문제에 대한 정보를 제공합니다.</block>
   <block id="58c8d351ba9d95afd9752aa88bf6e0f7" category="doc">SCVMM에서 SMB 공유 크기가 0으로 떨어집니다</block>
   <block id="d19b0ea77723113b53c5f3b5bcfc71cb" category="paragraph">SCVMM(System Center Virtual Machine Manager)에서 신규 또는 기존 SMB 3.0 공유 크기가 0으로 떨어질 수 있습니다.</block>
-  <block id="286cd1d6f9ece4f567a343b0e19efe60" category="paragraph">이 문제는 Data ONTAP에서 과도한 I/O로 인해 할당량 재초기화가 오랜 시간이 걸리는 경우, SCVMM에서 새 SMB 3.0 공유 크기 또는 기존 SMB 3.0 공유 크기가 0으로 떨어질 수 있습니다. 따라서 새 SMB 3.0 공유 또는 기존 SMB 3.0 공유에서 새 VM을 프로비저닝할 수 없습니다.</block>
   <block id="cc5ade6a333e0665a7013fb0305400d6" category="list-text">할당량을 해제합니다.</block>
   <block id="448805fdc8b90fe55f76dbffe9cd446f" category="list-text">SMB 공유를 호스팅하는 각 볼륨에 ""트리"" 유형의 기본 할당량 규칙을 하나 추가합니다.</block>
   <block id="4d2cce1528ba318942044838d5da6b76" category="list-text">기본 할당량 규칙을 추가한 볼륨에 대해 할당량을 설정하고 SMI-S Provider를 다시 시작합니다.</block>
@@ -750,11 +727,7 @@
   <block id="3ad2edd8ea9cf578e52754d637befd85" category="paragraph">CIM 서버가 시작된 경우 다음 메시지가 표시됩니다.</block>
   <block id="cd0961a3af19616ad066d6455a90f4f9" category="paragraph">"NetApp SMI-S Provider가 실행 중입니다.</block>
   <block id="928c1baab03e0230f3715e3de77b083f" category="summary">이 릴리스의 새로운 기능</block>
-  <block id="bd94701c8c3439968ac328f6961957c3" category="list-text">SMI-S Provider 5.2.5에 사용할 수 있는 업그레이드 경로가 없습니다.</block>
-  <block id="c55ff83f0b706c2e4f6784a3eea0d431" category="list-text">SMI-S Provider 5.2.5를 새로 설치해야 합니다.</block>
-  <block id="4dcc4ed93f208d25fc9635019b96fb17" category="paragraph">* Windows 사용자용: *</block>
   <block id="3073a5fe9dd6b21d2236fe4d631b4b80" category="list-text">이 릴리즈는 Windows Server 2012 또는 SCVMM(System Center Virtual Machine Manager) 2012와 호환되지 않습니다.</block>
-  <block id="0ccb5ab6332965b00555d89124eca6f4" category="list-text">SMI-S Provider 5.2.5는 Windows Server 2016, Windows Server 2019, SCVMM 2016 및 SCVMM 2019를 지원합니다.</block>
   <block id="475d549be2964d0228a25ed173ba7b08" category="summary">NetApp SMI-S Provider를 설치하기 전에 NetApp Support 사이트에서 소프트웨어 패키지를 다운로드해야 합니다.</block>
   <block id="f2efbfa9469f6b1841c97b04674b1de4" category="doc">NetApp SMI-S Provider 소프트웨어 패키지를 다운로드합니다</block>
   <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link">NetApp 지원</block>
@@ -787,7 +760,6 @@
   <block id="df08bacfdfa0f59296d2b2a817363f77" category="doc">SMI-S Provider에 사용되는 클론 기술입니다</block>
   <block id="510d66d307c0496d6ba81658c7a5b619" category="paragraph">SMI-S Provider는 FlexClone 기술만을 사용하여 해당 스토리지 시스템에 LUN 클론을 생성합니다. FlexClone 라이센스가 없는 경우 SMI-S Provider는 LUN 클론 기술을 사용하여 클론을 생성하지 않으며 다음 오류 메시지를 생성합니다.</block>
   <block id="d1da6127cf9130c3e6cbddab213daefb" category="paragraph">"FlexClone 라이센스가 스토리지 시스템에 설정되어 있지 않습니다.</block>
-  <block id="ddd332cc6425680fe389737022cab8af" category="paragraph">LUN 클론 기술을 사용하여 생성된 LUN 클론이 있고 Data ONTAP 버전이 7.3.1 이상으로 업그레이드되면 SMI-S Provider를 사용하여 해당 클론을 분할할 수 없습니다. 스토리지 시스템 관리자가 관리해야 합니다.</block>
   <block id="6b0fd0a659080ed97cfc94fb21d6fc96" category="summary">SMI-S Provider를 사용하여 HTTP 및 HTTPS 연결 활성화 또는 비활성화, HTTP 및 HTTPS 포트 번호 변경 등의 CIMOM 구성을 관리할 수 있습니다. 기본적으로 HTTP 연결이 활성화되어 클라이언트가 SSL 암호화를 사용하지 않고 CIM 서버에 연결할 수 있습니다.</block>
   <block id="16d818bdfd52f3614e92671e0206fa1b" category="doc">CIMOM 구성 설정을 관리합니다</block>
   <block id="7d6b3d18bec2ce6be3374ea0a9815106" category="paragraph">환경에서 CIM 서버와 주고받는 암호화된 트래픽이 필요한 경우 먼저 HTTP 연결을 비활성화한 다음 CIM 서버에 대한 HTTPS 연결이 활성화되어 있는지 확인해야 합니다.</block>
@@ -827,7 +799,6 @@
   <block id="f4c8242274a5433176fc6575733f6559" category="summary">SMIS 볼륨 명령은 스토리지 시스템에 대한 기존 볼륨과 유연한 볼륨을 나열합니다.</block>
   <block id="0f44b667bbfb5498165b4f0f5ca52339" category="doc">SMIS 볼륨</block>
   <block id="b78d25f27659bc706823fea082d9eb72" category="paragraph">'mis volumes' 명령은 스토리지 시스템의 기존 볼륨과 유연한 볼륨을 나열합니다.</block>
-  <block id="30789a6a7e76c03ee51006ffbbdd390c" category="paragraph">Clustered Data ONTAP의 경우 'mis volumes' 명령 대신 'mis pool' 명령을 사용해야 합니다.</block>
   <block id="0f2d51f976100876529d8e039c4b9c36" category="paragraph">'mis volumes' 명령과 그 축약된 출력:</block>
   <block id="3e3944372596c51dc61c2fe5a9f8063d" category="summary">SMIS list 명령은 추가된 스토리지 시스템을 표시합니다.</block>
   <block id="83d793b4ffc76972ddb8695c302c33bf" category="doc">SMIS 목록</block>
@@ -844,9 +815,6 @@
   <block id="80feca2aef5bfe7af61ecef2104515dc" category="summary">NetApp SMI-S Provider에서 관리하는 시스템의 최대 수를 알면 시스템의 성능 기능을 이해하는 데 도움이 됩니다.</block>
   <block id="8df995b0877455c8e157e1650dc377d4" category="doc">NetApp SMI-S Provider 사이징 및 성능</block>
   <block id="98bc8ee199ee6b2e16fe0a72065bc977" category="paragraph">* 사이징 *</block>
-  <block id="7b5949a309ff956607ccd7a05549a643" category="paragraph">NetApp SMI-S Provider는 clustered Data ONTAP에서 다음과 같은 수의 오브젝트를 관리할 수 있습니다.</block>
-  <block id="be3aa891f1e256500ac418272b5eba57" category="list-text">100개의 SVM(스토리지 가상 머신)(표시 없음)</block>
-  <block id="6d566731c48802fe3821e33a4c29bfb3" category="list-text">스토리지 가상 머신 10개(표시 포함)</block>
   <block id="5e21a9906ddd54cf24a9de122b49eeb1" category="list-text">LUN 1,500개(FlexVol 볼륨당)</block>
   <block id="aa8573942cd1ed77a581b629e3ba2237" category="list-text">CIFS 파일 공유 200개(FlexVol 볼륨당)</block>
   <block id="ee001510f4b124ecdffc864a0edba76b" category="paragraph">FlexVol에 qtree와 볼륨이 모두 포함되어 있으면 qtree가 디렉토리로 표시됩니다. 볼륨을 삭제할 때 실수로 Qtree를 삭제하지 않도록 주의해야 합니다.</block>
@@ -878,21 +846,14 @@
   <block id="111bb0fad8beadbe3d12694d63ed1d33" category="sidebar">NetApp SMI-S 공급자 문서</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">릴리스 정보</block>
   <block id="f16f70c449d9f0048b9a3659fcb12389" category="sidebar">트레이스 설정을 지정합니다</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="e746749730e661dd557a1c067c4dbe7d" category="inline-link">NetApp SMI-S Provider에 대한 알림입니다</block>
-  <block id="de70f78d604c1f59e6de2a196d7084c8" category="paragraph"><block ref="de70f78d604c1f59e6de2a196d7084c8" category="inline-link-rx"></block></block>
   <block id="b51493aaf7964eeecd1d7dfd7e847d13" category="doc">NetApp SMI-S 공급자 문서</block>
   <block id="3222e2c38626bc2823512833cc493f15" category="paragraph">NetApp SMI-S Provider Information Library에 오신 것을 환영합니다. NetApp 스토리지 시스템을 검색 및 관리하는 명령 기반 인터페이스인 NetApp SMI-S Provider를 설치 및 관리하는 방법을 비롯하여 NetApp SMI-S Provider 소프트웨어에 대한 문서가 제공됩니다.</block>
   <block id="1456d67be31dd1251336fefc3219f261" category="paragraph">NetApp SMI-S Provider의 이전 릴리즈에 대한 문서는 에서 확인할 수 있습니다<block ref="c1cc34bfdb0a4a31c8960c236e9f731a" category="inline-link-rx"></block>.</block>
   <block id="336d68bc1f4a7a4dd4d6826a8c11877e" category="doc">NetApp SMI-S Provider 릴리즈 노트</block>
-  <block id="6e3b9e20f7f45cc7004fb8412900830e" category="paragraph">를 클릭합니다<block ref="b5aeaaea80149eaf6be32e7995332412" category="inline-link-rx"></block> 새로운 기능, 업그레이드 노트, 해결된 문제, 알려진 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="doc">개요</block>
   <block id="7944dd24fa0a41aefb89e769af345698" category="paragraph">cimconfig 명령을 사용하여 HTTP 및 HTTPS 활성화/비활성화, HTTP 및 HTTPS 포트 번호 변경 등의 CIMOM 설정을 구성할 수 있습니다. cimconfig 명령을 입력하거나 NetApp SMI-S Provider 구성 값에 대한 환경 변수를 생성한 후에는 'mis cimserver restart' 명령을 사용하여 CIM 서버를 다시 시작해야 합니다.</block>
   <block id="5a70b73b0330c1b99f99d9417a0348a0" category="paragraph">cimuser 명령을 사용하여 CIM 서버 사용자를 추가, 제거, 삭제, 수정 및 나열하고 암호를 관리할 수 있습니다.</block>
-  <block id="b7c334318e075f9c3e093acfe23e8a85" category="paragraph">NetApp SMI-S Provider 소프트웨어를 설치하면 Data ONTAP를 실행하는 스토리지 시스템을 관리할 수 있습니다. 그러나 이전 버전으로 되돌리거나 다운그레이드할 수는 없습니다. 기본적으로 NetApp SMI-S Provider 소프트웨어는 'C:\Program Files (x86)\NetApp\SMIS\Pegasus' 디렉토리에 설치됩니다.</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">이 작업에 대해</block>
   <block id="92e9d6227d5534e7afc27a11179c808e" category="paragraph-title">구문</block>
   <block id="ce5bf551379459c1c61d2a204061c455" category="paragraph-title">위치</block>
@@ -911,4 +872,52 @@
   <block id="5940103c9703f3197b9db75e060cdcbc" category="paragraph">이 변수는 새 명령 프롬프트 세션을 열 때 설정됩니다.</block>
   <block id="5d46f0ef9c5d5b1b112b901048bd8b85" category="list-text">로 이동합니다<block ref="0a36b8ad7af6adf0c1d5daa0a3240994" prefix=" " category="inline-code"></block> 디렉터리:</block>
   <block id="82e1f4ca9abf9652748d9a698fc051c7" category="paragraph"><block ref="a9bf600e3f42bfde86bd479b9fcaec63" prefix="" category="inline-code"></block></block>
+  <block id="48bc52cab1e5701702bc6f42f3024f6e" category="paragraph">LUN 클론 기술을 사용하여 생성된 LUN 클론이 있고 ONTAP 버전이 7.3.1 이상으로 업그레이드된 경우, SMI-S Provider를 사용하여 해당 클론을 분할할 수 없습니다. 스토리지 시스템 관리자가 관리해야 합니다.</block>
+  <block id="3793e9a4bb699472d6c18b28d016f662" category="summary">SMI-S 캐시 새로 고침 간격, ONTAP API 호출 시간 제한 및 메시지 서비스 큐당 최대 스레드 수 지정 등의 SMI-S 공급자에 대한 고급 설정을 관리할 수 있습니다.</block>
+  <block id="7b6fbb88e3bf9e8b80df39afd6ae70e2" category="summary">NetApp SMI-S Provider 5.2.7를 사용하면 스토리지 시스템을 관리 및 모니터링하고 스토리지 시스템의 LUN 및 볼륨, CIMOM 구성 설정 및 CIM 서버 사용자를 관리할 수 있습니다.</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">오픈 소스</block>
+  <block id="627e4a7f98749d4e647b18565a55c01a" category="paragraph"><block ref="627e4a7f98749d4e647b18565a55c01a" category="inline-link-macro-rx"></block></block>
+  <block id="cf0ec6c9da7f221854f606212c7e5489" category="summary">5.2.7의 새로운 기능</block>
+  <block id="8cdc91a8be8828bc0479b47f30fdae33" category="doc">5.2.7의 새로운 기능</block>
+  <block id="e948f2d578d6a0f54741eda35d72d355" category="list-text">SMI-S Provider 5.2.7에 사용할 수 있는 업그레이드 경로가 없습니다.</block>
+  <block id="101dd88b1b293d47bc2c4e1aa268558e" category="list-text">SMI-S Provider 5.2.7를 새로 설치해야 합니다.</block>
+  <block id="4ec696bde1d3e1f41e9b67c2a35eba60" category="list-text">이 버전의 SMI-S 공급자에서는 Azure Site Recovery를 사용한 SnapMirror 관리가 지원되지 않습니다.</block>
+  <block id="4775945e20929f33ad1d62cb4602a93d" category="paragraph">* Windows 사용자용 *</block>
+  <block id="b2c38293fdc487e8a8d344b8402c74c5" category="list-text">SMI-S Provider 5.2.7은 Windows Server 2025, Windows Server 2022, Windows Server 2019, Windows Server 2016, SCVMM 2025, SCVMM 2022, SCVMM 2019 및 SCVMM 2016을 지원합니다.</block>
+  <block id="a4c64014c3378c5dd1a4c6bb00bf10a2" category="paragraph">이 메시지는 ONTAP API 호출 시간 초과시 발생한다. 기본 ONTAP API 호출 시간 제한은 60초이며 일부 시나리오에서는 너무 짧을 수 있습니다.</block>
+  <block id="0afc1caff128363a5d573c8e1df54406" category="paragraph">환경 변수를 설정하여 ONTAP API 호출 시간 제한을 60초 이상의 값으로 변경한<block ref="5ecfd3e48a727110bc36d7f3790545a9" prefix=" " category="inline-code"></block> 다음 SMI-S Provider를 다시 시작합니다.</block>
+  <block id="87dfe5752ca71d1f4b3849613b921207" category="paragraph">입출력이 많아 ONTAP에서 할당량 재초기화가 오래 걸리는 경우 SCVMM에서 신규 또는 기존 SMB 3.0 공유 크기가 0으로 떨어질 수 있습니다. 이 문제가 발생하면 신규 또는 기존 SMB 3.0 공유에서 새 VM을 프로비저닝할 수 없습니다.</block>
+  <block id="66341f3073d04fff4ddc353f99109815" category="paragraph">NetApp SMI-S Provider는 ONTAP에서 다음과 같은 수의 객체를 관리할 수 있습니다.</block>
+  <block id="0e4114de3f4cb820d8d7a1782e32b659" category="list-text">스토리지 가상 시스템(SVM) 30개 </block>
+  <block id="7de381613d186c65626f4ab272a71cf2" category="list-text">100 SVM(표시 없음)</block>
+  <block id="8b25443fa653d6b8b9930467ae62d747" category="list-text">SVM 10개(표시 포함)</block>
+  <block id="0639b789908acee0010a728c19ad44b5" category="summary">NetApp SMI-S Provider는 ONTAP 9 이상을 실행하는 클러스터 플랫폼을 지원합니다.</block>
+  <block id="d9085d6c5079a361332e427a284bb7ad" category="doc">ONTAP 시스템에 대한 NetApp SMI-S Provider 지원</block>
+  <block id="1f66c2179d8c6efe8772822bfc2d617e" category="paragraph">NetApp SMI-S Provider는 FAS 시스템을 지원합니다.</block>
+  <block id="58278fc92b6745b5bcadad3d3f612fc1" category="paragraph">NetApp SMI-S Provider는 ASA 시스템을 지원하지 않습니다.</block>
+  <block id="b9bc2a483649514f398dbc07af2c87c7" category="summary">SMIS 디스크 명령은 스토리지 시스템에 대한 디스크 정보를 표시합니다. SMIS 디스크는 ONTAP 7-Mode 컨트롤러와 함께 사용할 때만 작동합니다.</block>
+  <block id="487313fb24a8cbf19d58bad085b12a13" category="paragraph">이<block ref="001e1f541b1e42bd39ea2ea40c19ea63" prefix=" " category="inline-code"></block> 명령은 스토리지 시스템에 대한 디스크 정보를 표시합니다. <block ref="001e1f541b1e42bd39ea2ea40c19ea63" prefix=" " category="inline-code"></block>명령은 ONTAP 7-Mode 컨트롤러에서만 지원됩니다.</block>
+  <block id="efad0d1809b94075c94937353c4001ef" category="paragraph">ONTAP의 경우 명령 대신 명령을<block ref="0f44b667bbfb5498165b4f0f5ca52339" prefix=" " category="inline-code"></block> 사용해야<block ref="9f0928f5c491149e0d68d561ecf558bc" prefix=" " category="inline-code"></block> 합니다.</block>
+  <block id="6ed0120f37738e825d889dcb299d9251" category="list-text">Microsoft Windows Server 2022</block>
+  <block id="6e6b7efb9f9c24d5ca212d65430689fd" category="list-text">Microsoft Windows Server 2025</block>
+  <block id="fcebb93ad5cad2ad8092153d77893f24" category="section-title">SCVMM UR 2.1 요구 사항</block>
+  <block id="a66b176f80a3f93d31be0edb241f3215" category="paragraph">NetApp SMI-S Provider 5.2.7 이상을 사용하여 NetApp 파일 서버를 관리하려면 SCVMM(System Center Virtual Machine Manager) UR(업데이트 롤업) 2.1이 필요합니다.</block>
+  <block id="77e677c64c1986dc2a8a1c9afdb930e8" category="paragraph">이 UR이 없으면 SCVMM(버전 2016, 2019, 2022 또는 2025)에 NetApp 파일 서버에 있는 기존 파일 공유와 관련된 및<block ref="6af63b14f64f6cb255988d8fde2e0437" prefix=" " category="inline-code"></block> 옵션의<block ref="5406f75e1620d4c00bc95d050311cd8a" prefix=" " category="inline-code"></block> 값이 표시됩니다<block ref="207e174801113bba5afa048ccd3450bf" prefix=" " category="inline-code"></block>.</block>
+  <block id="9794792e794e863d0bd2afdc0bc7a283" category="paragraph">NetApp SMI-S Provider를 사용하여 System Center 2016, 2019, 2022 및 2025를 사용하여 스토리지 컨트롤러를 관리할 수 있습니다.</block>
+  <block id="60f804573e049a0f18647ca5ddadf79f" category="list-text">ONTAP에 연결된 각 호스트 시스템에 대해 MPIO 애플리케이션을 열고 다음 하드웨어 ID를 추가합니다.</block>
+  <block id="bfdf270b33cb3dc13957bd36fee69058" category="list-text">ONTAP 에 대해 를<block ref="ade191b1004522550d83e818f2d7139d" prefix=" " category="inline-code"></block>입력합니다.</block>
+  <block id="cf0d6d290cc1c4520fbbfc002c946664" category="summary">NetApp SMI-S Provider 5.2.7 소프트웨어의 기능, 제한 사항 및 알려진 문제에 대한 정보를 제공합니다.</block>
+  <block id="24b5861592ee7b4615fa625b97669f21" category="paragraph"><block ref="f88e2f39ae65eb4268159ba7fe6b9dda" category="inline-link-rx"></block>새로운 기능, 업그레이드 참고 사항, 해결된 문제, 알려진 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
+  <block id="c77d93c9bafb13a9882093351ecdb498" category="summary">NetApp SMI-S Provider 소프트웨어를 설치하여 ONTAP를 실행하는 스토리지 시스템을 관리할 수 있습니다. 기본적으로 NetApp SMI-S Provider 소프트웨어는 C:\Program Files (x86)\NetApp\SMIS\Pegasus 디렉토리에 설치됩니다.</block>
+  <block id="a29f0f75cbf44d12b1fb98ed37473297" category="paragraph">NetApp SMI-S Provider 소프트웨어를 설치하여 ONTAP를 실행하는 스토리지 시스템을 관리할 수 있습니다. 그러나 이전 버전으로 되돌리거나 다운그레이드할 수는 없습니다. 기본적으로 NetApp SMI-S Provider 소프트웨어는<block ref="e93eb95a4a6d54999769913bf79a69c9" prefix=" " category="inline-code"></block> 디렉토리에 설치됩니다.</block>
+  <block id="738fc2618ae3cc77b3d364faaf5e4b42" category="summary">SMI-S Provider는 스토리지 시스템에 대한 ONTAP API 호출을 수행합니다. 기본적으로 ONTAP API 호출 시간 제한은 300초입니다. 제한 시간을 60초에서 300초 사이의 값으로 설정할 수 있습니다.</block>
+  <block id="7162b9fa7c706619cc067c40bb9d383b" category="doc">ONTAP API 호출 시간 제한 값을 지정합니다</block>
 </blocks>
