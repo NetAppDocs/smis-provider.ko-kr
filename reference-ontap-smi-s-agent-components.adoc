@@ -1,5 +1,5 @@
 ---
-permalink: reference-data-ontap-smi-s-agent-components.html 
+permalink: reference-ontap-smi-s-agent-components.html 
 sidebar: sidebar 
 keywords: smi-s provider 
 summary: NetApp SMI-S Provider는 CIMOM, 공급자 개체 및 리포지토리의 스토리지 시스템을 관리 및 모니터링할 수 있는 세 가지 구성 요소로 구성되어 있습니다. 

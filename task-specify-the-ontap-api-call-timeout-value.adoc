@@ -1,5 +1,5 @@
 ---
-permalink: task-specify-the-ontapi-timeout-value.html 
+permalink: task-specify-the-ontap-api-call-timeout-value.html 
 sidebar: sidebar 
 keywords: smi-s provider, ontap api, calls, storage systems, default, 300 sec 
 summary: SMI-S Provider는 스토리지 시스템에 대한 ONTAP API 호출을 수행합니다. 기본적으로 ONTAP API 호출 시간 제한은 300초입니다. 제한 시간을 60초에서 300초 사이의 값으로 설정할 수 있습니다. 
