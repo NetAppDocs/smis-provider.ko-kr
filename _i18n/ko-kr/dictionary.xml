@@ -377,7 +377,6 @@
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp Support 사이트</block>
   <block id="5df91904e284b02eadf3bef23d5a41d4" category="summary">기본적으로 CIM 서버에 대해 SSL 인증이 활성화됩니다. SMI-S Provider를 설치하는 동안 CIM 서버에 대한 자체 서명된 인증서가 Pegasus 디렉토리에 설치됩니다. 자체 서명된 인증서를 생성하여 기본 인증서 대신 사용할 수 있습니다.</block>
   <block id="706bd7f5dc0fd11f32957fcfe95a1d86" category="doc">CIM 서버에 대해 자체 서명된 인증서를 생성합니다</block>
-  <block id="ddf96c0ef94c04177aac4c565af47742" category="paragraph">기본적으로 CIM 서버에 대해 SSL 인증이 활성화됩니다. SMI-S Provider 설치 중에 CIM 서버의 자체 서명된 인증서가 'Pegasus' 디렉토리에 설치됩니다. 자체 서명된 인증서를 생성하여 기본 인증서 대신 사용할 수 있습니다.</block>
   <block id="ce1605c578adffb355881da427936cf6" category="list-text">개인 키 생성:</block>
   <block id="ee01244ad0458fc0bceca3ca21a19bcf" category="paragraph">'* openssl genrsa-out cimom.key 2048 *</block>
   <block id="d1cc3793bab6382471940558e1237709" category="list-text">인증서 요청 생성:</block>
@@ -913,4 +912,9 @@
   <block id="7455ebb8e235fe565c33132298dc9ae2" category="list-text">해당 공급자는 Hyper-V 노드에 직접 설치할 수 없습니다. 대신 Hyper-V 가상 머신에 설치할 수 있습니다.</block>
   <block id="76e285f066350a12e27bc3bc52c6ac1b" category="list-text">공급자 호스트 시스템에서는 System Center Virtual Machine Manager(SCVMM)가 실행 중이면 안 됩니다.</block>
   <block id="cf25bf52de5fb16cb01c369f194fa595" category="list-text">공급자 호스트 시스템은 다른 공급업체의 SMI-S 공급자를 실행해서는 안 됩니다.</block>
+  <block id="84168690f051a56e2cb7f4e07041531d" category="paragraph">기본적으로 CIM 서버에는 SSL 인증이 활성화되어 있습니다. SMI-S Provider 설치 과정에서 CIM 서버용 자체 서명 인증서가 설치됩니다.<block ref="3015ca4f270b6938b27c95863174a8db" prefix=" " category="inline-code"></block> 예배 규칙서. 기본 인증서를 사용하는 대신 자체 서명 인증서를 생성해야 합니다.</block>
+  <block id="6395062fd7cc0c18b923c77707428ae7" category="inline-link-macro">NetApp 기술 자료 문서: "CSMIS-3: NetApp SMI-S Provider 5.2.7의 cimom.cert가 설치 시점에 만료되었습니다."</block>
+  <block id="e8dfaf98cdbd392a09efaa9768cab219" category="admonition">SMI-S 공급자를 설치하면 기본적으로 설치되는 자체 서명 인증서가 오래된 것입니다. 결과적으로 System Center Virtual Machine Manager(SCVMM)의 *저장 장치 추가*에서 SMI-S 공급자에 대한 SSL 연결이 실패합니다. CIM 서버용 자체 서명 인증서를 생성한 후 SMI-S Provider 서비스를 다시 시작해야 합니다. 더 자세한 내용은 다음을 참조하십시오. <block ref="6b2d7bc4026d64afffa89af6ebec1110" category="inline-link-macro-rx"></block></block>
+  <block id="cc2ad876e77ac64c0d4f8e5e89900549" category="list-text">Windows 호스트에 OpenSSL을 다운로드하여 설치해야 합니다.</block>
+  <block id="c104915e9f0d8e0313edcca7765f005e" category="list-text">SMI-S Provider 서비스를 재시작하십시오.</block>
 </blocks>
