@@ -275,7 +275,6 @@
   <block id="c79b9638e429df89a219f67e64877677" category="paragraph">NetApp SMI-S Provider는 ONTAP 소프트웨어를 실행하는 플랫폼을 검색하고 관리하는 명령 기반 인터페이스입니다. SMI-S Provider는 WBEM(Web-Based Enterprise Management) 프로토콜을 사용하여 스토리지 요소를 관리, 모니터링 및 보고할 수 있습니다.</block>
   <block id="a316d32069744858b73bc2472339bb1d" category="paragraph">NetApp SMI-S Provider는 다음과 같은 두 가지 조직에서 표준화된 스키마를 따릅니다.</block>
   <block id="ffb373b0246b03d37058c9917311f9ba" category="inline-link">DMTF(Distributed Management Task Force)</block>
-  <block id="3196a1e76b7eb51b7ff2baa784e99b4f" category="list-text"><block ref="3196a1e76b7eb51b7ff2baa784e99b4f" category="inline-link-rx"></block></block>
   <block id="b3973a38d43f2f1fe906a50cc9911f34" category="inline-link">SNIA(Storage Networking Industry Association)</block>
   <block id="6406ef7be2956ab22d718f61a164ac48" category="list-text"><block ref="6406ef7be2956ab22d718f61a164ac48" category="inline-link-rx"></block></block>
   <block id="6409b577d21cd98c3caae687888555d6" category="paragraph">SMI-S Provider는 여러 개의 관리되는 오브젝트 모델, 프로토콜 및 전송을 스토리지 네트워크의 모든 구성 요소에 대한 단일 객체 지향 모델로 대체합니다.</block>
@@ -917,4 +916,5 @@
   <block id="e8dfaf98cdbd392a09efaa9768cab219" category="admonition">SMI-S 공급자를 설치하면 기본적으로 설치되는 자체 서명 인증서가 오래된 것입니다. 결과적으로 System Center Virtual Machine Manager(SCVMM)의 *저장 장치 추가*에서 SMI-S 공급자에 대한 SSL 연결이 실패합니다. CIM 서버용 자체 서명 인증서를 생성한 후 SMI-S Provider 서비스를 다시 시작해야 합니다. 더 자세한 내용은 다음을 참조하십시오. <block ref="6b2d7bc4026d64afffa89af6ebec1110" category="inline-link-macro-rx"></block></block>
   <block id="cc2ad876e77ac64c0d4f8e5e89900549" category="list-text">Windows 호스트에 OpenSSL을 다운로드하여 설치해야 합니다.</block>
   <block id="c104915e9f0d8e0313edcca7765f005e" category="list-text">SMI-S Provider 서비스를 재시작하십시오.</block>
+  <block id="fa623328d311ec4315ab82a9a7303cbe" category="list-text"><block ref="fa623328d311ec4315ab82a9a7303cbe" category="inline-link-rx"></block></block>
 </blocks>
