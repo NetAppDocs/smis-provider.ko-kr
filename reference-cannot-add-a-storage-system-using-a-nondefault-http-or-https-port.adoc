@@ -32,6 +32,7 @@ summary: NetApp SMI-S Provider에서 문제가 발생했습니다.
 
 
 
+[[adding-a-storage-system-that-uses-port-8000-for-http-traffic]]
 == HTTP 트래픽에 포트 8000을 사용하는 스토리지 시스템 추가
 
 'cimcli ci-n root/ONTAP ONTAP_FilerData 호스트 이름 = 10.60.167.12 port=8000 사용자 이름=루트 암호=netapp1! comMechanism=HTTP-u 루트-p netapp1! -l localhost:5989-s--timeout 180'을 선택합니다

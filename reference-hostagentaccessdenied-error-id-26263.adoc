@@ -12,12 +12,14 @@ summary: NetApp SMI-S Provider에서 문제가 발생했습니다.
 
 
 
+[[message]]
 == 메시지
 
 '_SCVMM___(시스템)_에서 사용자_이름_에 대한 스토리지 공급자_SMIS_PROVIDER_MACHINE_의 등록이 실패했습니다. 오류 코드 HostAgentAccessDenied가 있습니다. 스토리지 검색에 유효한 공급자, 포트 및 사용자 자격 증명을 지정합니다. ID: 26263
 
 
 
+[[description]]
 == 설명
 
 이 메시지는 SMI-S Provider에 연결하기 위해 SCVMM에서 사용자를 지정했지만 SMIS 트러스트 저장소에 속하지 않은 경우에 발생합니다.
@@ -26,6 +28,7 @@ SCVMM과 SMI-S Provider 간의 통신을 활성화하려면 "cimuser" 명령을 
 
 
 
+[[corrective-action]]
 == 수정 조치
 
 "cimuser -a -u_admin user_-w_password_" 명령을 사용하여 CIM 서버 데이터베이스에 로컬 관리자 사용자(SMI-S Provider 시스템의)를 추가합니다. 그런 다음 SCVMM에 NetApp SMI-S Provider를 추가할 때 해당 관리 사용자를 사용해야 합니다.

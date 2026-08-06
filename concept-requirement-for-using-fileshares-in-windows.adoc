@@ -19,6 +19,7 @@ System Center 2016 SCVMM(Virtual Machine Manager)에서는 NTFS 전용 볼륨에
 
 
 
+[[creating-a-volume-to-be-used-for-cifs-shares-and-scvmm]]
 == CIFS 공유 및 SCVMM에 사용할 볼륨을 생성합니다
 
 CIFS 공유 및 SCVMM(System Center Virtual Machine Manager)에 사용할 볼륨을 생성할 때 볼륨은 NTFS 유형이어야 합니다. NTFS로 볼륨을 생성하려면 '_vol create -vserver <vserver_name> -volume <volume_name> -aggregate <aggr_name> -size <volume_size> -security-style NTFS_'를 입력합니다
