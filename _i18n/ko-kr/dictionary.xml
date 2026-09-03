@@ -304,7 +304,6 @@
   <block id="64dcf446a7778f30264ca7a94586a6e1" category="doc">SMI-S Provider 고급 설정을 관리합니다</block>
   <block id="42c81e79f364b151f80c02c552b5850d" category="summary">SMI-S Provider를 사용하여 스토리지 시스템을 관리 및 모니터링하려면 먼저 SMI-S Provider 소프트웨어를 설치하고 예비 구성을 확인해야 합니다.</block>
   <block id="ab3ccb0be518e752d20f706d36d252c9" category="doc">구축 워크플로우</block>
-  <block id="04c2ee750a71bee087a7164fa9418c8b" category="image-alt">SMI 공급자 워크플로입니다</block>
   <block id="11db62ef1b82524e398ad3812618f7ea" category="doc">NetApp SMI-S Provider를 시작하는 데 시간이 오래 걸립니다</block>
   <block id="a3519a79e1fa4e9109ec373b28d1609d" category="paragraph">이미 관리 중인 스토리지 시스템이 있는 Windows 시스템에서 'mis cimserver' 명령을 사용하여 NetApp SMI-S Provider를 시작하면 공급자 로컬 캐시가 채워질 때까지 명령이 반환되지 않습니다. 캐시가 채워지는 동안 최대 15분 동안 기다리며 NetApp SMI-S Provider는 반환될 때까지 사용할 수 없습니다.</block>
   <block id="f9ac0617143317e28bbf839b5d2db80a" category="paragraph">'mis cimserver' 명령을 사용하는 것이 NetApp SMI-S Provider를 시작하는 데 권장되는 방법입니다.</block>
@@ -655,7 +654,6 @@
   <block id="37735049e65188a885df4388c67153a4" category="summary">호스트의 클라이언트 애플리케이션이 SLP(CIM-XML encoding over HTTP)를 사용하여 CIMOM 서버를 검색할 때 클라이언트는 공유 객체(CIM 언어로 모델링한 객체)를 CIMOM에 쿼리합니다. CIMOM은 요청된 정보에 대해 디바이스 관련 API를 사용하여 공유 객체를 로드하고 스토리지 시스템을 쿼리합니다.</block>
   <block id="9016abb1e0944872fd232fd72ca5bc80" category="doc">NetApp SMI-S Provider가 호스트와 상호 작용하는 방법</block>
   <block id="14f75c43461428b4df3f6d3980b25d02" category="paragraph">다음 그림에서는 SMI-S Provider가 쿼리 또는 명령을 수신할 때 NetApp SMI-S Provider가 WBEM 관리 클라이언트와 상호 작용하는 방법을 보여 줍니다.</block>
-  <block id="707facb1331bad235d191a85d3686ab2" category="image-alt">SMI 에이전트 및 호스트 상호 작용</block>
   <block id="cacc10f2bbbb96e6d2a0d9b4aef02b69" category="summary">추적이 활성화되면 기본적으로 7개의 추적 파일이 저장됩니다. 더 많은 추적 파일을 저장해야 하는 경우 환경 변수 PEGASUS_TRACE_FILE_NUM을 설정하여 저장된 최대 추적 파일 수를 늘릴 수 있습니다. 저장된 추적 파일의 최대 개수를 늘릴 경우 시스템에서 추적 파일을 수용할 수 있는 충분한 공간이 하드 드라이브에 있는지 확인해야 합니다.</block>
   <block id="28b9df3d45d41cf4deb33c545836d2a7" category="doc">저장된 추적 파일 수를 지정합니다</block>
   <block id="03ef8ba810aaf28989881c22a0a0d0b4" category="paragraph">추적이 활성화되면 기본적으로 7개의 추적 파일이 저장됩니다. 더 많은 추적 파일을 저장해야 하는 경우 환경 변수 "PEGASUS_TRACE_FILE_NUM"을 설정하여 저장된 최대 추적 파일 수를 늘릴 수 있습니다. 저장된 추적 파일의 최대 개수를 늘릴 경우 시스템에서 추적 파일을 수용할 수 있는 충분한 공간이 하드 드라이브에 있는지 확인해야 합니다.</block>
@@ -917,4 +915,6 @@
   <block id="cc2ad876e77ac64c0d4f8e5e89900549" category="list-text">Windows 호스트에 OpenSSL을 다운로드하여 설치해야 합니다.</block>
   <block id="c104915e9f0d8e0313edcca7765f005e" category="list-text">SMI-S Provider 서비스를 재시작하십시오.</block>
   <block id="fa623328d311ec4315ab82a9a7303cbe" category="list-text"><block ref="fa623328d311ec4315ab82a9a7303cbe" category="inline-link-rx"></block></block>
+  <block id="f08445df01bad5aee6547cb7953d07d6" category="image-alt">SMI-S 공급자 배포, 사전 구성 유효성 검사 및 관리 작업 워크플로를 보여주는 다이어그램</block>
+  <block id="459eb66f775af707f84ca3f4c3f5f129" category="image-alt">호스트가 SMI-S Provider CIMOM, 저장소, 공급자 DLL 및 스토리지 시스템에 쿼리를 전송하는 다이어그램</block>
 </blocks>

@@ -15,4 +15,4 @@ summary: '호스트의 클라이언트 애플리케이션이 SLP(CIM-XML encodin
 
 다음 그림에서는 SMI-S Provider가 쿼리 또는 명령을 수신할 때 NetApp SMI-S Provider가 WBEM 관리 클라이언트와 상호 작용하는 방법을 보여 줍니다.
 
-image::../media/smi_s_agent_and_host_interaction.gif[SMI 에이전트 및 호스트 상호 작용]
+image::../media/smi_s_agent_and_host_interaction.gif[호스트가 SMI-S Provider CIMOM, 저장소, 공급자 DLL 및 스토리지 시스템에 쿼리를 전송하는 다이어그램]
