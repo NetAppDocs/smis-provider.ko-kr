@@ -10,6 +10,9 @@ summary: NetApp SMI-S Provider에서 문제가 발생했습니다.
 :imagesdir: ./media/
 
 
+[role="lead"]
+SMB 3.0 공유 크기가 과도한 I/O로 인해 ONTAP에서 할당량 재초기화에 시간이 오래 걸리는 경우 System Center Virtual Machine Manager(SCVMM)에서 0으로 떨어질 수 있으며, 이로 인해 새 VM을 프로비저닝할 수 없습니다. 할당량 설정을 조정하여 이 문제를 해결하십시오.
+
 * * 문제 *
 +
 SCVMM(System Center Virtual Machine Manager)에서 신규 또는 기존 SMB 3.0 공유 크기가 0으로 떨어질 수 있습니다.

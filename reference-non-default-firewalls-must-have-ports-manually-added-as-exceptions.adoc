@@ -10,6 +10,9 @@ summary: NetApp SMI-S Provider에서 문제가 발생했습니다.
 :imagesdir: ./media/
 
 
+[role="lead"]
+Windows 기본 방화벽 이외의 방화벽을 사용하는 경우, NetApp SMI-S Provider가 필요한 포트를 예외로 추가하지 않으면 클라이언트와 통신하거나 표시를 전송하지 못할 수 있습니다. 이 문제를 해결하려면 해당 포트를 방화벽 구성에 추가하십시오.
+
 * * 문제 *
 +
 기본 Windows 방화벽 이외의 방화벽을 사용하는 경우 다음과 같은 문제가 발생할 수 있습니다.

@@ -10,6 +10,9 @@ summary: NetApp SMI-S Provider에서 문제가 발생했습니다.
 :imagesdir: ./media/
 
 
+[role="lead"]
+A `Network path not found` SMB 공유에 가상 머신을 배포하는 동안 나타나는 메시지는 일반적으로 호스트가 DNS 서버에 아직 레코드가 없는 DNS 문제를 나타냅니다. DNS 레코드 또는 호스트 파일을 업데이트하여 이 문제를 해결하십시오.
+
 * * 메시지 *
 +
 네트워크 경로를 찾을 수 없습니다

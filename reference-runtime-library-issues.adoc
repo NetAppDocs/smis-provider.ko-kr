@@ -11,6 +11,9 @@ summary: NetApp SMI-S Provider에서 문제가 발생했습니다.
 :pp: &#43;&#43;
 
 
+[role="lead"]
+NetApp SMI-S Provider는 Windows 환경에서 런타임 라이브러리 문제를 일으킬 수 있습니다. 필요한 Microsoft Visual C{pp} 재배포 가능 패키지를 설치하여 이 문제를 해결하십시오.
+
 * * 문제 *
 +
 런타임 라이브러리 문제가 발생합니다.
