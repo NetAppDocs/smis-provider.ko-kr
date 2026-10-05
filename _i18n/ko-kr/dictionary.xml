@@ -12,7 +12,6 @@
   <block id="ccf6fa61cfac4827cab18b713647f22c" category="list-text">PEGASUS_DISABLE_INDIVITIONMENTS 환경 변수를 false로 설정합니다.</block>
   <block id="303b50921b53d3609d0e06a97d955426" category="list-text">CIM 서버를 다시 시작합니다.</block>
   <block id="127244f141478553012a969bb50d8169" category="paragraph">'* SMIS cimserver restart*'</block>
-  <block id="4ca8f8dc1b36b9c411697fcb2f505c44" category="summary">추적할 구성 요소 지정, 추적 메시지가 기록되는 대상, 추적 수준 및 추적 파일 위치 지정 등 SMI-S Provider가 추적 파일을 관리하는 방법을 구성할 수 있습니다.</block>
   <block id="ff33a03ec388f99378211d1528ffde50" category="doc">추적 관리</block>
   <block id="2f46f994932279267adf63af53ef8631" category="summary">NetApp SMI-S Provider에서 문제가 발생했습니다.</block>
   <block id="a276b571413c6c0fe3cdc0eb1cca1726" category="doc">localhost:5989에 연결할 수 없습니다</block>
@@ -461,9 +460,6 @@
   <block id="d10e609c9f10971c9ad9a9e63ddc2439" category="list-text">'*_CLASS_NAME_ *'</block>
   <block id="655546f65ee5fb9186411efa5747bec4" category="paragraph">정보를 원하는 클래스의 이름입니다</block>
   <block id="c807c0fac735539610e5b517945b000e" category="paragraph">'mis class' 명령과 그 축약된 출력:</block>
-  <block id="ef23db5e5a3a16df609d1db8b2ff882c" category="summary">SLP.conf 구성 파일을 편집하여 서비스 위치 프로토콜 데몬(SLPD) 서비스를 관리할 수 있습니다.</block>
-  <block id="e1cd17773638b5c6ba6a33ec0efa8bed" category="doc">SLP 구성 옵션을 지정합니다</block>
-  <block id="c520045e753333a3e19361a8bcc5accb" category="paragraph">Slp.conf 구성 파일을 편집하여 서비스 위치 프로토콜 데몬(SLPD) 서비스를 관리할 수 있습니다.</block>
   <block id="44f8fbce4489a6c5b317b3f8b2f2121a" category="summary">SMI-S Provider를 설치하기 전에 Windows 호스트에서 지원되는 운영 체제를 실행 중인지 확인해야 합니다.</block>
   <block id="8a83ea3699cafca0e6d30e8c5ffb9259" category="doc">지원되는 운영 체제 버전입니다</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">운영 체제</block>
@@ -898,7 +894,6 @@
   <block id="bfdf270b33cb3dc13957bd36fee69058" category="list-text">ONTAP 에 대해 를<block ref="ade191b1004522550d83e818f2d7139d" prefix=" " category="inline-code"></block>입력합니다.</block>
   <block id="cf0d6d290cc1c4520fbbfc002c946664" category="summary">NetApp SMI-S Provider 5.2.7 소프트웨어의 기능, 제한 사항 및 알려진 문제에 대한 정보를 제공합니다.</block>
   <block id="24b5861592ee7b4615fa625b97669f21" category="paragraph"><block ref="f88e2f39ae65eb4268159ba7fe6b9dda" category="inline-link-rx"></block>새로운 기능, 업그레이드 참고 사항, 해결된 문제, 알려진 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
-  <block id="c77d93c9bafb13a9882093351ecdb498" category="summary">NetApp SMI-S Provider 소프트웨어를 설치하여 ONTAP를 실행하는 스토리지 시스템을 관리할 수 있습니다. 기본적으로 NetApp SMI-S Provider 소프트웨어는 C:\Program Files (x86)\NetApp\SMIS\Pegasus 디렉토리에 설치됩니다.</block>
   <block id="a29f0f75cbf44d12b1fb98ed37473297" category="paragraph">NetApp SMI-S Provider 소프트웨어를 설치하여 ONTAP를 실행하는 스토리지 시스템을 관리할 수 있습니다. 그러나 이전 버전으로 되돌리거나 다운그레이드할 수는 없습니다. 기본적으로 NetApp SMI-S Provider 소프트웨어는<block ref="e93eb95a4a6d54999769913bf79a69c9" prefix=" " category="inline-code"></block> 디렉토리에 설치됩니다.</block>
   <block id="738fc2618ae3cc77b3d364faaf5e4b42" category="summary">SMI-S Provider는 스토리지 시스템에 대한 ONTAP API 호출을 수행합니다. 기본적으로 ONTAP API 호출 시간 제한은 300초입니다. 제한 시간을 60초에서 300초 사이의 값으로 설정할 수 있습니다.</block>
   <block id="7162b9fa7c706619cc067c40bb9d383b" category="doc">ONTAP API 호출 시간 제한 값을 지정합니다</block>
@@ -938,4 +933,7 @@
   <block id="6b9a7e33b136d15333a1b5ea897e1536" category="paragraph">이 <block ref="d6bea59fb7c3e2297074e152f32b36f6" prefix=" " category="inline-code"></block> 메시지는 System Center Virtual Machine Manager(SCVMM)에서 단일 파일 공유에 많은 수의 VM을 프로비저닝하는 동안 연결당 사용자 세션 최대 제한에 도달했을 때 나타납니다. 더 많은 VM 배포를 지원하려면 이 제한을 늘리십시오.</block>
   <block id="3d30ad5f2e0a9dd55e0a8cd699fdd7a8" category="paragraph">경고 26130은 호스트 중 어느 것도 스토리지 어레이에 액세스할 수 없는 호스트 그룹에 스토리지 용량이 할당될 때 발생하며, 이로 인해 스토리지 시스템에 가상 머신을 배치할 수 없게 됩니다. 이 경고를 해결하려면 각 호스트에 필요한 액세스 권한을 부여하십시오.</block>
   <block id="415be26ab3c45e9b0e674fcda56c11bb" category="paragraph">NetApp SMI-S Provider 릴리스 노트에는 각 릴리스의 새로운 기능, 업그레이드 참고 사항, 수정된 문제 및 알려진 제한 사항에 대한 설명이 포함되어 있습니다. NetApp SMI-S Provider 5.2.7의 최신 릴리스 노트는 여기에서 확인할 수 있습니다.</block>
+  <block id="ee6721a9bb4d509731f29438bd62f95e" category="summary">SMI-S Provider는 SMI-S v1.7을 준수하는 프로필 및 하위 프로필을 사용합니다.</block>
+  <block id="cbba47ea1866712504ecb2c8ff66414b" category="summary">NetApp SMI-S Provider는 스토리지 시스템, CIMOM, 공급자 객체 및 리포지토리를 관리하고 모니터링할 수 있도록 하는 세 가지 구성 요소로 이루어져 있습니다.</block>
+  <block id="44ba926fa432704769627324f65ba8a6" category="summary">ONTAP을 실행하는 스토리지 시스템을 관리하려면 NetApp SMI-S Provider 소프트웨어를 설치합니다.</block>
 </blocks>

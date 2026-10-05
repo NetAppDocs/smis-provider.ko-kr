@@ -85,17 +85,14 @@ sidebar:
       url: "/concept-manage-logging-and-tracing-overview.html"
     - title: 로그 설정을 구성합니다
       url: "/task-configure-log-settings.html"
-      entries:
-      - title: 로깅 수준
-        url: "/reference-logging-levels.html"
+    - title: 로깅 수준
+      url: "/reference-logging-levels.html"
     - title: 추적 관리
-      url: "/concept-manage-tracing.html"
       entries:
       - title: 트레이스 설정을 지정합니다
         url: "/task-specify-trace-settings.html"
-        entries:
-        - title: 트레이스 설정 값
-          url: "/reference-trace-setting-values.html"
+      - title: 트레이스 설정 값
+        url: "/reference-trace-setting-values.html"
       - title: 추적 파일 크기를 지정합니다
         url: "/task-specify-trace-file-size.html"
       - title: 저장된 추적 파일 수를 지정합니다
@@ -122,11 +119,8 @@ sidebar:
     entries:
     - title: 개요
       url: "/concept-manage-slp-overview.html"
-    - title: SLP 구성 옵션을 지정합니다
-      url: "/concept-specify-slp-configuration-options.html"
-      entries:
-      - title: SLP.conf 파일 관리
-        url: "/reference-editing-the-slp-conf-file.html"
+    - title: SLP.conf 파일 관리
+      url: "/reference-editing-the-slp-conf-file.html"
   - title: CIMOM 명령
     entries:
     - title: 구성
